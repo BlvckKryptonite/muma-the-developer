@@ -173,7 +173,7 @@ export default function Portfolio() {
       </div>
 
       {/* Hero Section */}
-      <section className="pt-20 pb-16 px-4 sm:px-6 lg:px-8">
+      <section className="pt-16 pb-12 px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-4xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -181,14 +181,14 @@ export default function Portfolio() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="flex flex-col items-center mb-6"
           >
-            <div className="w-24 h-24 mb-6 rounded-full overflow-hidden shadow-lg border-4 border-white dark:border-slate-700">
+            <div className="w-20 h-20 mb-4 rounded-full overflow-hidden shadow-lg border-4 border-white dark:border-slate-700">
               <img 
                 src="/icons/avatar.svg" 
                 alt="Muma Kalobwe" 
                 className="w-full h-full object-cover"
               />
             </div>
-            <h1 className="font-poppins text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 dark:text-white mb-4 leading-tight">
+            <h1 className="font-poppins text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 dark:text-white mb-3 leading-tight">
               Muma Kalobwe
             </h1>
           </motion.div>
@@ -197,7 +197,7 @@ export default function Portfolio() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
           >
-            <p className="text-lg sm:text-xl text-slate-600 dark:text-slate-300 mb-6 leading-relaxed">
+            <p className="text-lg sm:text-xl text-slate-600 dark:text-slate-300 mb-4 leading-relaxed">
               Full Stack Developer | Data & AI Enthusiast | FinTech-Focused
             </p>
           </motion.div>
