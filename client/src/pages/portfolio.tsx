@@ -3,6 +3,7 @@ import { useTheme } from "@/components/theme-provider";
 import { ProjectCard } from "@/components/project-card";
 import { Sun, Moon, Mail } from "lucide-react";
 
+
 const projects = [
   {
     name: "Reelalyze",
@@ -336,7 +337,7 @@ export default function Portfolio() {
                 period: "2023 - Present",
                 icon: (
                   <img 
-                    src="/attached_assets/code institute logo_1754174459869.png" 
+                    src="/code-institute-logo.png"
                     alt="Code Institute Logo" 
                     className="w-8 h-8 object-contain"
                   />
@@ -348,7 +349,7 @@ export default function Portfolio() {
                 period: "2021 - 2023",
                 icon: (
                   <img 
-                    src="/attached_assets/Malmö_University_Logo.svg_1754174459871.png" 
+                    src="/malmo-university-logo.png"
                     alt="Malmö University Logo" 
                     className="w-8 h-8 object-contain"
                   />
@@ -360,7 +361,7 @@ export default function Portfolio() {
                 period: "2015 - 2019",
                 icon: (
                   <img 
-                    src="/attached_assets/university of zambia logo_1754174459871.png" 
+                    src="/zambia-university-logo.png"
                     alt="University of Zambia Logo" 
                     className="w-8 h-8 object-contain"
                   />
