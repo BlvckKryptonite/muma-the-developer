@@ -1,15 +1,16 @@
 import { motion } from "framer-motion";
-import { ExternalLink, Clock } from "lucide-react";
+import { ExternalLink, Clock, FileText } from "lucide-react";
 
 interface ProjectCardProps {
   name: string;
   description: string;
   link: string;
+  documentation: string;
   icon: string;
   index: number;
 }
 
-export function ProjectCard({ name, description, link, icon, index }: ProjectCardProps) {
+export function ProjectCard({ name, description, link, documentation, icon, index }: ProjectCardProps) {
   const isComingSoon = link === "#";
 
   return (
@@ -74,24 +75,47 @@ export function ProjectCard({ name, description, link, icon, index }: ProjectCar
               Coming Soon
             </motion.span>
           ) : (
-            <motion.a
-              href={link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 font-medium transition-colors group/link"
-              whileHover={{ scale: 1.05, x: 4 }}
-              whileTap={{ scale: 0.95 }}
-              transition={{ duration: 0.2 }}
-            >
-              View Live
-              <motion.div
-                className="ml-1"
-                whileHover={{ x: 3, y: -3 }}
+            <div className="flex items-center space-x-4">
+              <motion.a
+                href={link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 font-medium transition-colors group/link"
+                whileHover={{ scale: 1.05, x: 4 }}
+                whileTap={{ scale: 0.95 }}
                 transition={{ duration: 0.2 }}
               >
-                <ExternalLink className="w-4 h-4" />
-              </motion.div>
-            </motion.a>
+                View Live
+                <motion.div
+                  className="ml-1"
+                  whileHover={{ x: 3, y: -3 }}
+                  transition={{ duration: 0.2 }}
+                >
+                  <ExternalLink className="w-4 h-4" />
+                </motion.div>
+              </motion.a>
+              
+              {documentation !== "#" && (
+                <motion.a
+                  href={documentation}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center text-slate-600 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-300 font-medium transition-colors group/link"
+                  whileHover={{ scale: 1.05, x: 4 }}
+                  whileTap={{ scale: 0.95 }}
+                  transition={{ duration: 0.2 }}
+                >
+                  Documentation
+                  <motion.div
+                    className="ml-1"
+                    whileHover={{ x: 3, y: -3 }}
+                    transition={{ duration: 0.2 }}
+                  >
+                    <FileText className="w-4 h-4" />
+                  </motion.div>
+                </motion.a>
+              )}
+            </div>
           )}
         </div>
       </div>

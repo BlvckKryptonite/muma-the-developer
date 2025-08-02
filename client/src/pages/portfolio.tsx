@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { useTheme } from "@/components/theme-provider";
 import { ProjectCard } from "@/components/project-card";
 import { Sun, Moon, Mail } from "lucide-react";
+import { useState } from "react";
 
 
 const projects = [
@@ -9,31 +10,92 @@ const projects = [
     name: "Reelalyze",
     description: "AI-powered YouTube summarizer using Streamlit, Python, and OpenAI. Extracts context-aware summaries from video transcripts and visuals.",
     link: "https://reelalyze.replit.app",
+    documentation: "#",
     icon: "/icons/reelalyze.svg"
   },
   {
     name: "SpendSmart",
     description: "A budgeting app built with HTML/CSS, JavaScript, and Chart.js. Helps users track expenses, savings, and gain financial awareness.",
     link: "https://spendsmart-js.netlify.app",
+    documentation: "#",
     icon: "/icons/spendsmart.svg"
   },
   {
     name: "FraudShield CLI",
     description: "Python-based command-line tool to flag suspicious financial transactions using rule-based and ML-based logic.",
     link: "https://github.com/BlvckKryptonite/fraudshield",
+    documentation: "#",
     icon: "/icons/fraudshield.svg"
   },
   {
     name: "Currency Exchange CLI",
     description: "Real-time currency converter using Fawaz API. Built in Python and deployed to Heroku.",
     link: "https://currency-converter-cli-fad75cd3b79c.herokuapp.com/",
+    documentation: "#",
     icon: "/icons/currency.svg"
   },
   {
     name: "ParsePilot",
     description: "Python tool that cleans CSV data, extracts nested JSON, and prepares it for analysis. Built for data preprocessing workflows.",
     link: "#",
+    documentation: "#",
     icon: "/icons/parsepilot.svg"
+  },
+  {
+    name: "Muma's 'Mazing Barbeque",
+    description: "Comic-book themed React & Tailwind website page with Framer Motion animations and playful scroll effects. Includes interactive ticket tiers, superhero-themed chef cards, and Stripe mock signup integration.",
+    link: "#",
+    documentation: "#",
+    icon: "/icons/barbeque.svg"
+  },
+  {
+    name: "ATM SIM",
+    description: "CLI-based ATM simulator using Python. Supports secure login, balance viewing, deposit/withdrawal functions, and simulates receipts and user accounts for core banking logic.",
+    link: "#",
+    documentation: "#",
+    icon: "/icons/atm.svg"
+  },
+  {
+    name: "TypeRush",
+    description: "Fast-paced typing game built solely with vanilla JavaScript. Tracks speed and accuracy while providing real-time feedback and visual cues to improve typing skills.",
+    link: "#",
+    documentation: "#",
+    icon: "/icons/typerush.svg"
+  },
+  {
+    name: "The GlowClip",
+    description: "A fully functional E-commerce website and product showcase built on Shopify with the Shrine theme. Includes optimized product descriptions, refund handling logic, apps, and basic analytics integration.",
+    link: "#",
+    documentation: "#",
+    icon: "/icons/glowclip.svg"
+  },
+  {
+    name: "ChurnChaser",
+    description: "Predictive analytics prototype (Python, Streamlit) for customer churn detection in e-commerce. Integrates behavioral variables to flag at-risk customers.",
+    link: "#",
+    documentation: "#",
+    icon: "/icons/churnchaser.svg"
+  },
+  {
+    name: "Word Unscramble",
+    description: "A browser-based JavaScript word game that challenges users to rearrange shuffled letters. Includes timer, scoring, and responsive design for a quick mental workout.",
+    link: "#",
+    documentation: "#",
+    icon: "/icons/wordgame.svg"
+  },
+  {
+    name: "Retail Radar",
+    description: "Python-powered scraper concept for comparing prices across retailers (e.g., eBay & Amazon). Features JSON parsing, anti-scraping logic, and a simple but modern React UI (planned).",
+    link: "#",
+    documentation: "#",
+    icon: "/icons/retailradar.svg"
+  },
+  {
+    name: "Game-Xit",
+    description: "A three-page HTML/CSS website raising awareness about video game addiction. Features responsive design, a gaming self-assessment tool link, embedded YouTube resources, and a styled contact form with Google Maps integration.",
+    link: "#",
+    documentation: "#",
+    icon: "/icons/gameexit.svg"
   }
 ];
 
@@ -144,6 +206,9 @@ const techStack = {
 
 export default function Portfolio() {
   const { theme, setTheme } = useTheme();
+  const [showAllProjects, setShowAllProjects] = useState(false);
+  
+  const displayedProjects = showAllProjects ? projects : projects.slice(0, 6);
 
   return (
     <div className="min-h-screen bg-slate-50 dark:bg-slate-900 text-slate-700 dark:text-slate-200 transition-all duration-500 ease-in-out">
@@ -254,12 +319,42 @@ export default function Portfolio() {
           </motion.div>
           
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            {projects.map((project, index) => (
-              <div key={project.name} className={index === 4 ? "lg:col-span-2" : ""}>
+            {displayedProjects.map((project, index) => (
+              <div key={project.name} className={index === 4 && displayedProjects.length === 5 ? "lg:col-span-2" : ""}>
                 <ProjectCard {...project} index={index} />
               </div>
             ))}
           </div>
+          
+          {/* View More Button */}
+          {projects.length > 6 && (
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.3 }}
+              viewport={{ once: true }}
+              className="flex justify-center mt-12"
+            >
+              <motion.button
+                onClick={() => setShowAllProjects(!showAllProjects)}
+                whileHover={{ scale: 1.02, y: -2 }}
+                whileTap={{ scale: 0.98 }}
+                className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white font-medium rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl"
+              >
+                {showAllProjects ? 'Show Less' : `View More (${projects.length - 6} more)`}
+                <motion.svg
+                  className="w-5 h-5 ml-2"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  animate={{ rotate: showAllProjects ? 180 : 0 }}
+                  transition={{ duration: 0.3 }}
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </motion.svg>
+              </motion.button>
+            </motion.div>
+          )}
         </div>
       </section>
 
