@@ -107,10 +107,10 @@ const techStack = {
   ],
   "Tools & Deployment": [
     { 
-      name: "Netlify, Vercel", 
+      name: "Vercel, Netlify", 
       icon: (
         <svg className="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
-          <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+          <path d="M24 22.525H0l12-21.05 12 21.05z"/>
         </svg>
       )
     },
@@ -296,6 +296,83 @@ export default function Portfolio() {
                       </span>
                     </motion.div>
                   ))}
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Educational Background Section */}
+      <section className="py-20 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-4xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
+            <h2 className="font-poppins text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 dark:text-white mb-16 text-center">
+              Educational Background
+            </h2>
+          </motion.div>
+          
+          <div className="space-y-8">
+            {[
+              {
+                institution: "Code Institute",
+                degree: "Full-Stack Software Development Program",
+                period: "2023 - Present",
+                icon: (
+                  <svg className="w-8 h-8" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0L19.2 12l-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/>
+                  </svg>
+                )
+              },
+              {
+                institution: "Malmö Universitet",
+                degree: "Master of Science",
+                period: "2021 - 2023",
+                icon: (
+                  <svg className="w-8 h-8" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/>
+                  </svg>
+                )
+              },
+              {
+                institution: "The University of Zambia",
+                degree: "Bachelor of Arts",
+                period: "2015 - 2019",
+                icon: (
+                  <svg className="w-8 h-8" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9L12 3zm6.82 6L12 12.72 5.18 9 12 5.28 18.82 9zM17 15.99l-5 2.73-5-2.73v-3.72L12 15l5-2.73v3.72z"/>
+                  </svg>
+                )
+              }
+            ].map((education, index) => (
+              <motion.div
+                key={education.institution}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
+                viewport={{ once: true }}
+                className="flex items-start space-x-4 p-6 bg-white dark:bg-slate-800 rounded-2xl shadow-lg border border-slate-200 dark:border-slate-700"
+              >
+                <div className="flex-shrink-0">
+                  <div className="w-12 h-12 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-xl flex items-center justify-center text-white">
+                    {education.icon}
+                  </div>
+                </div>
+                <div className="flex-1 min-w-0">
+                  <h3 className="font-poppins text-xl font-semibold text-slate-900 dark:text-white mb-1">
+                    {education.institution}
+                  </h3>
+                  <p className="text-slate-600 dark:text-slate-300 mb-2">
+                    {education.degree}
+                  </p>
+                  <p className="text-sm text-slate-500 dark:text-slate-400">
+                    {education.period}
+                  </p>
                 </div>
               </motion.div>
             ))}
