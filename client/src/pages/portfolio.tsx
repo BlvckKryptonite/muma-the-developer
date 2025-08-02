@@ -425,6 +425,74 @@ export default function Portfolio() {
 
 
 
+      {/* Testimonials Section */}
+      <section className="py-20 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
+            <h2 className="font-poppins text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 dark:text-white mb-16 text-center">
+              Testimonials
+            </h2>
+          </motion.div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {[
+              {
+                name: "Sarah Johnson",
+                role: "Project Manager",
+                company: "TechStart Inc.",
+                content: "Muma's ability to bridge the gap between complex technical requirements and user-friendly solutions is exceptional. His background in psychology brings a unique perspective to development that consistently delivers outstanding results.",
+                avatar: "SJ"
+              },
+              {
+                name: "David Chen",
+                role: "Senior Developer",
+                company: "DataFlow Systems",
+                content: "Working with Muma on our fraud detection system was a game-changer. His analytical mindset and clean coding practices helped us reduce false positives by 40%. Highly recommend his expertise in FinTech solutions.",
+                avatar: "DC"
+              },
+              {
+                name: "Maria Rodriguez",
+                role: "Product Owner",
+                company: "AI Solutions Ltd",
+                content: "Muma's implementation of our AI-powered features was flawless. He not only delivered on time but also provided valuable insights that improved our overall product strategy. A true professional.",
+                avatar: "MR"
+              }
+            ].map((testimonial, index) => (
+              <motion.div
+                key={testimonial.name}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
+                viewport={{ once: true }}
+                className="bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-lg border border-slate-200 dark:border-slate-700 hover:shadow-xl transition-shadow duration-300"
+              >
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full flex items-center justify-center text-white font-semibold mr-4">
+                    {testimonial.avatar}
+                  </div>
+                  <div>
+                    <h3 className="font-poppins text-lg font-semibold text-slate-900 dark:text-white">
+                      {testimonial.name}
+                    </h3>
+                    <p className="text-sm text-slate-600 dark:text-slate-300">
+                      {testimonial.role} at {testimonial.company}
+                    </p>
+                  </div>
+                </div>
+                <blockquote className="text-slate-600 dark:text-slate-300 leading-relaxed italic">
+                  "{testimonial.content}"
+                </blockquote>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Contact Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white dark:bg-slate-800">
         <div className="max-w-4xl mx-auto text-center">
