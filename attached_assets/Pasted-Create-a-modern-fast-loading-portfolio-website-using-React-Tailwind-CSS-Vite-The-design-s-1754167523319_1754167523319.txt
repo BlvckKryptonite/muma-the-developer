@@ -1,0 +1,103 @@
+Create a modern, fast-loading portfolio website using **React + Tailwind CSS + Vite**.
+
+The design should be inspired by the Spotlight Tailwind UI template: https://tailwindcss.com/plus/templates/spotlight/preview
+
+🔧 **Core Features:**
+- Fully responsive layout
+- Light/Dark mode toggle using Tailwind’s `dark` class and `useState`
+- Smooth, lightweight scroll and hover animations (Framer Motion)
+- Google Fonts: `Inter` for body, `Poppins` for headings
+- Deployed-ready via Vite (`npm run dev`, `npm run build`)
+
+---
+
+🧑‍💻 **Hero Section:**
+- Name: “Muma Kalobwe”
+- Subtitle: “Full Stack Developer | Data & AI Enthusiast | FinTech-Focused”
+- Centered on screen with animated entrance
+- Toggle button for light/dark mode in top-right
+
+---
+
+🧠 **About Section:**
+- Heading: “About Me”
+- Paragraph: “I’m a full-stack developer with a background in psychology & criminology, now building smart solutions in fintech, fraud detection, and AI-powered tooling. I thrive at the intersection of behavioral insight and clean, scalable code.”
+
+---
+
+📁 **Projects Section:**
+- Heading: “Featured Projects”
+- A responsive grid of cards (2 columns on desktop, 1 column on mobile)
+- Each card includes:
+  - Project icon (SVG or PNG on the left)
+  - Project name as heading
+  - Short description
+  - "View Live ↗" link
+- Add these 5 projects (all cards must animate in on scroll):
+
+```json
+[
+  {
+    "name": "Reelalyze",
+    "description": "AI-powered YouTube summarizer using Streamlit, Python, and OpenAI. Extracts context-aware summaries from video transcripts and visuals.",
+    "link": "https://reelalyze.replit.app",
+    "icon": "/icons/reelalyze.svg"
+  },
+  {
+    "name": "SpendSmart",
+    "description": "A budgeting app built with HTML/CSS, JavaScript, and Chart.js. Helps users track expenses, savings, and gain financial awareness.",
+    "link": "https://spendsmart-js.netlify.app",
+    "icon": "/icons/spendsmart.svg"
+  },
+  {
+    "name": "FraudShield CLI",
+    "description": "Python-based command-line tool to flag suspicious financial transactions using rule-based and ML-based logic.",
+    "link": "https://github.com/BlvckKryptonite/fraudshield",
+    "icon": "/icons/fraudshield.svg"
+  },
+  {
+    "name": "Currency Exchange CLI",
+    "description": "Real-time currency converter using Fawaz API. Built in Python and deployed to Heroku.",
+    "link": "https://currency-converter-cli-fad75cd3b79c.herokuapp.com/",
+    "icon": "/icons/currency.svg"
+  },
+  {
+    "name": "ParsePilot",
+    "description": "Python tool that cleans CSV data, extracts nested JSON, and prepares it for analysis. Built for data preprocessing workflows.",
+    "link": "#",
+    "icon": "/icons/parsepilot.svg"
+  }
+]
+🧰 Tech Stack Section:
+
+Heading: “Core Tech Stack”
+
+Three columns: Frontend, Backend, Tools/APIs
+
+Grouped lists:
+
+Frontend: HTML, CSS, JavaScript, React, Tailwind CSS, Framer Motion
+
+Backend: Python, Django, PostgreSQL, Streamlit
+
+Tools & APIs: OpenAI API, Git & GitHub, Replit, Netlify, Vercel, Heroku, Render
+
+📨 Contact Section:
+
+Heading: “Let’s Connect”
+
+Text: “Reach out if you want to collaborate, hire me, or geek out over Python + FinTech.”
+
+Simple email button that opens mailto:your.email@example.com
+
+⚙️ Additional Notes:
+
+Animate sections on scroll using Framer Motion
+
+Add hover scale/shadow to project cards
+
+Use Tailwind’s dark mode class strategy (darkMode: 'class')
+
+Ensure lightning-fast load time and SEO-friendly metadata
+
+Icons can be simple placeholder SVGs in /public/icons for now
