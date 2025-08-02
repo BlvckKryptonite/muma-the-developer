@@ -96,6 +96,20 @@ const projects = [
     link: "#",
     documentation: "#",
     icon: "/icons/gameexit.svg"
+  },
+  {
+    name: "Love Math",
+    description: "Educational quiz game built with JavaScript, HTML, and CSS. Offers timed arithmetic challenges with score tracking and responsive feedback.",
+    link: "#",
+    documentation: "#",
+    icon: "/icons/lovemath.svg"
+  },
+  {
+    name: "Love Running",
+    description: "Multi-page fitness site created solely with vanilla HTML and CSS. Focused on clean UI, accessible layout, and responsive design for a runners club.",
+    link: "#",
+    documentation: "#",
+    icon: "/icons/loverunning.svg"
   }
 ];
 
