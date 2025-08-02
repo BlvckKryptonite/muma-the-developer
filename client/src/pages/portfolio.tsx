@@ -306,16 +306,34 @@ export default function Portfolio() {
       {/* Educational Background Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-          >
-            <h2 className="font-poppins text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 dark:text-white mb-16 text-center">
-              Educational Background
-            </h2>
-          </motion.div>
+          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-16">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true }}
+            >
+              <h2 className="font-poppins text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 dark:text-white mb-6 sm:mb-0">
+                Educational Background
+              </h2>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              viewport={{ once: true }}
+            >
+              <a
+                href="#"
+                className="inline-flex items-center text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors font-medium"
+              >
+                Download CV
+                <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                </svg>
+              </a>
+            </motion.div>
+          </div>
           
           <div className="space-y-8">
             {[
@@ -363,16 +381,20 @@ export default function Portfolio() {
                     {education.icon}
                   </div>
                 </div>
-                <div className="flex-1 min-w-0">
-                  <h3 className="font-poppins text-xl font-semibold text-slate-900 dark:text-white mb-1">
-                    {education.institution}
-                  </h3>
-                  <p className="text-slate-600 dark:text-slate-300 mb-2">
-                    {education.degree}
-                  </p>
-                  <p className="text-sm text-slate-500 dark:text-slate-400">
-                    {education.period}
-                  </p>
+                <div className="flex-1 min-w-0 flex justify-between items-start">
+                  <div>
+                    <h3 className="font-poppins text-xl font-semibold text-slate-900 dark:text-white mb-1">
+                      {education.institution}
+                    </h3>
+                    <p className="text-slate-600 dark:text-slate-300">
+                      {education.degree}
+                    </p>
+                  </div>
+                  <div className="text-right flex-shrink-0 ml-4">
+                    <p className="text-sm text-slate-500 dark:text-slate-400 font-medium">
+                      {education.period}
+                    </p>
+                  </div>
                 </div>
               </motion.div>
             ))}
