@@ -335,9 +335,11 @@ export default function Portfolio() {
                 degree: "Full-Stack Software Development Program",
                 period: "2023 - Present",
                 icon: (
-                  <svg className="w-8 h-8" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0L19.2 12l-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/>
-                  </svg>
+                  <img 
+                    src="/attached_assets/code institute logo_1754174459869.png" 
+                    alt="Code Institute Logo" 
+                    className="w-8 h-8 object-contain"
+                  />
                 )
               },
               {
@@ -345,9 +347,11 @@ export default function Portfolio() {
                 degree: "Master of Science",
                 period: "2021 - 2023",
                 icon: (
-                  <svg className="w-8 h-8" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/>
-                  </svg>
+                  <img 
+                    src="/attached_assets/Malmö_University_Logo.svg_1754174459871.png" 
+                    alt="Malmö University Logo" 
+                    className="w-8 h-8 object-contain"
+                  />
                 )
               },
               {
@@ -355,9 +359,11 @@ export default function Portfolio() {
                 degree: "Bachelor of Arts",
                 period: "2015 - 2019",
                 icon: (
-                  <svg className="w-8 h-8" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9L12 3zm6.82 6L12 12.72 5.18 9 12 5.28 18.82 9zM17 15.99l-5 2.73-5-2.73v-3.72L12 15l5-2.73v3.72z"/>
-                  </svg>
+                  <img 
+                    src="/attached_assets/university of zambia logo_1754174459871.png" 
+                    alt="University of Zambia Logo" 
+                    className="w-8 h-8 object-contain"
+                  />
                 )
               }
             ].map((education, index) => (
@@ -370,7 +376,7 @@ export default function Portfolio() {
                 className="flex items-start space-x-4 p-6 bg-white dark:bg-slate-800 rounded-2xl shadow-lg border border-slate-200 dark:border-slate-700"
               >
                 <div className="flex-shrink-0">
-                  <div className="w-12 h-12 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-xl flex items-center justify-center text-white">
+                  <div className="w-12 h-12 bg-white dark:bg-slate-700 rounded-xl flex items-center justify-center border border-slate-200 dark:border-slate-600 shadow-sm">
                     {education.icon}
                   </div>
                 </div>
