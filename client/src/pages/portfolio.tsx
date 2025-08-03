@@ -564,11 +564,11 @@ export default function Portfolio() {
                     <h3 className="font-poppins text-xl font-semibold text-slate-900 dark:text-white mb-1">
                       {education.institution}
                     </h3>
-                    <p className="text-slate-600 dark:text-slate-300 mb-1">
-                      {education.degree}
-                    </p>
-                    <p className="text-sm text-slate-500 dark:text-slate-400">
+                    <p className="text-sm text-slate-500 dark:text-slate-400 mb-2">
                       {education.location}
+                    </p>
+                    <p className="text-slate-600 dark:text-slate-300">
+                      {education.degree}
                     </p>
                   </div>
                   <div className="text-right flex-shrink-0 ml-4">
