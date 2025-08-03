@@ -3,6 +3,7 @@ import { useTheme } from "@/components/theme-provider";
 import { ProjectCard } from "@/components/project-card";
 import { Sun, Moon, Mail } from "lucide-react";
 import { useState } from "react";
+import profileImage from "@assets/IMG_0395_1754265105242.jpg";
 
 
 
@@ -263,7 +264,7 @@ export default function Portfolio() {
           >
             <div className="w-32 h-32 mb-6 rounded-full overflow-hidden shadow-xl border-4 border-white dark:border-slate-700">
               <img 
-                src="@assets/IMG_0395_1754265105242.jpg" 
+                src={profileImage} 
                 alt="Muma Kalobwe" 
                 className="w-full h-full object-cover"
               />
