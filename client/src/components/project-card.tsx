@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { ExternalLink, Clock, FileText } from "lucide-react";
-import { SimpleTooltip } from "./simple-tooltip";
 
 interface ProjectCardProps {
   name: string;
@@ -14,20 +13,8 @@ interface ProjectCardProps {
 export function ProjectCard({ name, description, link, documentation, icon, index }: ProjectCardProps) {
   const isComingSoon = link === "#";
 
-  const projectData = {
-    name,
-    description,
-    link,
-    documentation,
-    icon
-  };
-
   return (
-    <SimpleTooltip 
-      content={`Tech stack and project details for ${name}`}
-      project={projectData}
-    >
-      <motion.div
+    <motion.div
         initial={{ opacity: 0, y: 20, scale: 0.9 }}
         animate={{ opacity: 1, y: 0, scale: 1 }}
         transition={{ 
@@ -154,7 +141,6 @@ export function ProjectCard({ name, description, link, documentation, icon, inde
           )}
         </div>
       </div>
-      </motion.div>
-    </SimpleTooltip>
+    </motion.div>
   );
 }
