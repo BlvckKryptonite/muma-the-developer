@@ -73,7 +73,7 @@ const projects = [
   {
     name: "FraudShield CLI",
     description: "Python-based command-line tool to flag suspicious financial transactions using rule-based and ML-based logic.",
-    link: "https://github.com/BlvckKryptonite/fraudshield",
+    link: "#",
     documentation: "https://github.com/BlvckKryptonite/fraudshield/wiki",
     icon: "/icons/fraudshield.png"
   },
@@ -510,6 +510,7 @@ export default function Portfolio() {
                 institution: "Code Institute",
                 degree: "Full-Stack Software Development Program",
                 period: "2023 - Present",
+                location: "Ireland",
                 icon: (
                   <img 
                     src="/code-institute-logo.png"
@@ -522,6 +523,7 @@ export default function Portfolio() {
                 institution: "Malmö Universitet",
                 degree: "Master of Science",
                 period: "2021 - 2023",
+                location: "Sweden",
                 icon: (
                   <img 
                     src="/malmo-university-logo.png"
@@ -534,6 +536,7 @@ export default function Portfolio() {
                 institution: "The University of Zambia",
                 degree: "Bachelor of Arts",
                 period: "2015 - 2019",
+                location: "Zambia",
                 icon: (
                   <img 
                     src="/zambia-university-logo.png"
@@ -561,8 +564,11 @@ export default function Portfolio() {
                     <h3 className="font-poppins text-xl font-semibold text-slate-900 dark:text-white mb-1">
                       {education.institution}
                     </h3>
-                    <p className="text-slate-600 dark:text-slate-300">
+                    <p className="text-slate-600 dark:text-slate-300 mb-1">
                       {education.degree}
+                    </p>
+                    <p className="text-sm text-slate-500 dark:text-slate-400">
+                      {education.location}
                     </p>
                   </div>
                   <div className="text-right flex-shrink-0 ml-4">
@@ -587,7 +593,7 @@ export default function Portfolio() {
               href="#"
               whileHover={{ scale: 1.02, y: -2 }}
               whileTap={{ scale: 0.98 }}
-              className="inline-flex items-center px-6 py-3 bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white border border-slate-200 dark:border-slate-600 hover:border-slate-300 dark:hover:border-slate-500 rounded-xl font-medium transition-all duration-300 shadow-sm hover:shadow-md"
+              className="inline-flex items-center px-6 py-3 bg-slate-900 dark:bg-slate-800 text-white hover:bg-slate-800 dark:hover:bg-slate-700 rounded-xl font-medium transition-all duration-300 shadow-lg hover:shadow-xl"
             >
               Download CV
               <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
