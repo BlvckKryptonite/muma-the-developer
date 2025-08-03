@@ -261,9 +261,9 @@ export default function Portfolio() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="flex flex-col items-center mb-6"
           >
-            <div className="w-20 h-20 mb-4 rounded-full overflow-hidden shadow-lg border-4 border-white dark:border-slate-700">
+            <div className="w-32 h-32 mb-6 rounded-full overflow-hidden shadow-xl border-4 border-white dark:border-slate-700">
               <img 
-                src="/icons/avatar.svg" 
+                src="@assets/IMG_0395_1754265105242.jpg" 
                 alt="Muma Kalobwe" 
                 className="w-full h-full object-cover"
               />
