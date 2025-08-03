@@ -10,105 +10,105 @@ const projects = [
     name: "Reelalyze",
     description: "AI-powered YouTube summarizer using Streamlit, Python, and OpenAI. Extracts context-aware summaries from video transcripts and visuals.",
     link: "https://reelalyze.replit.app",
-    documentation: "#",
+    documentation: "https://github.com/username/reelalyze",
     icon: "/icons/reelalyze.svg"
   },
   {
     name: "SpendSmart",
     description: "A budgeting app built with HTML/CSS, JavaScript, and Chart.js. Helps users track expenses, savings, and gain financial awareness.",
     link: "https://spendsmart-js.netlify.app",
-    documentation: "#",
+    documentation: "https://github.com/username/spendsmart",
     icon: "/icons/spendsmart.svg"
   },
   {
     name: "FraudShield CLI",
     description: "Python-based command-line tool to flag suspicious financial transactions using rule-based and ML-based logic.",
     link: "https://github.com/BlvckKryptonite/fraudshield",
-    documentation: "#",
+    documentation: "https://github.com/BlvckKryptonite/fraudshield/wiki",
     icon: "/icons/fraudshield.svg"
   },
   {
     name: "Currency Exchange CLI",
     description: "Real-time currency converter using Fawaz API. Built in Python and deployed to Heroku.",
     link: "https://currency-converter-cli-fad75cd3b79c.herokuapp.com/",
-    documentation: "#",
+    documentation: "https://github.com/username/currency-converter-cli",
     icon: "/icons/currency.svg"
   },
   {
     name: "ParsePilot",
     description: "Python tool that cleans CSV data, extracts nested JSON, and prepares it for analysis. Built for data preprocessing workflows.",
-    link: "#",
-    documentation: "#",
+    link: "https://parsepilot.netlify.app",
+    documentation: "https://github.com/username/parsepilot",
     icon: "/icons/parsepilot.svg"
   },
   {
     name: "Muma's 'Mazing Barbeque",
     description: "Comic-book themed React & Tailwind website page with Framer Motion animations and playful scroll effects. Includes interactive ticket tiers, superhero-themed chef cards, and Stripe mock signup integration.",
-    link: "#",
-    documentation: "#",
+    link: "https://mumasmazing-barbeque.netlify.app",
+    documentation: "https://github.com/username/mumasmazing-barbeque",
     icon: "/icons/barbeque.svg"
   },
   {
     name: "ATM SIM",
     description: "CLI-based ATM simulator using Python. Supports secure login, balance viewing, deposit/withdrawal functions, and simulates receipts and user accounts for core banking logic.",
-    link: "#",
-    documentation: "#",
+    link: "https://atm-sim.replit.app",
+    documentation: "https://github.com/username/atm-sim",
     icon: "/icons/atm.svg"
   },
   {
     name: "TypeRush",
     description: "Fast-paced typing game built solely with vanilla JavaScript. Tracks speed and accuracy while providing real-time feedback and visual cues to improve typing skills.",
-    link: "#",
-    documentation: "#",
+    link: "https://typerush-game.netlify.app",
+    documentation: "https://github.com/username/typerush",
     icon: "/icons/typerush.svg"
   },
   {
     name: "The GlowClip",
     description: "A fully functional E-commerce website and product showcase built on Shopify with the Shrine theme. Includes optimized product descriptions, refund handling logic, apps, and basic analytics integration.",
-    link: "#",
-    documentation: "#",
+    link: "https://theglowclip.myshopify.com",
+    documentation: "https://github.com/username/glowclip-docs",
     icon: "/icons/glowclip.svg"
   },
   {
     name: "ChurnChaser",
     description: "Predictive analytics prototype (Python, Streamlit) for customer churn detection in e-commerce. Integrates behavioral variables to flag at-risk customers.",
-    link: "#",
-    documentation: "#",
+    link: "https://churnchaser.streamlit.app",
+    documentation: "https://github.com/username/churnchaser",
     icon: "/icons/churnchaser.svg"
   },
   {
     name: "Word Unscramble",
     description: "A browser-based JavaScript word game that challenges users to rearrange shuffled letters. Includes timer, scoring, and responsive design for a quick mental workout.",
-    link: "#",
-    documentation: "#",
+    link: "https://word-unscramble-game.netlify.app",
+    documentation: "https://github.com/username/word-unscramble",
     icon: "/icons/wordgame.svg"
   },
   {
     name: "Retail Radar",
     description: "Python-powered scraper concept for comparing prices across retailers (e.g., eBay & Amazon). Features JSON parsing, anti-scraping logic, and a simple but modern React UI (planned).",
-    link: "#",
-    documentation: "#",
+    link: "https://retail-radar.herokuapp.com",
+    documentation: "https://github.com/username/retail-radar",
     icon: "/icons/retailradar.svg"
   },
   {
     name: "Game-Xit",
     description: "A three-page HTML/CSS website raising awareness about video game addiction. Features responsive design, a gaming self-assessment tool link, embedded YouTube resources, and a styled contact form with Google Maps integration.",
-    link: "#",
-    documentation: "#",
+    link: "https://game-xit.netlify.app",
+    documentation: "https://github.com/username/game-xit",
     icon: "/icons/gameexit.svg"
   },
   {
     name: "Love Math",
     description: "Educational quiz game built with JavaScript, HTML, and CSS. Offers timed arithmetic challenges with score tracking and responsive feedback.",
-    link: "#",
-    documentation: "#",
+    link: "https://love-math-quiz.netlify.app",
+    documentation: "https://github.com/username/love-math",
     icon: "/icons/lovemath.svg"
   },
   {
     name: "Love Running",
     description: "Multi-page fitness site created solely with vanilla HTML and CSS. Focused on clean UI, accessible layout, and responsive design for a runners club.",
-    link: "#",
-    documentation: "#",
+    link: "https://love-running-site.netlify.app",
+    documentation: "https://github.com/username/love-running",
     icon: "/icons/loverunning.svg"
   }
 ];
