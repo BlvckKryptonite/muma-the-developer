@@ -2,7 +2,7 @@
 
 ## Overview
 
-This is a modern, responsive portfolio website for Muma Kalobwe, a full-stack developer specializing in FinTech, AI, and data-driven solutions. The application is built using React with TypeScript, styled with Tailwind CSS, and features a clean, professional design with dark/light mode support. The portfolio showcases projects, technical skills, and professional experience in an interactive, visually appealing format.
+This is a modern, responsive portfolio website for Muma Kalobwe, a full-stack developer specializing in FinTech, AI, and data-driven solutions. The application is built using React with TypeScript, styled with Tailwind CSS, and features a clean, professional design with dark/light mode support. The portfolio showcases 15 comprehensive projects with enhanced animations, 3D hover effects, and custom project icons in black gradient containers with subtle shadows for premium visual appeal.
 
 ## User Preferences
 
