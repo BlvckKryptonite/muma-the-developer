@@ -51,7 +51,7 @@ export function ProjectCard({ name, description, link, documentation, icon, inde
       <div className="relative z-10 flex items-start space-x-4">
         <div className="flex-shrink-0">
           <motion.div 
-            className="w-14 h-14 bg-gradient-to-br from-slate-800 to-slate-900 rounded-xl flex items-center justify-center group-hover:shadow-lg group-hover:shadow-slate-500/25 transition-all duration-300"
+            className="w-14 h-14 bg-gradient-to-br from-slate-800 to-slate-900 rounded-xl flex items-center justify-center shadow-md shadow-slate-900/30 dark:shadow-slate-950/50 group-hover:shadow-lg group-hover:shadow-slate-500/25 transition-all duration-300"
             whileHover={{ 
               rotate: [0, -5, 5, 0],
               scale: 1.1,
