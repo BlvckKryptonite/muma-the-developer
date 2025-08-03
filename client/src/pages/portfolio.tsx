@@ -15,34 +15,6 @@ const projects = [
     icon: "/icons/reelalyze.png"
   },
   {
-    name: "SpendSmart",
-    description: "A budgeting app built with HTML/CSS, JavaScript, and Chart.js. Helps users track expenses, savings, and gain financial awareness.",
-    link: "https://spendsmart-js.netlify.app",
-    documentation: "https://github.com/username/spendsmart",
-    icon: "/icons/spendsmart.png"
-  },
-  {
-    name: "FraudShield CLI",
-    description: "Python-based command-line tool to flag suspicious financial transactions using rule-based and ML-based logic.",
-    link: "https://github.com/BlvckKryptonite/fraudshield",
-    documentation: "https://github.com/BlvckKryptonite/fraudshield/wiki",
-    icon: "/icons/fraudshield.png"
-  },
-  {
-    name: "Currency Exchange CLI",
-    description: "Real-time currency converter using Fawaz API. Built in Python and deployed to Heroku.",
-    link: "https://currency-converter-cli-fad75cd3b79c.herokuapp.com/",
-    documentation: "https://github.com/username/currency-converter-cli",
-    icon: "/icons/currency.png"
-  },
-  {
-    name: "ParsePilot",
-    description: "Python tool that cleans CSV data, extracts nested JSON, and prepares it for analysis. Built for data preprocessing workflows.",
-    link: "https://parsepilot.netlify.app",
-    documentation: "https://github.com/username/parsepilot",
-    icon: "/icons/parsepilot.png"
-  },
-  {
     name: "Muma's 'Mazing Barbeque",
     description: "Comic-book themed React & Tailwind website page with Framer Motion animations and playful scroll effects. Includes interactive ticket tiers, superhero-themed chef cards, and Stripe mock signup integration.",
     link: "https://mumasmazing-barbeque.netlify.app",
@@ -64,11 +36,46 @@ const projects = [
     icon: "/icons/typerush.png"
   },
   {
+    name: "Currency Exchange CLI",
+    description: "Real-time currency converter using Fawaz API. Built in Python and deployed to Heroku.",
+    link: "https://currency-converter-cli-fad75cd3b79c.herokuapp.com/",
+    documentation: "https://github.com/username/currency-converter-cli",
+    icon: "/icons/currency.png"
+  },
+  {
     name: "The GlowClip",
     description: "A fully functional E-commerce website and product showcase built on Shopify with the Shrine theme. Includes optimized product descriptions, refund handling logic, apps, and basic analytics integration.",
     link: "https://theglowclip.myshopify.com",
     documentation: "https://github.com/username/glowclip-docs",
     icon: "/icons/glowclip.png"
+  },
+  {
+    name: "SpendSmart",
+    description: "A budgeting app built with HTML/CSS, JavaScript, and Chart.js. Helps users track expenses, savings, and gain financial awareness.",
+    link: "https://spendsmart-js.netlify.app",
+    documentation: "https://github.com/username/spendsmart",
+    icon: "/icons/spendsmart.png"
+  },
+  {
+    name: "ParsePilot",
+    description: "Python tool that cleans CSV data, extracts nested JSON, and prepares it for analysis. Built for data preprocessing workflows.",
+    link: "https://parsepilot.netlify.app",
+    documentation: "https://github.com/username/parsepilot",
+    icon: "/icons/parsepilot.png"
+  },
+  {
+    name: "Game-Xit",
+    description: "A three-page HTML/CSS website raising awareness about video game addiction. Features responsive design, a gaming self-assessment tool link, embedded YouTube resources, and a styled contact form with Google Maps integration.",
+    link: "https://game-xit.netlify.app",
+    documentation: "https://github.com/username/game-xit",
+    icon: "/icons/gameexit.png"
+  },
+  {
+    name: "FraudShield CLI",
+    description: "Python-based command-line tool to flag suspicious financial transactions using rule-based and ML-based logic.",
+    link: "https://github.com/BlvckKryptonite/fraudshield",
+    documentation: "https://github.com/BlvckKryptonite/fraudshield/wiki",
+    icon: "/icons/fraudshield.png"
   },
   {
     name: "ChurnChaser",
@@ -90,13 +97,6 @@ const projects = [
     link: "https://retail-radar.herokuapp.com",
     documentation: "https://github.com/username/retail-radar",
     icon: "/icons/retailradar.png"
-  },
-  {
-    name: "Game-Xit",
-    description: "A three-page HTML/CSS website raising awareness about video game addiction. Features responsive design, a gaming self-assessment tool link, embedded YouTube resources, and a styled contact form with Google Maps integration.",
-    link: "https://game-xit.netlify.app",
-    documentation: "https://github.com/username/game-xit",
-    icon: "/icons/gameexit.png"
   },
   {
     name: "Love Math",
