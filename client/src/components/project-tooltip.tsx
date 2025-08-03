@@ -50,6 +50,9 @@ export function ProjectTooltip({ children, project }: ProjectTooltipProps) {
     role,
   ]);
 
+  // Debug logging
+  console.log('Tooltip state:', { isOpen, projectName: project.name });
+
   // Enhanced project details for tooltips
   const getProjectDetails = (projectName: string) => {
     const baseDetails = {

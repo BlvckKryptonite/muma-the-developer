@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { ExternalLink, Clock, FileText } from "lucide-react";
-import { ProjectTooltip } from "./project-tooltip";
+import { SimpleTooltip } from "./simple-tooltip";
 
 interface ProjectCardProps {
   name: string;
@@ -23,24 +23,27 @@ export function ProjectCard({ name, description, link, documentation, icon, inde
   };
 
   return (
-    <ProjectTooltip project={projectData}>
-      <motion.div
-      initial={{ opacity: 0, y: 20, scale: 0.9 }}
-      animate={{ opacity: 1, y: 0, scale: 1 }}
-      transition={{ 
-        duration: 0.8, 
-        delay: index * 0.1,
-        ease: "easeOut"
-      }}
-      whileHover={{ 
-        y: -12, 
-        scale: 1.03,
-        rotateY: 2,
-        transition: { duration: 0.4, ease: "easeOut" }
-      }}
-      whileTap={{ scale: 0.97 }}
-      className="project-card relative bg-white dark:bg-slate-800/90 rounded-3xl p-8 shadow-xl border border-slate-200/50 dark:border-slate-700/50 transition-all duration-500 hover:shadow-2xl hover:border-blue-300/60 dark:hover:border-blue-600/60 dark:hover:shadow-2xl cursor-pointer group overflow-hidden backdrop-blur-sm"
+    <SimpleTooltip 
+      content={`Tech stack and project details for ${name}`}
+      project={projectData}
     >
+      <motion.div
+        initial={{ opacity: 0, y: 20, scale: 0.9 }}
+        animate={{ opacity: 1, y: 0, scale: 1 }}
+        transition={{ 
+          duration: 0.8, 
+          delay: index * 0.1,
+          ease: "easeOut"
+        }}
+        whileHover={{ 
+          y: -12, 
+          scale: 1.03,
+          rotateY: 2,
+          transition: { duration: 0.4, ease: "easeOut" }
+        }}
+        whileTap={{ scale: 0.97 }}
+        className="project-card relative bg-white dark:bg-slate-800/90 rounded-3xl p-8 shadow-xl border border-slate-200/50 dark:border-slate-700/50 transition-all duration-500 hover:shadow-2xl hover:border-blue-300/60 dark:hover:border-blue-600/60 dark:hover:shadow-2xl cursor-pointer group overflow-hidden backdrop-blur-sm"
+      >
       {/* Subtle background glow effect */}
       <motion.div
         className="absolute inset-0 bg-gradient-to-br from-blue-400/5 via-indigo-400/5 to-purple-400/5 dark:from-blue-400/10 dark:via-indigo-400/10 dark:to-purple-400/10 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
@@ -152,6 +155,6 @@ export function ProjectCard({ name, description, link, documentation, icon, inde
         </div>
       </div>
       </motion.div>
-    </ProjectTooltip>
+    </SimpleTooltip>
   );
 }
