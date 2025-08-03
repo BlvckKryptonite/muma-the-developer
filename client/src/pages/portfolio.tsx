@@ -5,36 +5,6 @@ import { Sun, Moon, Mail } from "lucide-react";
 import { useState } from "react";
 
 
-const testimonials = [
-  {
-    name: "Sarah Chen",
-    role: "Senior Product Manager",
-    company: "TechFlow Solutions",
-    content: "Muma delivered exceptional results on our fraud detection system. His ability to combine behavioral insights with technical expertise resulted in a 35% improvement in detection accuracy. A rare talent who bridges psychology and programming.",
-    avatar: "/icons/avatar-1.svg"
-  },
-  {
-    name: "Dr. James Rodriguez",
-    role: "Head of Data Science",
-    company: "FinanceCore Analytics",
-    content: "Working with Muma on our customer churn prediction models was remarkable. His understanding of both the technical implementation and psychological factors behind customer behavior gave us insights we hadn't considered.",
-    avatar: "/icons/avatar-2.svg"
-  },
-  {
-    name: "Emily Watson",
-    role: "Technical Lead",
-    company: "StartupLab Inc",
-    content: "Muma's work on our React-based dashboard exceeded expectations. Clean code, smooth animations, and intuitive UX. His background in psychology really shows in how he approaches user experience design.",
-    avatar: "/icons/avatar-3.svg"
-  },
-  {
-    name: "Michael Thompson",
-    role: "CTO",
-    company: "DataDriven Solutions",
-    content: "Rare to find a developer who can build robust Python backends and elegant frontends with equal skill. Muma's criminology background adds unique perspective to our security implementations.",
-    avatar: "/icons/avatar-4.svg"
-  }
-];
 
 const projects = [
   {
@@ -349,51 +319,116 @@ export default function Portfolio() {
         </div>
       </section>
 
-      {/* Projects Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8">
+      {/* Animated Projects Portfolio Section */}
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-slate-50 via-blue-50/30 to-indigo-50/30 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900">
         <div className="max-w-6xl mx-auto">
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
             viewport={{ once: true }}
+            className="text-center mb-16"
           >
-            <h2 className="font-poppins text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 dark:text-white mb-16 text-center">
+            <motion.div
+              initial={{ width: 0 }}
+              whileInView={{ width: "100%" }}
+              transition={{ duration: 1, delay: 0.3 }}
+              viewport={{ once: true }}
+              className="h-1 bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-500 rounded-full mx-auto mb-8 max-w-24"
+            />
+            <motion.h2 
+              className="font-poppins text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 dark:text-white mb-4"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+              viewport={{ once: true }}
+            >
               Featured Projects
-            </h2>
+            </motion.h2>
+            <motion.p 
+              className="text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.5 }}
+              viewport={{ once: true }}
+            >
+              A showcase of innovative solutions spanning FinTech, AI, and full-stack development
+            </motion.p>
           </motion.div>
           
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <motion.div 
+            className="grid grid-cols-1 lg:grid-cols-2 gap-8"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            viewport={{ once: true }}
+          >
             {displayedProjects.map((project, index) => (
-              <div key={project.name} className={index === 4 && displayedProjects.length === 5 ? "lg:col-span-2" : ""}>
+              <motion.div 
+                key={project.name} 
+                className={index === 4 && displayedProjects.length === 5 ? "lg:col-span-2" : ""}
+                initial={{ opacity: 0, y: 50, scale: 0.9 }}
+                whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                transition={{ 
+                  duration: 0.6, 
+                  delay: index * 0.15,
+                  ease: "easeOut"
+                }}
+                viewport={{ once: true, margin: "-100px" }}
+              >
                 <ProjectCard {...project} index={index} />
-              </div>
+              </motion.div>
             ))}
-          </div>
+          </motion.div>
           
-          {/* View More Button */}
+          {/* Enhanced View More Button */}
           {projects.length > 6 && (
             <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.3 }}
+              initial={{ opacity: 0, y: 40, scale: 0.8 }}
+              whileInView={{ opacity: 1, y: 0, scale: 1 }}
+              transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
               viewport={{ once: true }}
-              className="flex justify-center mt-12"
+              className="flex justify-center mt-16"
             >
               <motion.button
                 onClick={() => setShowAllProjects(!showAllProjects)}
-                whileHover={{ scale: 1.02, y: -2 }}
-                whileTap={{ scale: 0.98 }}
-                className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white font-medium rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl"
+                whileHover={{ 
+                  scale: 1.05, 
+                  y: -4,
+                  boxShadow: "0 20px 40px rgba(59, 130, 246, 0.3)"
+                }}
+                whileTap={{ scale: 0.95 }}
+                className="group relative inline-flex items-center px-10 py-5 bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 hover:from-blue-700 hover:via-indigo-700 hover:to-purple-700 text-white font-semibold rounded-2xl transition-all duration-500 shadow-xl hover:shadow-2xl border border-blue-500/20"
               >
-                {showAllProjects ? 'Show Less' : `View More (${projects.length - 6} more)`}
+                <motion.div
+                  className="absolute inset-0 bg-gradient-to-r from-blue-400 via-indigo-400 to-purple-400 rounded-2xl opacity-0 group-hover:opacity-20 transition-opacity duration-500"
+                  animate={{
+                    background: [
+                      "linear-gradient(90deg, #3b82f6, #6366f1, #8b5cf6)",
+                      "linear-gradient(180deg, #6366f1, #8b5cf6, #3b82f6)",
+                      "linear-gradient(270deg, #8b5cf6, #3b82f6, #6366f1)",
+                      "linear-gradient(360deg, #3b82f6, #6366f1, #8b5cf6)"
+                    ]
+                  }}
+                  transition={{
+                    duration: 3,
+                    repeat: Infinity,
+                    ease: "linear"
+                  }}
+                />
+                <span className="relative z-10">
+                  {showAllProjects ? 'Show Less' : `View More (${projects.length - 6} more)`}
+                </span>
                 <motion.svg
-                  className="w-5 h-5 ml-2"
+                  className="w-5 h-5 ml-3 relative z-10"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
-                  animate={{ rotate: showAllProjects ? 180 : 0 }}
-                  transition={{ duration: 0.3 }}
+                  animate={{ 
+                    rotate: showAllProjects ? 180 : 0,
+                    y: showAllProjects ? 2 : 0
+                  }}
+                  transition={{ duration: 0.5, ease: "easeInOut" }}
                 >
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                 </motion.svg>
