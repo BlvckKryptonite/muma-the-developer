@@ -122,8 +122,8 @@ export function ProjectCard({ name, description, link, documentation, icon, inde
                   href={documentation}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center text-slate-600 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-300 font-medium transition-colors group/link"
-                  whileHover={{ scale: 1.05, x: 4 }}
+                  className="inline-flex items-center text-slate-600 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-300 font-medium transition-colors group/link ml-auto"
+                  whileHover={{ scale: 1.05, x: -4 }}
                   whileTap={{ scale: 0.95 }}
                   transition={{ duration: 0.2 }}
                 >
