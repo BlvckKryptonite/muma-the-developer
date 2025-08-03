@@ -10,106 +10,106 @@ const projects = [
   {
     name: "Reelalyze",
     description: "AI-powered YouTube summarizer using Streamlit, Python, and OpenAI. Extracts context-aware summaries from video transcripts and visuals.",
-    link: "https://reelalyze.replit.app",
-    documentation: "https://github.com/username/reelalyze",
+    link: "https://reelalyze.replit.app/",
+    documentation: "https://github.com/BlvckKryptonite/Reelalyze/blob/main/README.md",
     icon: "/icons/reelalyze.png"
   },
   {
     name: "Muma's 'Mazing Barbeque",
     description: "Comic-book themed React & Tailwind website page with Framer Motion animations and playful scroll effects. Includes interactive ticket tiers, superhero-themed chef cards, and Stripe mock signup integration.",
-    link: "https://mumasmazing-barbeque.netlify.app",
-    documentation: "https://github.com/username/mumasmazing-barbeque",
+    link: "https://mumas-mazing-barbeque.replit.app",
+    documentation: "https://github.com/BlvckKryptonite/mumas-mazing-barbeque/edit/main/README.md",
     icon: "/icons/mumas-mazing-bbq.png"
   },
   {
     name: "ATM SIM",
     description: "CLI-based ATM simulator using Python. Supports secure login, balance viewing, deposit/withdrawal functions, and simulates receipts and user accounts for core banking logic.",
-    link: "https://atm-sim.replit.app",
-    documentation: "https://github.com/username/atm-sim",
+    link: "https://atm-sim-muma-k.vercel.app/",
+    documentation: "https://github.com/BlvckKryptonite/ATMSim/blob/main/README.md",
     icon: "/icons/atm.png"
   },
   {
     name: "TypeRush",
     description: "Fast-paced typing game built solely with vanilla JavaScript. Tracks speed and accuracy while providing real-time feedback and visual cues to improve typing skills.",
-    link: "https://typerush-game.netlify.app",
-    documentation: "https://github.com/username/typerush",
+    link: "https://blvckkryptonite.github.io/TypeRush/",
+    documentation: "https://github.com/BlvckKryptonite/TypeRush/edit/main/README.md",
     icon: "/icons/typerush.png"
   },
   {
     name: "Currency Exchange CLI",
     description: "Real-time currency converter using Fawaz API. Built in Python and deployed to Heroku.",
     link: "https://currency-converter-cli-fad75cd3b79c.herokuapp.com/",
-    documentation: "https://github.com/username/currency-converter-cli",
+    documentation: "https://github.com/BlvckKryptonite/currency_converter_cli/edit/main/README.md",
     icon: "/icons/currency.png"
   },
   {
     name: "The GlowClip",
     description: "A fully functional E-commerce website and product showcase built on Shopify with the Shrine theme. Includes optimized product descriptions, refund handling logic, apps, and basic analytics integration.",
-    link: "https://theglowclip.myshopify.com",
-    documentation: "https://github.com/username/glowclip-docs",
+    link: "https://theglowclip.com/",
+    documentation: "#",
     icon: "/icons/glowclip.png"
   },
   {
     name: "SpendSmart",
     description: "A budgeting app built with HTML/CSS, JavaScript, and Chart.js. Helps users track expenses, savings, and gain financial awareness.",
-    link: "https://spendsmart-js.netlify.app",
-    documentation: "https://github.com/username/spendsmart",
+    link: "https://blvckkryptonite.github.io/SpendSmart/",
+    documentation: "https://github.com/BlvckKryptonite/SpendSmart/edit/master/README.md",
     icon: "/icons/spendsmart.png"
   },
   {
     name: "ParsePilot",
     description: "Python tool that cleans CSV data, extracts nested JSON, and prepares it for analysis. Built for data preprocessing workflows.",
-    link: "https://parsepilot.netlify.app",
-    documentation: "https://github.com/username/parsepilot",
+    link: "https://parsepilot-b9qw.onrender.com/",
+    documentation: "https://github.com/BlvckKryptonite/ParsePilot/edit/main/README.md",
     icon: "/icons/parsepilot.png"
   },
   {
     name: "Game-Xit",
     description: "A three-page HTML/CSS website raising awareness about video game addiction. Features responsive design, a gaming self-assessment tool link, embedded YouTube resources, and a styled contact form with Google Maps integration.",
-    link: "https://game-xit.netlify.app",
-    documentation: "https://github.com/username/game-xit",
+    link: "https://blvckkryptonite.github.io/game-xit/",
+    documentation: "https://github.com/BlvckKryptonite/game-xit/edit/main/README.md",
     icon: "/icons/gameexit.png"
   },
   {
     name: "FraudShield CLI",
     description: "Python-based command-line tool to flag suspicious financial transactions using rule-based and ML-based logic.",
     link: "#",
-    documentation: "https://github.com/BlvckKryptonite/fraudshield/wiki",
+    documentation: "https://github.com/BlvckKryptonite/FraudShield/blob/main/README.md",
     icon: "/icons/fraudshield.png"
   },
   {
     name: "ChurnChaser",
     description: "Predictive analytics prototype (Python, Streamlit) for customer churn detection in e-commerce. Integrates behavioral variables to flag at-risk customers.",
-    link: "https://churnchaser.streamlit.app",
-    documentation: "https://github.com/username/churnchaser",
+    link: "https://churn-chaser-bugfreemuma.replit.app/",
+    documentation: "https://github.com/BlvckKryptonite/ChurnChaser/edit/main/README.md",
     icon: "/icons/churnchaser.png"
   },
   {
     name: "Word Unscramble",
     description: "A browser-based JavaScript word game that challenges users to rearrange shuffled letters. Includes timer, scoring, and responsive design for a quick mental workout.",
-    link: "https://word-unscramble-game.netlify.app",
-    documentation: "https://github.com/username/word-unscramble",
+    link: "https://blvckkryptonite.github.io/WordUnscramble/",
+    documentation: "https://github.com/BlvckKryptonite/WordUnscramble/edit/main/README.md",
     icon: "/icons/wordgame.png"
   },
   {
     name: "Retail Radar",
     description: "Python-powered scraper concept for comparing prices across retailers (e.g., eBay & Amazon). Features JSON parsing, anti-scraping logic, and a simple but modern React UI (planned).",
-    link: "https://retail-radar.herokuapp.com",
-    documentation: "https://github.com/username/retail-radar",
+    link: "https://retailradar.replit.app/",
+    documentation: "https://github.com/BlvckKryptonite/retail-radar/edit/main/README.md",
     icon: "/icons/retailradar.png"
   },
   {
     name: "Love Math",
     description: "Educational quiz game built with JavaScript, HTML, and CSS. Offers timed arithmetic challenges with score tracking and responsive feedback.",
-    link: "https://love-math-quiz.netlify.app",
-    documentation: "https://github.com/username/love-math",
+    link: "https://blvckkryptonite.github.io/love-math/",
+    documentation: "#",
     icon: "/icons/lovemath.png"
   },
   {
     name: "Love Running",
     description: "Multi-page fitness site created solely with vanilla HTML and CSS. Focused on clean UI, accessible layout, and responsive design for a runners club.",
-    link: "https://love-running-site.netlify.app",
-    documentation: "https://github.com/username/love-running",
+    link: "https://blvckkryptonite.github.io/love-running/",
+    documentation: "https://github.com/BlvckKryptonite/love-running/edit/main/README.md",
     icon: "/icons/loverunning.png"
   }
 ];
