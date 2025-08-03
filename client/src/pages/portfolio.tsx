@@ -12,7 +12,7 @@ const projects = [
     description: "AI-powered YouTube summarizer using Streamlit, Python, and OpenAI. Extracts context-aware summaries from video transcripts and visuals.",
     link: "https://reelalyze.replit.app",
     documentation: "https://github.com/username/reelalyze",
-    icon: "/icons/reelalyze.svg"
+    icon: "/icons/reelalyze.png"
   },
   {
     name: "SpendSmart",
@@ -26,21 +26,21 @@ const projects = [
     description: "Python-based command-line tool to flag suspicious financial transactions using rule-based and ML-based logic.",
     link: "https://github.com/BlvckKryptonite/fraudshield",
     documentation: "https://github.com/BlvckKryptonite/fraudshield/wiki",
-    icon: "/icons/fraudshield.svg"
+    icon: "/icons/fraudshield.png"
   },
   {
     name: "Currency Exchange CLI",
     description: "Real-time currency converter using Fawaz API. Built in Python and deployed to Heroku.",
     link: "https://currency-converter-cli-fad75cd3b79c.herokuapp.com/",
     documentation: "https://github.com/username/currency-converter-cli",
-    icon: "/icons/currency.svg"
+    icon: "/icons/currency.png"
   },
   {
     name: "ParsePilot",
     description: "Python tool that cleans CSV data, extracts nested JSON, and prepares it for analysis. Built for data preprocessing workflows.",
     link: "https://parsepilot.netlify.app",
     documentation: "https://github.com/username/parsepilot",
-    icon: "/icons/parsepilot.svg"
+    icon: "/icons/parsepilot.png"
   },
   {
     name: "Muma's 'Mazing Barbeque",
@@ -54,7 +54,7 @@ const projects = [
     description: "CLI-based ATM simulator using Python. Supports secure login, balance viewing, deposit/withdrawal functions, and simulates receipts and user accounts for core banking logic.",
     link: "https://atm-sim.replit.app",
     documentation: "https://github.com/username/atm-sim",
-    icon: "/icons/atm.svg"
+    icon: "/icons/atm.png"
   },
   {
     name: "TypeRush",
@@ -75,7 +75,7 @@ const projects = [
     description: "Predictive analytics prototype (Python, Streamlit) for customer churn detection in e-commerce. Integrates behavioral variables to flag at-risk customers.",
     link: "https://churnchaser.streamlit.app",
     documentation: "https://github.com/username/churnchaser",
-    icon: "/icons/churnchaser.svg"
+    icon: "/icons/churnchaser.png"
   },
   {
     name: "Word Unscramble",
@@ -89,28 +89,28 @@ const projects = [
     description: "Python-powered scraper concept for comparing prices across retailers (e.g., eBay & Amazon). Features JSON parsing, anti-scraping logic, and a simple but modern React UI (planned).",
     link: "https://retail-radar.herokuapp.com",
     documentation: "https://github.com/username/retail-radar",
-    icon: "/icons/retailradar.svg"
+    icon: "/icons/retailradar.png"
   },
   {
     name: "Game-Xit",
     description: "A three-page HTML/CSS website raising awareness about video game addiction. Features responsive design, a gaming self-assessment tool link, embedded YouTube resources, and a styled contact form with Google Maps integration.",
     link: "https://game-xit.netlify.app",
     documentation: "https://github.com/username/game-xit",
-    icon: "/icons/gameexit.svg"
+    icon: "/icons/gameexit.png"
   },
   {
     name: "Love Math",
     description: "Educational quiz game built with JavaScript, HTML, and CSS. Offers timed arithmetic challenges with score tracking and responsive feedback.",
     link: "https://love-math-quiz.netlify.app",
     documentation: "https://github.com/username/love-math",
-    icon: "/icons/lovemath.svg"
+    icon: "/icons/lovemath.png"
   },
   {
     name: "Love Running",
     description: "Multi-page fitness site created solely with vanilla HTML and CSS. Focused on clean UI, accessible layout, and responsive design for a runners club.",
     link: "https://love-running-site.netlify.app",
     documentation: "https://github.com/username/love-running",
-    icon: "/icons/loverunning.svg"
+    icon: "/icons/loverunning.png"
   }
 ];
 
