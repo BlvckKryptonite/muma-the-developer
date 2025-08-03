@@ -47,7 +47,7 @@ const projects = [
     description: "Comic-book themed React & Tailwind website page with Framer Motion animations and playful scroll effects. Includes interactive ticket tiers, superhero-themed chef cards, and Stripe mock signup integration.",
     link: "https://mumasmazing-barbeque.netlify.app",
     documentation: "https://github.com/username/mumasmazing-barbeque",
-    icon: "/icons/mumas-mazing-bbq.svg"
+    icon: "/icons/mumas-mazing-bbq.png"
   },
   {
     name: "ATM SIM",
