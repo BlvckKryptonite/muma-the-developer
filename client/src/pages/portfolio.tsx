@@ -5,6 +5,37 @@ import { Sun, Moon, Mail } from "lucide-react";
 import { useState } from "react";
 
 
+const testimonials = [
+  {
+    name: "Sarah Chen",
+    role: "Senior Product Manager",
+    company: "TechFlow Solutions",
+    content: "Muma delivered exceptional results on our fraud detection system. His ability to combine behavioral insights with technical expertise resulted in a 35% improvement in detection accuracy. A rare talent who bridges psychology and programming.",
+    avatar: "/icons/avatar-1.svg"
+  },
+  {
+    name: "Dr. James Rodriguez",
+    role: "Head of Data Science",
+    company: "FinanceCore Analytics",
+    content: "Working with Muma on our customer churn prediction models was remarkable. His understanding of both the technical implementation and psychological factors behind customer behavior gave us insights we hadn't considered.",
+    avatar: "/icons/avatar-2.svg"
+  },
+  {
+    name: "Emily Watson",
+    role: "Technical Lead",
+    company: "StartupLab Inc",
+    content: "Muma's work on our React-based dashboard exceeded expectations. Clean code, smooth animations, and intuitive UX. His background in psychology really shows in how he approaches user experience design.",
+    avatar: "/icons/avatar-3.svg"
+  },
+  {
+    name: "Michael Thompson",
+    role: "CTO",
+    company: "DataDriven Solutions",
+    content: "Rare to find a developer who can build robust Python backends and elegant frontends with equal skill. Muma's criminology background adds unique perspective to our security implementations.",
+    avatar: "/icons/avatar-4.svg"
+  }
+];
+
 const projects = [
   {
     name: "Reelalyze",
