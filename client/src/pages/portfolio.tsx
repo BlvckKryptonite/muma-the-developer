@@ -417,7 +417,7 @@ export default function Portfolio() {
                   }}
                 />
                 <span className="relative z-10">
-                  {showAllProjects ? 'Show Less' : `View More (${projects.length - 6} more)`}
+                  {showAllProjects ? 'Show Less' : 'Show More'}
                 </span>
                 <motion.svg
                   className="w-5 h-5 ml-3 relative z-10"
