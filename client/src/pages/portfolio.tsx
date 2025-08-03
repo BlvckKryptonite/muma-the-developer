@@ -19,7 +19,7 @@ const projects = [
     description: "A budgeting app built with HTML/CSS, JavaScript, and Chart.js. Helps users track expenses, savings, and gain financial awareness.",
     link: "https://spendsmart-js.netlify.app",
     documentation: "https://github.com/username/spendsmart",
-    icon: "/icons/spendsmart.svg"
+    icon: "/icons/spendsmart.png"
   },
   {
     name: "FraudShield CLI",
@@ -61,14 +61,14 @@ const projects = [
     description: "Fast-paced typing game built solely with vanilla JavaScript. Tracks speed and accuracy while providing real-time feedback and visual cues to improve typing skills.",
     link: "https://typerush-game.netlify.app",
     documentation: "https://github.com/username/typerush",
-    icon: "/icons/typerush.svg"
+    icon: "/icons/typerush.png"
   },
   {
     name: "The GlowClip",
     description: "A fully functional E-commerce website and product showcase built on Shopify with the Shrine theme. Includes optimized product descriptions, refund handling logic, apps, and basic analytics integration.",
     link: "https://theglowclip.myshopify.com",
     documentation: "https://github.com/username/glowclip-docs",
-    icon: "/icons/glowclip.svg"
+    icon: "/icons/glowclip.png"
   },
   {
     name: "ChurnChaser",
@@ -82,7 +82,7 @@ const projects = [
     description: "A browser-based JavaScript word game that challenges users to rearrange shuffled letters. Includes timer, scoring, and responsive design for a quick mental workout.",
     link: "https://word-unscramble-game.netlify.app",
     documentation: "https://github.com/username/word-unscramble",
-    icon: "/icons/wordgame.svg"
+    icon: "/icons/wordgame.png"
   },
   {
     name: "Retail Radar",
