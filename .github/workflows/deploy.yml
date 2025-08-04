@@ -25,8 +25,9 @@ jobs:
       
     - name: Build for GitHub Pages
       run: |
-        npx vite build --outDir docs --base=/${GITHUB_REPOSITORY#*/}/
-        cp -r client/public/* docs/ 2>/dev/null || true
+        npm run build
+        rm -rf docs
+        cp -r dist/public docs
       
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v4

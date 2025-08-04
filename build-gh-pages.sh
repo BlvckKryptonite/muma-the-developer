@@ -3,18 +3,14 @@
 # Build for GitHub Pages
 echo "Building for GitHub Pages..."
 
-# Create docs directory (GitHub Pages will serve from here)
+# Clean up previous build
 rm -rf docs
-mkdir -p docs
 
-# Build the Vite app with the correct base path
-# Replace 'your-repo-name' with your actual GitHub repository name
-npx vite build --outDir docs --base=/your-repo-name/
+# Build the Vite app (this creates dist/public)
+npm run build
 
-# Copy additional assets if needed
-if [ -d "client/public" ]; then
-    cp -r client/public/* docs/
-fi
+# Copy the built files to docs directory for GitHub Pages
+cp -r dist/public docs
 
 echo "Build complete! Files are ready in the 'docs' directory."
 echo "Make sure to:"

@@ -9,7 +9,7 @@
 4. The workflow in `.github/workflows/deploy.yml` will automatically build and deploy on every push to main
 
 ### Repository Name:
-The deployment assumes your repository name is `muma-kalobwe-portfolio`. If different, update the base path in the GitHub Actions workflow.
+No repository-specific configuration needed - the build process creates a static site that works with any repository name.
 
 ## Manual Deployment
 
