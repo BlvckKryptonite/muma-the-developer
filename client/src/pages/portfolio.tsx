@@ -69,7 +69,7 @@ const projects = [
   {
     name: "SpendSmart",
     description:
-      "A budgeting app built with HTML/CSS, JavaScript, and Chart.js. Helps users track expenses, savings, and gain financial awareness.",
+      "A simple budgeting app built with HTML/CSS, JavaScript, and Chart.js. Helps users visualize expenses, savings, and get financial insight.",
     link: "https://blvckkryptonite.github.io/SpendSmart/",
     documentation:
       "https://github.com/BlvckKryptonite/SpendSmart/edit/master/README.md",
@@ -87,7 +87,7 @@ const projects = [
   {
     name: "Game-Xit",
     description:
-      "A three-page HTML/CSS website raising awareness about video game addiction. Features responsive design, a gaming self-assessment tool link, embedded YouTube resources, and a styled contact form with Google Maps integration.",
+      "A three-page HTML/CSS site built to raise awareness about video game addiction. Includes a responsive layout, embedded YouTube resources, a gaming self-assessment tool link, and a styled contact form with Google Maps integration.",
     link: "https://blvckkryptonite.github.io/game-xit/",
     documentation:
       "https://github.com/BlvckKryptonite/game-xit/edit/main/README.md",
@@ -96,7 +96,7 @@ const projects = [
   {
     name: "FraudShield CLI",
     description:
-      "Python-based command-line tool to flag suspicious financial transactions using rule-based and ML-based logic.",
+      "A Python-based command-line tool that flags suspicious financial transactions using rule-based and machine learning detection. Includes tabulated outputs, color-coded alerts, and modular logic for analyzing datasets across fintech, banking, and fraud prevention use cases.",
     link: "#",
     documentation:
       "https://github.com/BlvckKryptonite/FraudShield/blob/main/README.md",
