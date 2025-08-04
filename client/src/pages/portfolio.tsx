@@ -10,7 +10,7 @@ const projects = [
   {
     name: "Reelalyze",
     description:
-      "AI-powered YouTube summarizer using Streamlit, Python, and OpenAI. Extracts context-aware summaries from video transcripts and visuals.",
+      "Currently in development: An AI-powered YouTube summarizer built with Streamlit, Python, and OpenAI. It analyzes transcripts and visuals to generate smart, context-aware summaries designed for commentary, educational, and long-form video content.",
     link: "https://reelalyze.replit.app/",
     documentation:
       "https://github.com/BlvckKryptonite/Reelalyze/blob/main/README.md",
@@ -19,7 +19,7 @@ const projects = [
   {
     name: "Muma's 'Mazing Barbeque",
     description:
-      "Comic-book themed React & Tailwind website page with Framer Motion animations and playful scroll effects. Includes interactive ticket tiers, superhero-themed chef cards, and Stripe mock signup integration.",
+      "A comic-book styled React and Tailwind website featuring Framer Motion scroll animations, interactive ticket tiers, superhero-themed chef cards, and a mock signup flow powered by Stripe — built as a high-concept BBQ landing page.",
     link: "https://mumas-mazing-barbeque.replit.app",
     documentation:
       "https://github.com/BlvckKryptonite/mumas-mazing-barbeque/edit/main/README.md",
