@@ -347,13 +347,60 @@ export default function Portfolio() {
               className="h-1 bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-500 rounded-full mx-auto mb-8 max-w-24"
             />
             <motion.h2 
-              className="font-poppins sm:text-4xl md:text-5xl font-bold text-slate-900 dark:text-white mb-6 text-[44px]"
+              className="font-poppins text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 dark:text-white mb-6 flex items-center justify-center gap-4"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
               viewport={{ once: true }}
             >
-              Featured Projects 🚀
+              Featured Projects
+              <svg 
+                width="48" 
+                height="48" 
+                viewBox="0 0 200 200" 
+                className="inline-block"
+              >
+                <defs>
+                  <linearGradient id="projectsGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stopColor="#3b82f6" />
+                    <stop offset="50%" stopColor="#6366f1" />
+                    <stop offset="100%" stopColor="#8b5cf6" />
+                  </linearGradient>
+                </defs>
+                
+                {/* Gear/Cog */}
+                <path 
+                  d="M100 20 L110 40 L130 35 L135 55 L155 60 L150 80 L170 90 L150 100 L155 120 L135 125 L130 145 L110 140 L100 160 L90 140 L70 145 L65 125 L45 120 L50 100 L30 90 L50 80 L45 60 L65 55 L70 35 L90 40 Z M100 70 A30 30 0 1 1 100 130 A30 30 0 1 1 100 70"
+                  fill="url(#projectsGradient)"
+                  fillRule="evenodd"
+                />
+                
+                {/* Lightbulb */}
+                <circle cx="50" cy="150" r="15" fill="url(#projectsGradient)" />
+                <path 
+                  d="M50 135 Q40 125 40 115 Q40 100 50 90 Q60 100 60 115 Q60 125 50 135 Z M45 150 L55 150 M46 155 L54 155 M47 160 L53 160"
+                  fill="url(#projectsGradient)"
+                  stroke="url(#projectsGradient)"
+                  strokeWidth="2"
+                />
+                
+                {/* Checkmark box */}
+                <rect x="135" y="135" width="30" height="30" rx="5" fill="url(#projectsGradient)" />
+                <path 
+                  d="M142 150 L148 156 L158 144"
+                  stroke="white"
+                  strokeWidth="3"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  fill="none"
+                />
+                
+                {/* Laptop/Computer */}
+                <rect x="75" y="170" width="50" height="25" rx="3" fill="url(#projectsGradient)" />
+                <rect x="78" y="173" width="44" height="16" rx="2" fill="white" />
+                <rect x="95" y="195" width="10" height="3" fill="url(#projectsGradient)" />
+                <rect x="85" y="198" width="30" height="2" rx="1" fill="url(#projectsGradient)" />
+              </svg>
             </motion.h2>
             <motion.div 
               className="text-lg text-slate-600 dark:text-slate-300 max-w-4xl mx-auto space-y-4"
