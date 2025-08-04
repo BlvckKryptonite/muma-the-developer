@@ -755,7 +755,6 @@ export default function Portfolio() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
             viewport={{ once: true }}
-            className="flex flex-col sm:flex-row gap-4 items-center justify-center"
           >
             <a
               href="mailto:Mumathedeveloper@gmail.com"
@@ -772,18 +771,6 @@ export default function Portfolio() {
               <Mail className="w-5 h-5 mr-2" />
               Get In Touch
             </a>
-            <button
-              onClick={() => {
-                navigator.clipboard.writeText("Mumathedeveloper@gmail.com");
-                alert("Email copied to clipboard!");
-              }}
-              className="inline-flex items-center bg-slate-200 dark:bg-slate-700 hover:bg-slate-300 dark:hover:bg-slate-600 text-slate-700 dark:text-slate-200 font-semibold py-4 px-6 rounded-2xl transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
-            >
-              <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
-              </svg>
-              Copy Email
-            </button>
           </motion.div>
         </div>
       </section>
