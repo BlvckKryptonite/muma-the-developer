@@ -99,7 +99,7 @@ export function ProjectCard({ name, description, link, documentation, icon, inde
                 Coming Soon
               </motion.span>
               
-              {documentation !== "#" && (
+              {documentation !== "#" && documentation !== "" && (
                 <motion.a
                   href={documentation}
                   target="_blank"
@@ -141,7 +141,7 @@ export function ProjectCard({ name, description, link, documentation, icon, inde
                 </motion.div>
               </motion.a>
               
-              {documentation !== "#" && (
+              {documentation !== "#" && documentation !== "" && (
                 <motion.a
                   href={documentation}
                   target="_blank"
