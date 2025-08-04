@@ -37,7 +37,7 @@ const projects = [
       "A comic-book styled React and Tailwind website featuring Framer Motion scroll animations, interactive ticket tiers, superhero-themed chef cards, and a mock signup flow powered by Stripe — built as a high-concept BBQ landing page.",
     link: "https://mumas-mazing-barbeque.replit.app",
     documentation:
-      "https://github.com/BlvckKryptonite/mumas-mazing-barbeque/edit/main/README.md",
+      "https://github.com/BlvckKryptonite/mumas-mazing-barbeque/blob/main/README.md",
     icon: bbqIcon,
   },
   {
@@ -55,7 +55,7 @@ const projects = [
       "Fast-paced typing game built solely with vanilla JavaScript. Tracks speed and accuracy while providing real-time feedback and visual cues to improve typing skills.",
     link: "https://blvckkryptonite.github.io/TypeRush/",
     documentation:
-      "https://github.com/BlvckKryptonite/TypeRush/edit/main/README.md",
+      "https://github.com/BlvckKryptonite/TypeRush/blob/main/README.md",
     icon: typerushIcon,
   },
   {
@@ -64,7 +64,7 @@ const projects = [
       "A terminal-based real-time currency converter using Fawaz API. Built in Python and deployed to Heroku.",
     link: "https://currency-converter-cli-fad75cd3b79c.herokuapp.com/",
     documentation:
-      "https://github.com/BlvckKryptonite/currency_converter_cli/edit/main/README.md",
+      "https://github.com/BlvckKryptonite/currency_converter_cli/blob/main/README.md",
     icon: currencyIcon,
   },
   {
@@ -72,7 +72,7 @@ const projects = [
     description:
       "A fully functional E-commerce website and product showcase built on Shopify with the Shrine theme.",
     link: "https://theglowclip.com/",
-    documentation: "#",
+    documentation: "",
     icon: glowclipIcon,
   },
   {
@@ -81,7 +81,7 @@ const projects = [
       "A simple budgeting app built with HTML/CSS, JavaScript, and Chart.js. Helps users visualize expenses, savings, and get financial insight.",
     link: "https://blvckkryptonite.github.io/SpendSmart/",
     documentation:
-      "https://github.com/BlvckKryptonite/SpendSmart/edit/master/README.md",
+      "https://github.com/BlvckKryptonite/SpendSmart/blob/master/README.md",
     icon: "/icons/spendsmart.png",
   },
   {
@@ -90,7 +90,7 @@ const projects = [
       "Python tool that cleans CSV data, extracts nested JSON, and prepares it for analysis. Built for data preprocessing workflows.",
     link: "https://parsepilot-b9qw.onrender.com/",
     documentation:
-      "https://github.com/BlvckKryptonite/ParsePilot/edit/main/README.md",
+      "https://github.com/BlvckKryptonite/ParsePilot/blob/main/README.md",
     icon: "/icons/parsepilot.png",
   },
   {
@@ -99,7 +99,7 @@ const projects = [
       "A three-page HTML/CSS site built to raise awareness about video game addiction. Includes a responsive layout, embedded YouTube resources, a gaming self-assessment tool link, and a styled contact form with Google Maps integration.",
     link: "https://blvckkryptonite.github.io/game-xit/",
     documentation:
-      "https://github.com/BlvckKryptonite/game-xit/edit/main/README.md",
+      "https://github.com/BlvckKryptonite/game-xit/blob/main/README.md",
     icon: "/icons/gameexit.png",
   },
   {
@@ -117,7 +117,7 @@ const projects = [
       "A predictive analytics prototype built with Python and Streamlit to detect customer churn in e-commerce. Leverages behavioral variables, visual outputs, and scoring logic to help businesses flag at-risk users and prevent subscription drop-off.",
     link: "https://churn-chaser-bugfreemuma.replit.app/",
     documentation:
-      "https://github.com/BlvckKryptonite/ChurnChaser/edit/main/README.md",
+      "https://github.com/BlvckKryptonite/ChurnChaser/blob/main/README.md",
     icon: "/icons/churnchaser.png",
   },
   {
@@ -126,7 +126,7 @@ const projects = [
       "A browser-based JavaScript word game that challenges users to unscramble shuffled letters. Features a live timer, scoring system, sound effects, and responsive UI — designed to sharpen mental reflexes through fast-paced, repeatable gameplay.",
     link: "https://blvckkryptonite.github.io/WordUnscramble/",
     documentation:
-      "https://github.com/BlvckKryptonite/WordUnscramble/edit/main/README.md",
+      "https://github.com/BlvckKryptonite/WordUnscramble/blob/main/README.md",
     icon: "/icons/wordgame.png",
   },
   {
@@ -135,7 +135,7 @@ const projects = [
       "A Python-powered price scraper designed to compare product listings across retailers like eBay and Amazon. Includes JSON parsing, basic anti-scraping measures, and a lightweight React frontend (in progress) for streamlined viewing and search.",
     link: "https://retailradar.replit.app/",
     documentation:
-      "https://github.com/BlvckKryptonite/retail-radar/edit/main/README.md",
+      "https://github.com/BlvckKryptonite/retail-radar/blob/main/README.md",
     icon: "/icons/retailradar.png",
   },
   {
@@ -143,7 +143,7 @@ const projects = [
     description:
       "An educational quiz game built with JavaScript, HTML, and CSS. Presents arithmetic challenges with score tracking, dynamic UI updates, and responsive feedback — demonstrating strong DOM manipulation, logic handling, and front-end interaction design skills.",
     link: "https://blvckkryptonite.github.io/love-math/",
-    documentation: "#",
+    documentation: "",
     icon: "/icons/lovemath.png",
   },
   {
@@ -152,7 +152,7 @@ const projects = [
       "Multi-page fitness site created solely with vanilla HTML and CSS. Focused on clean UI, accessible layout, and responsive design for a runners club.",
     link: "https://blvckkryptonite.github.io/love-running/",
     documentation:
-      "https://github.com/BlvckKryptonite/love-running/edit/main/README.md",
+      "https://github.com/BlvckKryptonite/love-running/blob/main/README.md",
     icon: "/icons/loverunning.png",
   },
 ];
