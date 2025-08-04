@@ -309,9 +309,14 @@ export default function Portfolio() {
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            <p className="text-lg sm:text-xl text-slate-600 dark:text-slate-300 leading-relaxed text-center max-w-3xl mx-auto">
-              I'm a full-stack developer with a background in psychology & criminology, now building smart solutions in fintech, fraud detection, and AI-powered tooling. I thrive at the intersection of behavioral insight and clean, scalable code.
-            </p>
+            <div className="text-lg sm:text-xl text-slate-600 dark:text-slate-300 leading-relaxed text-center max-w-3xl mx-auto space-y-4">
+              <p>
+                I'm a full-stack developer with a unique background in psychology & criminology, now building smart solutions in fintech, fraud detection, and AI-powered tooling.
+              </p>
+              <p>
+                I thrive at the intersection of behavioral insight and clean, scalable code, bringing a human-centered approach to technical problem-solving.
+              </p>
+            </div>
           </motion.div>
         </div>
       </section>
