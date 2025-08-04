@@ -394,9 +394,7 @@ export default function Portfolio() {
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8, delay: 0.7 }}
                 viewport={{ once: true, margin: "-30px" }}
-              >
-                Most are open source and come with full documentation links. If something catches your eye, feel free to explore the code — or even contribute if you have ideas for improvement.
-              </motion.p>
+              >Most are open source and come with full documentation links. If something catches your eye, feel free to explore the code or even contribute if you have ideas for improvement.</motion.p>
               <motion.p
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
