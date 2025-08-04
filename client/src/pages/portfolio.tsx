@@ -664,15 +664,15 @@ export default function Portfolio() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                className="flex flex-col sm:flex-row items-start space-y-4 sm:space-y-0 sm:space-x-4 p-4 sm:p-6 bg-white dark:bg-slate-800 rounded-2xl shadow-lg border border-slate-200 dark:border-slate-700"
+                className="flex flex-row items-start space-x-3 sm:space-x-4 p-4 sm:p-6 bg-white dark:bg-slate-800 rounded-2xl shadow-lg border border-slate-200 dark:border-slate-700"
               >
-                <div className="flex-shrink-0 mx-auto sm:mx-0">
+                <div className="flex-shrink-0">
                   <div className="w-10 h-10 sm:w-12 sm:h-12 bg-white dark:bg-slate-700 rounded-xl flex items-center justify-center border border-slate-200 dark:border-slate-600 shadow-sm">
                     {education.icon}
                   </div>
                 </div>
-                <div className="flex-1 min-w-0 text-center sm:text-left">
-                  <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start space-y-2 sm:space-y-0">
+                <div className="flex-1 min-w-0">
+                  <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start space-y-1 sm:space-y-0">
                     <div>
                       <h3 className="font-poppins text-lg sm:text-xl font-semibold text-slate-900 dark:text-white mb-1">
                         {education.institution}
