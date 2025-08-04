@@ -252,7 +252,6 @@ export default function Portfolio() {
           </motion.div>
         </motion.button>
       </div>
-
       {/* Hero Section */}
       <section className="pt-16 pb-12 px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-4xl mx-auto">
@@ -278,9 +277,7 @@ export default function Portfolio() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
           >
-            <p className="text-lg sm:text-xl text-slate-600 dark:text-slate-300 mb-4 leading-relaxed">
-              Full Stack Developer | Data & AI Enthusiast | FinTech-Focused
-            </p>
+            <p className="text-lg sm:text-xl text-slate-600 dark:text-slate-300 mb-4 leading-relaxed">Software Developer | Data & AI Enthusiast</p>
           </motion.div>
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -293,7 +290,6 @@ export default function Portfolio() {
           </motion.div>
         </div>
       </section>
-
       {/* About Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white dark:bg-slate-800">
         <div className="max-w-4xl mx-auto">
@@ -319,7 +315,6 @@ export default function Portfolio() {
           </motion.div>
         </div>
       </section>
-
       {/* Animated Projects Portfolio Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-slate-50 via-blue-50/30 to-indigo-50/30 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900">
         <div className="max-w-6xl mx-auto">
@@ -438,7 +433,6 @@ export default function Portfolio() {
           )}
         </div>
       </section>
-
       {/* Tech Stack Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white dark:bg-slate-800">
         <div className="max-w-6xl mx-auto">
@@ -490,7 +484,6 @@ export default function Portfolio() {
           </div>
         </div>
       </section>
-
       {/* Educational Background Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
@@ -604,10 +597,6 @@ export default function Portfolio() {
           </motion.div>
         </div>
       </section>
-
-
-
-
       {/* Contact Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white dark:bg-slate-800">
         <div className="max-w-4xl mx-auto text-center">
@@ -647,7 +636,6 @@ export default function Portfolio() {
           </motion.div>
         </div>
       </section>
-
       {/* Footer */}
       <footer className="py-8 px-4 sm:px-6 lg:px-8 bg-white dark:bg-slate-800 border-t border-slate-200 dark:border-slate-700">
         <div className="max-w-6xl mx-auto text-center">
