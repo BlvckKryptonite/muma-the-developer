@@ -339,23 +339,31 @@ export default function Portfolio() {
               className="h-1 bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-500 rounded-full mx-auto mb-8 max-w-24"
             />
             <motion.h2 
-              className="font-poppins text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 dark:text-white mb-4"
+              className="font-poppins text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 dark:text-white mb-6"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
               viewport={{ once: true }}
             >
-              Featured Projects
+              Featured Projects 🚀
             </motion.h2>
-            <motion.p 
-              className="text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto"
+            <motion.div 
+              className="text-lg text-slate-600 dark:text-slate-300 max-w-4xl mx-auto space-y-4"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.5 }}
               viewport={{ once: true }}
             >
-              A showcase of innovative solutions spanning FinTech, AI, and full-stack development
-            </motion.p>
+              <p>
+                I've worked on a wide range of projects over the past couple of years, from quick experiments to full-stack apps. Below are some of my most recent builds.
+              </p>
+              <p>
+                Most are open source and come with full documentation links. If something catches your eye, feel free to explore the code — or even contribute if you have ideas for improvement.
+              </p>
+              <p>
+                Got a project in mind? I'm always open to collaborating or helping bring bold ideas to life.
+              </p>
+            </motion.div>
           </motion.div>
           
           <motion.div 
