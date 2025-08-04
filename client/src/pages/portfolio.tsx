@@ -3,8 +3,8 @@ import { useTheme } from "@/components/theme-provider";
 import { ProjectCard } from "@/components/project-card";
 import { Sun, Moon, Mail } from "lucide-react";
 import { useState } from "react";
-const profileImage = "/assets/profile.jpg?v=" + Date.now();
-const featuredProjectsIcon = "/assets/featured-projects.svg";
+const profileImage = "/assets/profile.svg";
+const featuredProjectsIcon = "/assets/featured-projects.png";
 
 const projects = [
   {
