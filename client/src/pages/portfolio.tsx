@@ -638,7 +638,7 @@ export default function Portfolio() {
                 location: "Ireland",
                 icon: (
                   <img
-                    src="/code-institute-logo.png"
+                    src="./code-institute-logo.png"
                     alt="Code Institute Logo"
                     className="w-8 h-8 object-contain"
                   />
@@ -651,7 +651,7 @@ export default function Portfolio() {
                 location: "Sweden",
                 icon: (
                   <img
-                    src="/malmo-university-logo.png"
+                    src="./malmo-university-logo.png"
                     alt="Malmö University Logo"
                     className="w-8 h-8 object-contain"
                   />
@@ -664,7 +664,7 @@ export default function Portfolio() {
                 location: "Zambia",
                 icon: (
                   <img
-                    src="/zambia-university-logo.png"
+                    src="./zambia-university-logo.png"
                     alt="University of Zambia Logo"
                     className="w-8 h-8 object-contain"
                   />

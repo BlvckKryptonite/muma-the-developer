@@ -17,7 +17,7 @@ sed -i 's|src="/assets/|src="./assets/|g' docs/index.html
 sed -i 's|href="/assets/|href="./assets/|g' docs/index.html
 
 # Fix JavaScript bundle paths for GitHub Pages
-find docs/assets -name "*.js" -exec sed -i 's|"/assets/|"./assets/|g; s|"/icons/|"./icons/|g' {} \;
+find docs/assets -name "*.js" -exec sed -i 's|"/assets/|"./assets/|g; s|"/icons/|"./icons/|g; s|"/code-institute-logo.png"|"./code-institute-logo.png"|g; s|"/malmo-university-logo.png"|"./malmo-university-logo.png"|g; s|"/zambia-university-logo.png"|"./zambia-university-logo.png"|g' {} \;
 
 # Create 404.html for GitHub Pages SPA support
 cp docs/index.html docs/404.html
