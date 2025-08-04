@@ -365,9 +365,7 @@ export default function Portfolio() {
               <p>
                 I've worked on a wide range of projects over the past couple of years, from quick experiments to full-stack apps. Below are some of my most recent builds.
               </p>
-              <p>
-                Most are open source and come with full documentation links. If something catches your eye, feel free to explore the code — or even contribute if you have ideas for improvement.
-              </p>
+              <p>Most are open source and come with full documentation links. If something catches your eye, feel free to explore the code or even contribute if you have ideas for improvement.</p>
               <p>
                 Got a project in mind? I'm always open to collaborating or helping bring bold ideas to life.
               </p>
