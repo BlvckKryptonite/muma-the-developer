@@ -105,7 +105,7 @@ const projects = [
   {
     name: "ChurnChaser",
     description:
-      "Predictive analytics prototype (Python, Streamlit) for customer churn detection in e-commerce. Integrates behavioral variables to flag at-risk customers.",
+      "A predictive analytics prototype built with Python and Streamlit to detect customer churn in e-commerce. Leverages behavioral variables, visual outputs, and scoring logic to help businesses flag at-risk users and prevent subscription drop-off.",
     link: "https://churn-chaser-bugfreemuma.replit.app/",
     documentation:
       "https://github.com/BlvckKryptonite/ChurnChaser/edit/main/README.md",
@@ -114,7 +114,7 @@ const projects = [
   {
     name: "Word Unscramble",
     description:
-      "A browser-based JavaScript word game that challenges users to rearrange shuffled letters. Includes timer, scoring, and responsive design for a quick mental workout.",
+      "A browser-based JavaScript word game that challenges users to unscramble shuffled letters. Features a live timer, scoring system, sound effects, and responsive UI — designed to sharpen mental reflexes through fast-paced, repeatable gameplay.",
     link: "https://blvckkryptonite.github.io/WordUnscramble/",
     documentation:
       "https://github.com/BlvckKryptonite/WordUnscramble/edit/main/README.md",
