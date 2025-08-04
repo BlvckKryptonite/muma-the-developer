@@ -300,7 +300,7 @@ export default function Portfolio() {
             viewport={{ once: true }}
           >
             <h2 className="font-poppins text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 dark:text-white mb-8 text-center">
-              About Me
+              About Me 💡
             </h2>
           </motion.div>
           <motion.div
@@ -309,12 +309,15 @@ export default function Portfolio() {
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            <div className="text-lg sm:text-xl text-slate-600 dark:text-slate-300 leading-relaxed text-center max-w-3xl mx-auto space-y-4">
+            <div className="text-lg sm:text-xl text-slate-600 dark:text-slate-300 leading-relaxed text-center max-w-4xl mx-auto space-y-6">
               <p>
-                I'm a full-stack developer with a unique background in psychology & criminology, now building smart solutions in fintech, fraud detection, and AI-powered tooling.
+                I'm a software developer with a background in behavioral science, bridging human insight with clean, scalable code. I don't just build solutions — I understand why they matter. This perspective helps me craft development strategies that align with real-world behavior, user needs, and business goals.
               </p>
               <p>
-                I thrive at the intersection of behavioral insight and clean, scalable code, bringing a human-centered approach to technical problem-solving.
+                I have a strong eye for modern design, a keen attention to detail and a deep respect for clarity and usability. I am currently building smart solutions spanning fintech, fraud detection, and AI-powered tools.
+              </p>
+              <p>
+                Explore some of my featured projects below — each one reflects my commitment to smart, intentional, and forward-thinking development.
               </p>
             </div>
           </motion.div>
