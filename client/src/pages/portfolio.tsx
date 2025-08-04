@@ -350,7 +350,7 @@ export default function Portfolio() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.1 }}
               viewport={{ once: true, margin: "-50px" }}
-              className="text-[20px]"
+              className="text-sm sm:text-base md:text-lg lg:text-xl"
             >I'm a software developer with a background in behavioral science, bridging human insight with clean, scalable code. I don't just build solutions — I understand why they matter.</motion.p>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
@@ -664,31 +664,25 @@ export default function Portfolio() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                className="flex flex-col sm:flex-row items-start space-y-4 sm:space-y-0 sm:space-x-4 p-4 sm:p-6 bg-white dark:bg-slate-800 rounded-2xl shadow-lg border border-slate-200 dark:border-slate-700"
+                className="bg-white dark:bg-slate-800 rounded-2xl shadow-lg border border-slate-200 dark:border-slate-700 p-4 sm:p-6"
               >
-                <div className="flex-shrink-0 mx-auto sm:mx-0">
-                  <div className="w-10 h-10 sm:w-12 sm:h-12 bg-white dark:bg-slate-700 rounded-xl flex items-center justify-center border border-slate-200 dark:border-slate-600 shadow-sm">
+                <div className="flex flex-col items-center text-center space-y-3">
+                  <div className="w-12 h-12 bg-white dark:bg-slate-700 rounded-xl flex items-center justify-center border border-slate-200 dark:border-slate-600 shadow-sm">
                     {education.icon}
                   </div>
-                </div>
-                <div className="flex-1 min-w-0 text-center sm:text-left">
-                  <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start space-y-2 sm:space-y-0">
-                    <div>
-                      <h3 className="font-poppins text-lg sm:text-xl font-semibold text-slate-900 dark:text-white mb-1">
-                        {education.institution}
-                      </h3>
-                      <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-400 mb-2">
-                        {education.location}
-                      </p>
-                      <p className="text-sm sm:text-base text-slate-600 dark:text-slate-300">
-                        {education.degree}
-                      </p>
-                    </div>
-                    <div className="sm:text-right sm:flex-shrink-0 sm:ml-4">
-                      <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-medium">
-                        {education.period}
-                      </p>
-                    </div>
+                  <div className="space-y-2">
+                    <h3 className="font-poppins text-lg sm:text-xl font-semibold text-slate-900 dark:text-white">
+                      {education.institution}
+                    </h3>
+                    <p className="text-sm sm:text-base text-slate-600 dark:text-slate-400 font-medium">
+                      {education.location}
+                    </p>
+                    <p className="text-sm sm:text-base text-slate-700 dark:text-slate-300">
+                      {education.degree}
+                    </p>
+                    <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-400">
+                      {education.period}
+                    </p>
                   </div>
                 </div>
               </motion.div>
