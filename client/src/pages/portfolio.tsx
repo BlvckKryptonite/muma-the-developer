@@ -757,7 +757,7 @@ export default function Portfolio() {
             viewport={{ once: true }}
           >
             <a
-              href="mailto:mumathedeveloper@gmail.com"
+              href="mailto:Mumathedeveloper@gmail.com"
               className="inline-flex items-center bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 text-white font-semibold py-4 px-8 rounded-2xl transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
             >
               <Mail className="w-5 h-5 mr-2" />
