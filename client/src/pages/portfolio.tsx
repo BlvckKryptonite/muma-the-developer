@@ -52,7 +52,7 @@ const projects = [
   {
     name: "Currency Exchange CLI",
     description:
-      "Real-time currency converter using Fawaz API. Built in Python and deployed to Heroku.",
+      "A terminal-based real-time currency converter using Fawaz API. Built in Python and deployed to Heroku.",
     link: "https://currency-converter-cli-fad75cd3b79c.herokuapp.com/",
     documentation:
       "https://github.com/BlvckKryptonite/currency_converter_cli/edit/main/README.md",
@@ -61,7 +61,7 @@ const projects = [
   {
     name: "The GlowClip",
     description:
-      "A fully functional E-commerce website and product showcase built on Shopify with the Shrine theme. Includes optimized product descriptions, refund handling logic, apps, and basic analytics integration.",
+      "A fully functional E-commerce website and product showcase built on Shopify with the Shrine theme.",
     link: "https://theglowclip.com/",
     documentation: "#",
     icon: "/icons/glowclip.png",
