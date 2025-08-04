@@ -668,9 +668,7 @@ export default function Portfolio() {
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            <p className="text-lg sm:text-xl text-slate-600 dark:text-slate-300 mb-8 leading-relaxed">
-              Reach out if you want to collaborate, hire me, or geek out over Python + FinTech.
-            </p>
+            <p className="text-lg sm:text-xl text-slate-600 dark:text-slate-300 mb-8 leading-relaxed font-thin text-justify">Whether you're looking to collaborate, hire a developer, or discuss a project idea. I’m open to freelance opportunities, creative partnerships, or just chatting about how tech can solve real-world problems.</p>
           </motion.div>
           <motion.div
             initial={{ opacity: 0, y: 30 }}
