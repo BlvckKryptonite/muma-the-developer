@@ -1,9 +1,10 @@
+import React from "react";
 import { motion } from "framer-motion";
 import { ExternalLink, Clock, FileText } from "lucide-react";
 
 interface ProjectCardProps {
   name: string;
-  description: string;
+  description: string | React.ReactElement;
   link: string;
   documentation: string;
   icon: string;
