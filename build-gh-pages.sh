@@ -16,6 +16,9 @@ cp -r dist/public docs
 sed -i 's|src="/assets/|src="./assets/|g' docs/index.html
 sed -i 's|href="/assets/|href="./assets/|g' docs/index.html
 
+# Fix JavaScript bundle paths for GitHub Pages
+find docs/assets -name "*.js" -exec sed -i 's|"/assets/|"./assets/|g; s|"/icons/|"./icons/|g' {} \;
+
 # Create 404.html for GitHub Pages SPA support
 cp docs/index.html docs/404.html
 
