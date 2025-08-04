@@ -5,6 +5,12 @@ import { Sun, Moon, Mail } from "lucide-react";
 import { useState } from "react";
 const profileImage = "/assets/profile.jpg";
 const featuredProjectsIcon = "/assets/featured-projects.png";
+const reelalyzeIcon = "/icons/reelalyze.png";
+const bbqIcon = "/icons/mumas-mazing-bbq.png";
+const atmIcon = "/icons/atm.png";
+const typerushIcon = "/icons/typerush.png";
+const currencyIcon = "/icons/currency.png";
+const glowclipIcon = "/icons/glowclip.png";
 
 const projects = [
   {
@@ -23,7 +29,7 @@ const projects = [
     link: "https://reelalyze.replit.app/",
     documentation:
       "https://github.com/BlvckKryptonite/Reelalyze/blob/main/README.md",
-    icon: "/icons/reelalyze.png",
+    icon: reelalyzeIcon,
   },
   {
     name: "Muma's 'Mazing Barbeque",
@@ -32,7 +38,7 @@ const projects = [
     link: "https://mumas-mazing-barbeque.replit.app",
     documentation:
       "https://github.com/BlvckKryptonite/mumas-mazing-barbeque/edit/main/README.md",
-    icon: "/icons/mumas-mazing-bbq.png",
+    icon: bbqIcon,
   },
   {
     name: "ATM SIM",
@@ -41,7 +47,7 @@ const projects = [
     link: "https://atm-sim-muma-k.vercel.app/",
     documentation:
       "https://github.com/BlvckKryptonite/ATMSim/blob/main/README.md",
-    icon: "/icons/atm.png",
+    icon: atmIcon,
   },
   {
     name: "TypeRush",
@@ -50,7 +56,7 @@ const projects = [
     link: "https://blvckkryptonite.github.io/TypeRush/",
     documentation:
       "https://github.com/BlvckKryptonite/TypeRush/edit/main/README.md",
-    icon: "/icons/typerush.png",
+    icon: typerushIcon,
   },
   {
     name: "Currency Exchange CLI",
@@ -59,7 +65,7 @@ const projects = [
     link: "https://currency-converter-cli-fad75cd3b79c.herokuapp.com/",
     documentation:
       "https://github.com/BlvckKryptonite/currency_converter_cli/edit/main/README.md",
-    icon: "/icons/currency.png",
+    icon: currencyIcon,
   },
   {
     name: "The GlowClip",
@@ -67,7 +73,7 @@ const projects = [
       "A fully functional E-commerce website and product showcase built on Shopify with the Shrine theme.",
     link: "https://theglowclip.com/",
     documentation: "#",
-    icon: "/icons/glowclip.png",
+    icon: glowclipIcon,
   },
   {
     name: "SpendSmart",
