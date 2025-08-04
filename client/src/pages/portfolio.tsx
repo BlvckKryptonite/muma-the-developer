@@ -313,9 +313,7 @@ export default function Portfolio() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.1 }}
                 viewport={{ once: true, margin: "-50px" }}
-              >
-                I'm a software developer with a background in behavioral science, bridging human insight with clean, scalable code. I don't just build solutions — I understand why they matter.
-              </motion.p>
+                className="text-[20px]">I'm a software developer with a background in behavioral science, bridging human insight with clean, scalable code. I don't just build solutions, I understand why they matter.</motion.p>
               <motion.p
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
