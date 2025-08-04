@@ -54,6 +54,14 @@ docs/
 ```
 
 ## Troubleshooting
+- **White screen issue**: Fixed! Asset paths are now relative (./assets/) instead of absolute (/assets/)
 - If only README shows: Make sure the `docs` folder is committed and pushed
-- If assets don't load: Check the base path matches your repository name
+- If assets don't load: Rebuild using the updated scripts - they automatically fix path issues
 - If site doesn't work: Check browser console for errors and verify all paths are correct
+
+## Quick Fix for White Screen
+The white screen was caused by absolute asset paths. The updated build process automatically converts:
+- `/assets/file.js` → `./assets/file.js`
+- `/assets/file.css` → `./assets/file.css`
+
+This makes your site work on GitHub Pages regardless of repository name.
