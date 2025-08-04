@@ -123,7 +123,7 @@ const projects = [
   {
     name: "Retail Radar",
     description:
-      "Python-powered scraper concept for comparing prices across retailers (e.g., eBay & Amazon). Features JSON parsing, anti-scraping logic, and a simple but modern React UI (planned).",
+      "A Python-powered price scraper designed to compare product listings across retailers like eBay and Amazon. Includes JSON parsing, basic anti-scraping measures, and a lightweight React frontend (in progress) for streamlined viewing and search.",
     link: "https://retailradar.replit.app/",
     documentation:
       "https://github.com/BlvckKryptonite/retail-radar/edit/main/README.md",
@@ -132,7 +132,7 @@ const projects = [
   {
     name: "Love Math",
     description:
-      "Educational quiz game built with JavaScript, HTML, and CSS. Offers timed arithmetic challenges with score tracking and responsive feedback.",
+      "An educational quiz game built with JavaScript, HTML, and CSS. Presents arithmetic challenges with score tracking, dynamic UI updates, and responsive feedback — demonstrating strong DOM manipulation, logic handling, and front-end interaction design skills.",
     link: "https://blvckkryptonite.github.io/love-math/",
     documentation: "#",
     icon: "/icons/lovemath.png",
