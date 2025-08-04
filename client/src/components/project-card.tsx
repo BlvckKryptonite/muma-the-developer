@@ -30,7 +30,7 @@ export function ProjectCard({ name, description, link, documentation, icon, inde
           transition: { duration: 0.4, ease: "easeOut" }
         }}
         whileTap={{ scale: 0.97 }}
-        className="project-card relative bg-white dark:bg-slate-800/90 rounded-3xl p-8 shadow-xl border border-slate-200/50 dark:border-slate-700/50 transition-all duration-500 hover:shadow-2xl hover:border-blue-300/60 dark:hover:border-blue-600/60 dark:hover:shadow-2xl cursor-pointer group overflow-hidden backdrop-blur-sm"
+        className="project-card relative bg-white dark:bg-slate-800/90 rounded-3xl p-4 sm:p-6 lg:p-8 shadow-xl border border-slate-200/50 dark:border-slate-700/50 transition-all duration-500 hover:shadow-2xl hover:border-blue-300/60 dark:hover:border-blue-600/60 dark:hover:shadow-2xl cursor-pointer group overflow-hidden backdrop-blur-sm"
       >
       {/* Subtle background glow effect */}
       <motion.div
@@ -49,10 +49,10 @@ export function ProjectCard({ name, description, link, documentation, icon, inde
           ease: "easeInOut"
         }}
       />
-      <div className="relative z-10 flex items-start space-x-4">
+      <div className="relative z-10 flex items-start space-x-3 sm:space-x-4">
         <div className="flex-shrink-0">
           <motion.div 
-            className="w-14 h-14 bg-gradient-to-br from-slate-800 to-slate-900 rounded-xl flex items-center justify-center shadow-md shadow-slate-900/30 dark:shadow-slate-950/50 group-hover:shadow-lg group-hover:shadow-slate-500/25 transition-all duration-300"
+            className="w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14 bg-gradient-to-br from-slate-800 to-slate-900 rounded-xl flex items-center justify-center shadow-md shadow-slate-900/30 dark:shadow-slate-950/50 group-hover:shadow-lg group-hover:shadow-slate-500/25 transition-all duration-300"
             whileHover={{ 
               rotate: [0, -5, 5, 0],
               scale: 1.1,
@@ -62,7 +62,7 @@ export function ProjectCard({ name, description, link, documentation, icon, inde
             <motion.img 
               src={icon} 
               alt={`${name} icon`} 
-              className="w-8 h-8 object-contain" 
+              className="w-5 h-5 sm:w-6 sm:h-6 lg:w-8 lg:h-8 object-contain" 
               whileHover={{ scale: 1.1 }}
               transition={{ duration: 0.2 }}
             />
@@ -70,14 +70,14 @@ export function ProjectCard({ name, description, link, documentation, icon, inde
         </div>
         <div className="flex-1">
           <motion.h3 
-            className="font-poppins text-xl font-semibold text-slate-900 dark:text-white mb-3 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-300"
+            className="font-poppins text-lg sm:text-xl font-semibold text-slate-900 dark:text-white mb-2 sm:mb-3 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-300"
             whileHover={{ x: 4 }}
             transition={{ duration: 0.2 }}
           >
             {name}
           </motion.h3>
           <motion.p 
-            className="text-slate-600 dark:text-slate-300 mb-4 leading-relaxed group-hover:text-slate-700 dark:group-hover:text-slate-200 transition-colors duration-300"
+            className="text-slate-600 dark:text-slate-300 mb-3 sm:mb-4 leading-relaxed group-hover:text-slate-700 dark:group-hover:text-slate-200 transition-colors duration-300 text-sm sm:text-base"
             whileHover={{ x: 2 }}
             transition={{ duration: 0.2, delay: 0.05 }}
           >
@@ -86,7 +86,7 @@ export function ProjectCard({ name, description, link, documentation, icon, inde
           {isComingSoon ? (
             <div className="flex items-center justify-between">
               <motion.span 
-                className="inline-flex items-center text-slate-500 dark:text-slate-400 font-medium"
+                className="inline-flex items-center text-slate-500 dark:text-slate-400 font-medium text-sm sm:text-base"
                 whileHover={{ scale: 1.05 }}
                 transition={{ duration: 0.2 }}
               >
@@ -94,7 +94,7 @@ export function ProjectCard({ name, description, link, documentation, icon, inde
                   animate={{ rotate: 360 }}
                   transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
                 >
-                  <Clock className="w-4 h-4 mr-1" />
+                  <Clock className="w-3 h-3 sm:w-4 sm:h-4 mr-1" />
                 </motion.div>
                 Coming Soon
               </motion.span>
@@ -126,7 +126,7 @@ export function ProjectCard({ name, description, link, documentation, icon, inde
                 href={link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 font-medium transition-colors group/link"
+                className="inline-flex items-center text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 font-medium transition-colors group/link text-sm sm:text-base"
                 whileHover={{ scale: 1.05, x: 4 }}
                 whileTap={{ scale: 0.95 }}
                 transition={{ duration: 0.2 }}
@@ -137,7 +137,7 @@ export function ProjectCard({ name, description, link, documentation, icon, inde
                   whileHover={{ x: 3, y: -3 }}
                   transition={{ duration: 0.2 }}
                 >
-                  <ExternalLink className="w-4 h-4" />
+                  <ExternalLink className="w-3 h-3 sm:w-4 sm:h-4" />
                 </motion.div>
               </motion.a>
               
