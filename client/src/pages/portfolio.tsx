@@ -305,9 +305,7 @@ export default function Portfolio() {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <h2 className="font-poppins text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 dark:text-white mb-8 text-center">
-              About Me 💡
-            </h2>
+            <h2 className="font-poppins sm:text-4xl md:text-5xl font-bold text-slate-900 dark:text-white mb-8 text-center text-[44px]">About Me</h2>
           </motion.div>
             <div className="text-lg sm:text-xl text-slate-600 dark:text-slate-300 leading-relaxed text-center max-w-4xl mx-auto space-y-6">
               <motion.p
@@ -657,7 +655,6 @@ export default function Portfolio() {
           </motion.div>
         </div>
       </section>
-
       {/* Contact Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white dark:bg-slate-800">
         <div className="max-w-4xl mx-auto text-center">
@@ -697,7 +694,6 @@ export default function Portfolio() {
           </motion.div>
         </div>
       </section>
-
       {/* Footer */}
       <footer className="py-8 px-4 sm:px-6 lg:px-8 bg-white dark:bg-slate-800 border-t border-slate-200 dark:border-slate-700">
         <div className="max-w-6xl mx-auto text-center">
