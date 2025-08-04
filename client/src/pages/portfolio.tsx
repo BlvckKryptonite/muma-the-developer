@@ -660,9 +660,7 @@ export default function Portfolio() {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <h2 className="font-poppins text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 dark:text-white mb-8">
-              Let's Connect
-            </h2>
+            <h2 className="font-poppins text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 dark:text-white mb-8">Let's Connect 💡</h2>
           </motion.div>
           <motion.div
             initial={{ opacity: 0, y: 30 }}
