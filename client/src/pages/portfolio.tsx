@@ -228,7 +228,12 @@ export default function Portfolio() {
   const displayedProjects = showAllProjects ? projects : projects.slice(0, 6);
 
   return (
-    <div className="min-h-screen bg-slate-50 dark:bg-slate-900 text-slate-700 dark:text-slate-200 transition-all duration-500 ease-in-out">
+    <motion.div 
+      className="min-h-screen bg-slate-50 dark:bg-slate-900 text-slate-700 dark:text-slate-200 transition-all duration-500 ease-in-out"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
+    >
       {/* Dark Mode Toggle */}
       <div className="fixed top-6 right-6 z-50">
         <motion.button
@@ -300,32 +305,52 @@ export default function Portfolio() {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <h2 className="font-poppins sm:text-4xl md:text-5xl font-bold text-slate-900 dark:text-white mb-8 text-center text-[44px]">About Me</h2>
+            <h2 className="font-poppins text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 dark:text-white mb-8 text-center">
+              About Me 💡
+            </h2>
           </motion.div>
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            viewport={{ once: true }}
-          >
             <div className="text-lg sm:text-xl text-slate-600 dark:text-slate-300 leading-relaxed text-center max-w-4xl mx-auto space-y-6">
-              <p>
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.1 }}
+                viewport={{ once: true, margin: "-50px" }}
+              >
                 I'm a software developer with a background in behavioral science, bridging human insight with clean, scalable code. I don't just build solutions — I understand why they matter.
-              </p>
-              <p>
+              </motion.p>
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                viewport={{ once: true, margin: "-50px" }}
+              >
                 This perspective helps me craft development strategies that align with real-world behavior, user needs, and business goals.
-              </p>
-              <p>
+              </motion.p>
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.3 }}
+                viewport={{ once: true, margin: "-50px" }}
+              >
                 I have a strong eye for modern design, a keen attention to detail and a deep respect for clarity and usability.
-              </p>
-              <p>
+              </motion.p>
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.4 }}
+                viewport={{ once: true, margin: "-50px" }}
+              >
                 I am currently building smart solutions spanning fintech, fraud detection, and AI-powered tools.
-              </p>
-              <p>
+              </motion.p>
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.5 }}
+                viewport={{ once: true, margin: "-50px" }}
+              >
                 Explore some of my featured projects below — each one reflects my commitment to smart, intentional, and forward-thinking development.
-              </p>
+              </motion.p>
             </div>
-          </motion.div>
         </div>
       </section>
       {/* Animated Projects Portfolio Section */}
@@ -359,21 +384,32 @@ export default function Portfolio() {
                 className="h-[44px] w-auto"
               />
             </motion.h2>
-            <motion.div 
-              className="text-lg text-slate-600 dark:text-slate-300 max-w-4xl mx-auto space-y-4"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.5 }}
-              viewport={{ once: true }}
-            >
-              <p>
+            <div className="text-lg text-slate-600 dark:text-slate-300 max-w-4xl mx-auto space-y-4">
+              <motion.p
+                initial={{ opacity: 0, x: -30 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.8, delay: 0.6 }}
+                viewport={{ once: true, margin: "-30px" }}
+              >
                 I've worked on a wide range of projects over the past couple of years, from quick experiments to full-stack apps. Below are some of my most recent builds.
-              </p>
-              <p>Most are open source and come with full documentation links. If something catches your eye, feel free to explore the code or even contribute if you have ideas for improvement.</p>
-              <p>
+              </motion.p>
+              <motion.p
+                initial={{ opacity: 0, x: 30 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.8, delay: 0.7 }}
+                viewport={{ once: true, margin: "-30px" }}
+              >
+                Most are open source and come with full documentation links. If something catches your eye, feel free to explore the code — or even contribute if you have ideas for improvement.
+              </motion.p>
+              <motion.p
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.8 }}
+                viewport={{ once: true, margin: "-30px" }}
+              >
                 Got a project in mind? I'm always open to collaborating or helping bring bold ideas to life.
-              </p>
-            </motion.div>
+              </motion.p>
+            </div>
           </motion.div>
           
           <motion.div 
@@ -621,45 +657,7 @@ export default function Portfolio() {
           </motion.div>
         </div>
       </section>
-      {/* Contact Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white dark:bg-slate-800">
-        <div className="max-w-4xl mx-auto text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-          >
-            <h2 className="font-poppins text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 dark:text-white mb-8">
-              Let's Connect
-            </h2>
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            viewport={{ once: true }}
-          >
-            <p className="text-lg sm:text-xl text-slate-600 dark:text-slate-300 mb-8 leading-relaxed">
-              Reach out if you want to collaborate, hire me, or geek out over Python + FinTech.
-            </p>
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            viewport={{ once: true }}
-          >
-            <a
-              href="mailto:your.email@example.com"
-              className="inline-flex items-center bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 text-white font-semibold py-4 px-8 rounded-2xl transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
-            >
-              <Mail className="w-5 h-5 mr-2" />
-              Get In Touch
-            </a>
-          </motion.div>
-        </div>
-      </section>
+
       {/* Footer */}
       <footer className="py-8 px-4 sm:px-6 lg:px-8 bg-white dark:bg-slate-800 border-t border-slate-200 dark:border-slate-700">
         <div className="max-w-6xl mx-auto text-center">
@@ -668,6 +666,6 @@ export default function Portfolio() {
           </p>
         </div>
       </footer>
-    </div>
+    </motion.div>
   );
 }
