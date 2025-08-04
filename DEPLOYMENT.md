@@ -65,3 +65,11 @@ The white screen was caused by absolute asset paths. The updated build process a
 - `/assets/file.css` → `./assets/file.css`
 
 This makes your site work on GitHub Pages regardless of repository name.
+
+## Recent Fixes Applied
+✓ Fixed duplicate "Featured Projects" heading by removing alt text from icon
+✓ Profile photo and featured projects icon are included in build
+✓ All project icons are properly copied to docs/icons/
+✓ Asset paths are relative for GitHub Pages compatibility
+
+**To deploy the fixes**: Commit and push the updated docs/ folder to GitHub.

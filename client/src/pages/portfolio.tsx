@@ -426,7 +426,7 @@ export default function Portfolio() {
               Featured Projects
               <img
                 src={featuredProjectsIcon}
-                alt="Featured Projects Icon"
+                alt=""
                 className="h-6 sm:h-8 md:h-10 lg:h-[44px] w-auto flex-shrink-0"
               />
             </motion.h2>
