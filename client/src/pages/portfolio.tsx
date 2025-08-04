@@ -339,7 +339,7 @@ export default function Portfolio() {
               className="h-1 bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-500 rounded-full mx-auto mb-8 max-w-24"
             />
             <motion.h2 
-              className="font-poppins text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 dark:text-white mb-6"
+              className="font-poppins sm:text-4xl md:text-5xl font-bold text-slate-900 dark:text-white mb-6 text-[44px]"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
