@@ -96,7 +96,7 @@ const projects = [
   {
     name: "FraudShield CLI",
     description:
-      "A Python-based command-line tool that flags suspicious financial transactions using rule-based and machine learning detection. Includes tabulated outputs, color-coded alerts, and modular logic for analyzing datasets across fintech, banking, and fraud prevention use cases.",
+      "A Python-based command-line tool that flags suspicious financial transactions using rule-based and machine learning detection. Includes tabulated outputs, color-coded alerts, and modular logic for analyzing datasets across fintech, banking, and fraud prevention.",
     link: "#",
     documentation:
       "https://github.com/BlvckKryptonite/FraudShield/blob/main/README.md",
