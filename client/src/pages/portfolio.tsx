@@ -3,7 +3,7 @@ import { useTheme } from "@/components/theme-provider";
 import { ProjectCard } from "@/components/project-card";
 import { Sun, Moon, Mail } from "lucide-react";
 import { useState } from "react";
-import profileImage from "@assets/profile.jpg";
+const profileImage = "/assets/profile.jpg?v=" + Date.now();
 const featuredProjectsIcon = "/assets/featured-projects.svg";
 
 const projects = [
@@ -14,7 +14,10 @@ const projects = [
         <span className="inline-block bg-gradient-to-r from-blue-500 to-indigo-600 bg-clip-text text-transparent font-semibold">
           Currently in development:
         </span>{" "}
-        An AI-powered YouTube summarizer built with Streamlit, Python, and OpenAI. It analyzes transcripts and visuals to generate smart, context-aware summaries designed for commentary, educational, and long-form video content.
+        An AI-powered YouTube summarizer built with Streamlit, Python, and
+        OpenAI. It analyzes transcripts and visuals to generate smart,
+        context-aware summaries designed for commentary, educational, and
+        long-form video content.
       </>
     ),
     link: "https://reelalyze.replit.app/",
@@ -351,7 +354,11 @@ export default function Portfolio() {
               transition={{ duration: 0.8, delay: 0.1 }}
               viewport={{ once: true, margin: "-50px" }}
               className="text-sm sm:text-base md:text-lg lg:text-xl"
-            >I'm a software developer with a background in behavioral science, bridging human insight with clean, scalable code. I don't just build solutions — I understand why they matter.</motion.p>
+            >
+              I'm a software developer with a background in behavioral science,
+              bridging human insight with clean, scalable code. I don't just
+              build solutions — I understand why they matter.
+            </motion.p>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
