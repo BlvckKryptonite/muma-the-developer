@@ -8,6 +8,7 @@ const featuredProjectsIcon = "/assets/featured-projects.png";
 const reelalyzeIcon = "/icons/reelalyze.png";
 const bbqIcon = "/icons/mumas-mazing-bbq.png";
 const atmIcon = "/icons/atm.png";
+const brewHavenIcon = "./brew-haven-logo.png";
 const typerushIcon = "/icons/typerush.png";
 const currencyIcon = "/icons/currency.png";
 const glowclipIcon = "/icons/glowclip.png";
@@ -48,6 +49,14 @@ const projects = [
     documentation:
       "https://github.com/BlvckKryptonite/ATMSim/blob/main/README.md",
     icon: atmIcon,
+  },
+  {
+    name: "Brew Haven",
+    description:
+      "A modern, responsive coffee shop landing page built with React, TypeScript, and Tailwind CSS. Features smooth animations, a premium dark theme, interactive menu sections, and polished UI elements for an authentic, high-end café experience.",
+    link: "#",
+    documentation: "",
+    icon: brewHavenIcon,
   },
   {
     name: "TypeRush",
