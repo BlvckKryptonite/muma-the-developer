@@ -149,11 +149,19 @@ const projects = [
   {
     name: "Love Running",
     description:
-      "Multi-page fitness site created solely with vanilla HTML and CSS. Focused on clean UI, accessible layout, and responsive design for a runners club.",
+      "A simple multi-page fitness website built with vanilla HTML and CSS. Features a clean UI, responsive layout, and accessible design tailored for a runners club.",
     link: "https://blvckkryptonite.github.io/love-running/",
     documentation:
       "https://github.com/BlvckKryptonite/love-running/blob/main/README.md",
     icon: "/icons/loverunning.png",
+  },
+  {
+    name: "Brew Haven",
+    description:
+      "A modern coffee shop landing page built with React, TypeScript, and Tailwind CSS. Features a premium dark theme, smooth animations, and interactive menu sections.",
+    link: "https://blvckkryptonite.github.io/brew-haven/",
+    documentation: "",
+    icon: "./brew-haven-logo.png",
   },
 ];
 
