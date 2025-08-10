@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { useTheme } from "@/components/theme-provider";
 import { ProjectCard } from "@/components/project-card";
+import { AnimatedBackground } from "@/components/animated-background";
 import { Sun, Moon, Mail } from "lucide-react";
 import { useState } from "react";
 const profileImage = "/assets/profile.jpg";
@@ -278,11 +279,13 @@ export default function Portfolio() {
 
   return (
     <motion.div
-      className="min-h-screen bg-slate-50 dark:bg-slate-900 text-slate-700 dark:text-slate-200 transition-all duration-500 ease-in-out"
+      className="min-h-screen bg-slate-50 dark:bg-slate-900 text-slate-700 dark:text-slate-200 transition-all duration-500 ease-in-out relative"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
     >
+      {/* Animated Background */}
+      <AnimatedBackground />
       {/* Dark Mode Toggle */}
       <div className="fixed top-4 right-4 sm:top-6 sm:right-6 z-50">
         <motion.button
