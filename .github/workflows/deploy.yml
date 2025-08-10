@@ -30,7 +30,7 @@ jobs:
         cp -r dist/public docs
         sed -i 's|src="/assets/|src="./assets/|g' docs/index.html
         sed -i 's|href="/assets/|href="./assets/|g' docs/index.html
-        find docs/assets -name "*.js" -exec sed -i 's|"/assets/|"./assets/|g; s|"/icons/|"./icons/|g; s|"/code-institute-logo.png"|"./code-institute-logo.png"|g; s|"/malmo-university-logo.png"|"./malmo-university-logo.png"|g; s|"/zambia-university-logo.png"|"./zambia-university-logo.png"|g; s|"/brew-haven-logo.png"|"./brew-haven-logo.png"|g' {} \;
+        find docs/assets -name "*.js" -exec sed -i 's|"/assets/|"./assets/|g; s|"/icons/|"./icons/|g; s|"/code-institute-logo.png"|"./code-institute-logo.png"|g; s|"/malmo-university-logo.png"|"./malmo-university-logo.png"|g; s|"/zambia-university-logo.png"|"./zambia-university-logo.png"|g' {} \;
         cp docs/index.html docs/404.html
       
     - name: Deploy to GitHub Pages
