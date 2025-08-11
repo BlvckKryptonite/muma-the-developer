@@ -81,7 +81,8 @@ const projects = [
     description:
       "A modern coffee shop website built with React, TypeScript, and Tailwind CSS. Features a premium dark theme, smooth animations, and interactive menu sections.",
     link: "https://blvckkryptonite.github.io/brew-haven/",
-    documentation: "https://github.com/BlvckKryptonite/brew-haven/blob/main/README.md",
+    documentation:
+      "https://github.com/BlvckKryptonite/brew-haven/blob/main/README.md",
     icon: "./brew-haven-logo.png",
   },
   {
@@ -167,7 +168,7 @@ const projects = [
   {
     name: "Love Running",
     description:
-      "A simple multi-page fitness website built with vanilla HTML and CSS. Features a clean UI, responsive layout, and accessible design tailored for a runners club.",
+      "A simple multi-page fitness website built with vanilla HTML and CSS. Features a clean user interface, responsive layout, and accessible design tailored for a runners club.",
     link: "https://blvckkryptonite.github.io/love-running/",
     documentation:
       "https://github.com/BlvckKryptonite/love-running/blob/main/README.md",
