@@ -410,7 +410,7 @@ export default function Portfolio() {
               transition={{ duration: 0.8, delay: 0.5 }}
               viewport={{ once: true, margin: "-50px" }}
             >
-              Explore some of my featured projects below — each one reflects my
+              Explore some of my featured projects below — each one reflects my 
               commitment to smart, intentional, and forward-thinking
               development.
             </motion.p>
