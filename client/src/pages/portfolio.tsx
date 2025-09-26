@@ -4,7 +4,7 @@ import { ProjectCard } from "@/components/project-card";
 import { AnimatedBackground } from "@/components/animated-background";
 import { Sun, Moon, Mail } from "lucide-react";
 import { useState } from "react";
-const profileImage = "/assets/profile.jpg";
+const profileImage = "/assets/IMG_2962_1758920339786.heic";
 const featuredProjectsIcon = "/assets/featured-projects.png";
 const reelalyzeIcon = "/icons/reelalyze.png";
 const bbqIcon = "/icons/mumas-mazing-bbq.png";
