@@ -338,7 +338,7 @@ export default function Portfolio() {
             className="px-2"
           >
             <p className="text-base sm:text-lg md:text-xl text-slate-600 dark:text-slate-300 mb-3 sm:mb-4 leading-relaxed">
-              Software Developer | Data & AI Enthusiast
+              Software Developer | Predictive Analytics
             </p>
           </motion.div>
           <motion.div
@@ -410,7 +410,7 @@ export default function Portfolio() {
               transition={{ duration: 0.8, delay: 0.5 }}
               viewport={{ once: true, margin: "-50px" }}
             >
-              Explore some of my featured projects below — each one reflects my 
+              Explore some of my featured projects below — each one reflects my
               commitment to smart, intentional, and forward-thinking
               development.
             </motion.p>
