@@ -36,9 +36,9 @@ const projects = [
     name: "Muma's 'Mazing Barbeque",
     description:
       "A comic-book styled React and Tailwind website featuring Framer Motion scroll animations, interactive ticket tiers, superhero-themed chef cards, and a mock signup flow powered by Stripe — built as a high-concept BBQ landing page.",
-    link: "https://mumas-mazing-barbeque.replit.app",
+    link: "https://mumas-mazing-barbeque.netlify.app/",
     documentation:
-      "https://github.com/BlvckKryptonite/mumas-mazing-barbeque/blob/main/README.md",
+      "https://github.com/BlvckKryptonite/mumas-mazing-barbeque-restored/blob/main/README.md",
     icon: bbqIcon,
   },
   {
