@@ -12,30 +12,22 @@ const atmIcon = "/icons/atm.png";
 const typerushIcon = "/icons/typerush.png";
 const currencyIcon = "/icons/currency.png";
 const glowclipIcon = "/icons/glowclip.png";
+const sceneshareIcon = "/icons/sceneshare.png";
 
 const projects = [
   {
-    name: "Reelalyze",
-    description: (
-      <>
-        <span className="inline-block bg-gradient-to-r from-blue-500 to-indigo-600 bg-clip-text text-transparent font-semibold">
-          Currently in development:
-        </span>{" "}
-        An AI-powered YouTube summarizer built with Streamlit, Python, and
-        OpenAI. It analyzes transcripts and visuals to generate smart,
-        context-aware summaries designed for commentary, educational, and
-        long-form video content.
-      </>
-    ),
-    link: "https://reelalyze.replit.app/",
+    name: "SceneShare",
+    description:
+      "A full-stack Django and PostgreSQL web application enabling users to browse, rate, and review movies while managing personalized watchlists. Built as a sleek, community-driven movie review platform following the MVT architecture.",
+    link: "https://sceneshare-0073094647bb.herokuapp.com/",
     documentation:
-      "https://github.com/BlvckKryptonite/Reelalyze/blob/main/README.md",
-    icon: reelalyzeIcon,
+      "https://github.com/BlvckKryptonite/scene-share/blob/main/README.md",
+    icon: sceneshareIcon
   },
   {
     name: "Muma's 'Mazing Barbeque",
     description:
-      "A comic-book styled React and Tailwind website featuring Framer Motion scroll animations, interactive ticket tiers, superhero-themed chef cards, and a mock signup flow powered by Stripe — built as a high-concept BBQ landing page.",
+      "A comic-book styled React and Tailwind website featuring Framer Motion scroll animations, interactive ticket tiers, superhero-themed chef cards, and a mock signup flow powered by Stripe. Built as a high-concept BBQ landing page.",
     link: "https://mumas-mazing-barbeque.netlify.app/",
     documentation:
       "https://github.com/BlvckKryptonite/mumas-mazing-barbeque-restored/blob/main/README.md",
@@ -164,6 +156,24 @@ const projects = [
     link: "https://blvckkryptonite.github.io/love-math/",
     documentation: "",
     icon: "/icons/lovemath.png",
+  },
+   {
+    name: "Reelalyze",
+    description: (
+      <>
+        <span className="inline-block bg-gradient-to-r from-blue-500 to-indigo-600 bg-clip-text text-transparent font-semibold">
+          Currently in development:
+        </span>{" "}
+        An AI-powered YouTube summarizer built with Streamlit, Python, and
+        OpenAI. It analyzes transcripts and visuals to generate smart,
+        context-aware summaries designed for commentary, educational, and
+        long-form video content.
+      </>
+    ),
+    link: "https://reelalyze.replit.app/",
+    documentation:
+      "https://github.com/BlvckKryptonite/Reelalyze/blob/main/README.md",
+    icon: reelalyzeIcon,
   },
 ];
 
