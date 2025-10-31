@@ -348,7 +348,7 @@ export default function Portfolio() {
             className="px-2"
           >
             <p className="text-base sm:text-lg md:text-xl text-slate-600 dark:text-slate-300 mb-3 sm:mb-4 leading-relaxed">
-              Software Developer | Predictive Analytics
+              Software & Analytics Developer
             </p>
           </motion.div>
           <motion.div
@@ -362,72 +362,8 @@ export default function Portfolio() {
           </motion.div>
         </div>
       </section>
-      {/* About Section */}
-      <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 bg-white dark:bg-slate-800">
-        <div className="max-w-4xl mx-auto">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-          >
-            <h2 className="font-poppins text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 dark:text-white mb-6 sm:mb-8 text-center">
-              About Me
-            </h2>
-          </motion.div>
-          <div className="text-sm sm:text-base md:text-lg lg:text-xl text-slate-600 dark:text-slate-300 leading-relaxed text-center max-w-4xl mx-auto space-y-4 sm:space-y-6 px-2">
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.1 }}
-              viewport={{ once: true, margin: "-50px" }}
-              className="text-sm sm:text-base md:text-lg lg:text-xl"
-            >
-              I'm a software developer with a background in behavioral science,
-              bridging human insight with clean, scalable code. I don't just
-              build solutions — I understand why they matter.
-            </motion.p>
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              viewport={{ once: true, margin: "-50px" }}
-            >
-              This perspective helps me craft development strategies that align
-              with real-world behavior, user needs, and business goals.
-            </motion.p>
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.3 }}
-              viewport={{ once: true, margin: "-50px" }}
-            >
-              I have a strong eye for modern design, a keen attention to detail
-              and a deep respect for clarity and usability.
-            </motion.p>
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.4 }}
-              viewport={{ once: true, margin: "-50px" }}
-            >
-              I am currently building smart solutions spanning fintech, fraud
-              detection, and AI-powered tools.
-            </motion.p>
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.5 }}
-              viewport={{ once: true, margin: "-50px" }}
-            >
-              Explore some of my featured projects below — each one reflects my
-              commitment to smart, intentional, and forward-thinking
-              development.
-            </motion.p>
-          </div>
-        </div>
-      </section>
-      {/* Animated Projects Portfolio Section */}
+
+     {/* Animated Projects Portfolio Section */}
       <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-slate-50 via-blue-50/30 to-indigo-50/30 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900">
         <div className="max-w-6xl mx-auto">
           <motion.div
@@ -581,6 +517,61 @@ export default function Portfolio() {
           )}
         </div>
       </section>
+
+      {/* About Section */}
+      <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 bg-white dark:bg-slate-800">
+        <div className="max-w-4xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
+            <h2 className="font-poppins text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 dark:text-white mb-6 sm:mb-8 text-center">
+              About Me
+            </h2>
+          </motion.div>
+          <div className="text-sm sm:text-base md:text-lg lg:text-xl text-slate-600 dark:text-slate-300 leading-relaxed text-center max-w-4xl mx-auto space-y-4 sm:space-y-6 px-2">
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.1 }}
+              viewport={{ once: true, margin: "-50px" }}
+              className="text-sm sm:text-base md:text-lg lg:text-xl"
+            >
+              I'm a software developer with a background in behavioral science,
+              bridging human insight with clean, scalable code. I don't just
+              build solutions, I understand why they matter.
+            </motion.p>
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              viewport={{ once: true, margin: "-50px" }}
+            >
+              My journey into software began with a fascination for how people make decisions, especially in complex systems like finance and compliance. This perspective helps me craft development strategies that align
+              with real-world behavior, user needs, and business goals.
+            </motion.p>
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.3 }}
+              viewport={{ once: true, margin: "-50px" }}
+            >
+              I have a strong eye for modern design, attention to detail, and respect for clarity and usability. I aim to develop systems that align human behavior with transparent, responsible innovation.
+            </motion.p>
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.5 }}
+              viewport={{ once: true, margin: "-50px" }}
+            >
+             For me, technology is about responsibility, transparency, and precision — principles I bring to every project.
+            </motion.p>
+          </div>
+        </div>
+      </section>
+ 
       {/* Tech Stack Section */}
       <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 bg-white dark:bg-slate-800">
         <div className="max-w-6xl mx-auto">
