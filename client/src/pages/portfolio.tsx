@@ -13,6 +13,7 @@ const typerushIcon = "/icons/typerush.png";
 const currencyIcon = "/icons/currency.png";
 const glowclipIcon = "/icons/glowclip.png";
 const sceneshareIcon = "/icons/sceneshare.png";
+const maxlinIcon = "/icons/maxlin.png";
 
 const projects = [
   {
@@ -51,6 +52,27 @@ const projects = [
       "https://github.com/BlvckKryptonite/TypeRush/blob/main/README.md",
     icon: typerushIcon,
   },
+
+    {
+    name: "Brew Haven",
+    description:
+      "A modern coffee shop website built with React, TypeScript, and Tailwind CSS. Features a premium dark theme, smooth animations, and interactive menu sections.",
+    link: "https://blvckkryptonite.github.io/brew-haven/",
+    documentation:
+      "https://github.com/BlvckKryptonite/brew-haven/blob/main/README.md",
+    icon: "./brew-haven-logo.png",
+  },
+
+    {
+    name: "Maxlin",
+    description:
+      "A modern cleaning services website built with React, TypeScript, and Tailwind CSS. Includes a polished design system, smooth animations, service showcases, and an engaging user experience.",
+    link: "https://maxlin-custom-site.netlify.app/",
+    documentation:
+      "https://github.com/BlvckKryptonite/maxlin-custom-site/blob/main/README.md",
+    icon: maxlinIcon,
+  },
+
   {
     name: "Currency Exchange CLI",
     description:
@@ -60,121 +82,116 @@ const projects = [
       "https://github.com/BlvckKryptonite/currency_converter_cli/blob/main/README.md",
     icon: currencyIcon,
   },
-  {
-    name: "The GlowClip",
-    description:
-      "A fully functional E-commerce website and product showcase built on Shopify with the Shrine theme.",
-    link: "https://theglowclip.com/",
-    documentation: "",
-    icon: glowclipIcon,
-  },
-  {
-    name: "Brew Haven",
-    description:
-      "A modern coffee shop website built with React, TypeScript, and Tailwind CSS. Features a premium dark theme, smooth animations, and interactive menu sections.",
-    link: "https://blvckkryptonite.github.io/brew-haven/",
-    documentation:
-      "https://github.com/BlvckKryptonite/brew-haven/blob/main/README.md",
-    icon: "./brew-haven-logo.png",
-  },
-  {
-    name: "Love Running",
-    description:
-      "A simple multi-page fitness website built with vanilla HTML and CSS. Features a clean user interface, responsive layout, and accessible design tailored for a runners club.",
-    link: "https://blvckkryptonite.github.io/love-running/",
-    documentation:
-      "https://github.com/BlvckKryptonite/love-running/blob/main/README.md",
-    icon: "/icons/loverunning.png",
-  },
-  {
-    name: "SpendSmart",
-    description:
-      "A simple budgeting app built with HTML/CSS, JavaScript, and Chart.js. Helps users visualize expenses, savings, and get financial insight.",
-    link: "https://blvckkryptonite.github.io/SpendSmart/",
-    documentation:
-      "https://github.com/BlvckKryptonite/SpendSmart/blob/master/README.md",
-    icon: "/icons/spendsmart.png",
-  },
-  {
-    name: "ParsePilot",
-    description:
-      "Python tool that cleans CSV data, extracts nested JSON, and prepares it for analysis. Built for data preprocessing workflows.",
-    link: "https://parsepilot-b9qw.onrender.com/",
-    documentation:
-      "https://github.com/BlvckKryptonite/ParsePilot/blob/main/README.md",
-    icon: "/icons/parsepilot.png",
-  },
-  {
-    name: "Game-Xit",
-    description:
-      "A three-page HTML/CSS site built to raise awareness about video game addiction. Includes a responsive layout, embedded YouTube resources, a gaming self-assessment tool link, and a styled contact form with Google Maps integration.",
-    link: "https://blvckkryptonite.github.io/game-xit/",
-    documentation:
-      "https://github.com/BlvckKryptonite/game-xit/blob/main/README.md",
-    icon: "/icons/gameexit.png",
-  },
-  {
-    name: "FraudShield CLI",
-    description:
-      "A Python-based command-line tool that flags suspicious financial transactions using rule-based and machine learning detection. Includes tabulated outputs, color-coded alerts, and modular logic for analyzing datasets across fintech, banking, and fraud prevention.",
-    link: "#",
-    documentation:
-      "https://github.com/BlvckKryptonite/FraudShield/blob/main/README.md",
-    icon: "/icons/fraudshield.png",
-  },
-  {
-    name: "ChurnChaser",
-    description:
-      "A predictive analytics prototype built with Python and Streamlit to detect customer churn in e-commerce. Leverages behavioral variables, visual outputs, and scoring logic to help businesses flag at-risk users and prevent subscription drop-off.",
-    link: "https://churn-chaser-bugfreemuma.replit.app/",
-    documentation:
-      "https://github.com/BlvckKryptonite/ChurnChaser/blob/main/README.md",
-    icon: "/icons/churnchaser.png",
-  },
-  {
+
+    {
     name: "Word Unscramble",
     description:
-      "A browser-based JavaScript word game that challenges users to unscramble shuffled letters. Features a live timer, scoring system, sound effects, and responsive UI — designed to sharpen mental reflexes through fast-paced, repeatable gameplay.",
+      "A browser-based JavaScript word game designed to sharpen mental reflexes through fast-paced gameplay.",
     link: "https://blvckkryptonite.github.io/WordUnscramble/",
     documentation:
       "https://github.com/BlvckKryptonite/WordUnscramble/blob/main/README.md",
     icon: "/icons/wordgame.png",
   },
-  {
-    name: "Retail Radar",
-    description:
-      "A Python-powered price scraper designed to compare product listings across retailers like eBay and Amazon. Includes JSON parsing, basic anti-scraping measures, and a lightweight React frontend (in progress) for streamlined viewing and search.",
-    link: "https://retailradar.replit.app/",
-    documentation:
-      "https://github.com/BlvckKryptonite/retail-radar/blob/main/README.md",
-    icon: "/icons/retailradar.png",
-  },
-  {
-    name: "Love Math",
-    description:
-      "An educational quiz game built with JavaScript, HTML, and CSS. Presents arithmetic challenges with score tracking, dynamic UI updates, and responsive feedback — demonstrating strong DOM manipulation, logic handling, and front-end interaction design skills.",
-    link: "https://blvckkryptonite.github.io/love-math/",
-    documentation: "",
-    icon: "/icons/lovemath.png",
-  },
-   {
-    name: "Reelalyze",
-    description: (
-      <>
-        <span className="inline-block bg-gradient-to-r from-blue-500 to-indigo-600 bg-clip-text text-transparent font-semibold">
-          Currently in development:
-        </span>{" "}
-        An AI-powered YouTube summarizer built with Streamlit, Python, and
-        OpenAI. It analyzes transcripts and visuals to generate smart,
-        context-aware summaries designed for commentary, educational, and
-        long-form video content.
-      </>
-    ),
-    link: "https://reelalyze.replit.app/",
-    documentation:
-      "https://github.com/BlvckKryptonite/Reelalyze/blob/main/README.md",
-    icon: reelalyzeIcon,
-  },
+ 
+
+//   {
+//     name: "Love Running",
+//     description:
+//       "A simple multi-page fitness website built with vanilla HTML and CSS. Features a clean user interface, responsive layout, and accessible design tailored for a runners club.",
+//     link: "https://blvckkryptonite.github.io/love-running/",
+//     documentation:
+//       "https://github.com/BlvckKryptonite/love-running/blob/main/README.md",
+//     icon: "/icons/loverunning.png",
+//   },
+//   {
+//     name: "SpendSmart",
+//     description:
+//       "A simple budgeting app built with HTML/CSS, JavaScript, and Chart.js. Helps users visualize expenses, savings, and get financial insight.",
+//     link: "https://blvckkryptonite.github.io/SpendSmart/",
+//     documentation:
+//       "https://github.com/BlvckKryptonite/SpendSmart/blob/master/README.md",
+//     icon: "/icons/spendsmart.png",
+//   },
+//   {
+//     name: "ParsePilot",
+//     description:
+//       "Python tool that cleans CSV data, extracts nested JSON, and prepares it for analysis. Built for data preprocessing workflows.",
+//     link: "https://parsepilot-b9qw.onrender.com/",
+//     documentation:
+//       "https://github.com/BlvckKryptonite/ParsePilot/blob/main/README.md",
+//     icon: "/icons/parsepilot.png",
+//   },
+//   {
+//     name: "Game-Xit",
+//     description:
+//       "A three-page HTML/CSS site built to raise awareness about video game addiction. Includes a responsive layout, embedded YouTube resources, a gaming self-assessment tool link, and a styled contact form with Google Maps integration.",
+//     link: "https://blvckkryptonite.github.io/game-xit/",
+//     documentation:
+//       "https://github.com/BlvckKryptonite/game-xit/blob/main/README.md",
+//     icon: "/icons/gameexit.png",
+//   },
+//   {
+//     name: "FraudShield CLI",
+//     description:
+//       "A Python-based command-line tool that flags suspicious financial transactions using rule-based and machine learning detection. Includes tabulated outputs, color-coded alerts, and modular logic for analyzing datasets across fintech, banking, and fraud prevention.",
+//     link: "#",
+//     documentation:
+//       "https://github.com/BlvckKryptonite/FraudShield/blob/main/README.md",
+//     icon: "/icons/fraudshield.png",
+//   },
+//   {
+//     name: "ChurnChaser",
+//     description:
+//       "A predictive analytics prototype built with Python and Streamlit to detect customer churn in e-commerce. Leverages behavioral variables, visual outputs, and scoring logic to help businesses flag at-risk users and prevent subscription drop-off.",
+//     link: "https://churn-chaser-bugfreemuma.replit.app/",
+//     documentation:
+//       "https://github.com/BlvckKryptonite/ChurnChaser/blob/main/README.md",
+//     icon: "/icons/churnchaser.png",
+//   },
+//   {
+//     name: "Retail Radar",
+//     description:
+//       "A Python-powered price scraper designed to compare product listings across retailers like eBay and Amazon. Includes JSON parsing, basic anti-scraping measures, and a lightweight React frontend (in progress) for streamlined viewing and search.",
+//     link: "https://retailradar.replit.app/",
+//     documentation:
+//       "https://github.com/BlvckKryptonite/retail-radar/blob/main/README.md",
+//     icon: "/icons/retailradar.png",
+//   },
+//   {
+//     name: "Love Math",
+//     description:
+//       "An educational quiz game built with JavaScript, HTML, and CSS. Presents arithmetic challenges with score tracking, dynamic UI updates, and responsive feedback — demonstrating strong DOM manipulation, logic handling, and front-end interaction design skills.",
+//     link: "https://blvckkryptonite.github.io/love-math/",
+//     documentation: "",
+//     icon: "/icons/lovemath.png",
+//   },
+//  {
+//     name: "The GlowClip",
+//     description:
+//       "A fully functional E-commerce website and product showcase built on Shopify with the Shrine theme.",
+//     link: "https://theglowclip.com/",
+//     documentation: "",
+//     icon: glowclipIcon,
+//   },
+
+//    {
+//     name: "Reelalyze",
+//     description: (
+//       <>
+//         <span className="inline-block bg-gradient-to-r from-blue-500 to-indigo-600 bg-clip-text text-transparent font-semibold">
+//           Currently in development:
+//         </span>{" "}
+//         An AI-powered YouTube summarizer built with Streamlit, Python, and
+//         OpenAI. It analyzes transcripts and visuals to generate smart,
+//         context-aware summaries designed for commentary, educational, and
+//         long-form video content.
+//       </>
+//     ),
+//     link: "https://reelalyze.replit.app/",
+//     documentation:
+//       "https://github.com/BlvckKryptonite/Reelalyze/blob/main/README.md",
+//     icon: reelalyzeIcon,
+//   },
 ];
 
 const techStack = {
