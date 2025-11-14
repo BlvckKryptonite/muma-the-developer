@@ -64,7 +64,7 @@ const projects = [
   },
 
     {
-    name: "Maxlin",
+    name: "Maxlin Enterprise",
     description:
       "A modern cleaning services website built with React, TypeScript, and Tailwind CSS. Includes a polished design system, smooth animations, service showcases, and an engaging user experience.",
     link: "https://maxlin-custom-site.netlify.app/",
