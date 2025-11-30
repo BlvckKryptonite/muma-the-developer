@@ -14,8 +14,19 @@ const currencyIcon = "/icons/currency.png";
 const glowclipIcon = "/icons/glowclip.png";
 const sceneshareIcon = "/icons/sceneshare.png";
 const maxlinIcon = "/icons/maxlin.png";
+const aerionLogo = "/icons/aerion.png";
+const chefGusto = "/icons/chef-gusto.png";
 
 const projects = [
+    {
+    name: "Aerion Analytics",
+    description:
+      "A modern Framer website for an AI automation and integration agency. Designed with a sleek FinTech aesthetic, the site showcases intelligent automation services, custom AI agents, and data-driven solutions through a clean, conversion-focused layout.",
+    link: "https://aerion-analytics.framer.website/",
+    documentation:
+      "",
+    icon: aerionLogo
+  },
   {
     name: "SceneShare",
     description:
@@ -33,6 +44,15 @@ const projects = [
     documentation:
       "https://github.com/BlvckKryptonite/mumas-mazing-barbeque-restored/blob/main/README.md",
     icon: bbqIcon,
+  },
+   {
+    name: "Chef Gusto",
+    description:
+      "A TypeScript-powered recipe generator using unified AI for text and image creation. Features structured JSON outputs, clean React components, and a playful chef-inspired interface built for fast, reliable cooking inspiration.",
+    link: "https://chef-gusto.netlify.app/",
+    documentation:
+      "https://github.com/BlvckKryptonite/chef-gusto/blob/main/README.md",
+    icon: chefGusto,
   },
   {
     name: "ATM SIM",
