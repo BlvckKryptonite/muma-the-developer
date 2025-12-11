@@ -419,7 +419,7 @@ export default function Portfolio() {
             >
               {/* Animated glowing border */}
               <motion.div
-                className="absolute inset-0 rounded-full bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-500 blur-lg opacity-75 group-hover:opacity-100 transition-opacity duration-300"
+                className="absolute inset-0 rounded-2xl bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-500 blur-lg opacity-75 group-hover:opacity-100 transition-opacity duration-300"
                 animate={{
                   backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
                 }}
@@ -435,7 +435,7 @@ export default function Portfolio() {
 
               {/* Button with border */}
               <motion.div
-                className="relative px-6 sm:px-8 py-2.5 sm:py-3 bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 text-white font-semibold rounded-full transition-all duration-300 shadow-xl hover:shadow-2xl border-2 border-transparent hover:border-white/30 flex items-center gap-2"
+                className="relative px-6 sm:px-8 py-2.5 sm:py-3 bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 text-white font-semibold rounded-2xl transition-all duration-300 shadow-xl hover:shadow-2xl border-2 border-transparent hover:border-white/30 flex items-center gap-2"
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.95 }}
               >
