@@ -1,8 +1,10 @@
 import { motion } from "framer-motion";
 import { useTheme } from "@/components/theme-provider";
 import { ProjectCard } from "@/components/project-card";
+import { FramerProjectsCard } from "@/components/framer-projects-card";
+import { ContactModal } from "@/components/contact-modal";
 import { AnimatedBackground } from "@/components/animated-background";
-import { Sun, Moon, Mail } from "lucide-react";
+import { Sun, Moon, Mail, ArrowRight } from "lucide-react";
 import { useState } from "react";
 const profileImage = "/assets/profile.jpg";
 const profileImage2 = "/assets/dp.jpg"
@@ -15,19 +17,9 @@ const currencyIcon = "/icons/currency.png";
 const glowclipIcon = "/icons/glowclip.png";
 const sceneshareIcon = "/icons/sceneshare.png";
 const maxlinIcon = "/icons/maxlin.png";
-const aerionLogo = "/icons/aerion.png";
 const chefGusto = "/icons/chef-gusto.png";
 
 const projects = [
-    {
-    name: "Aerion Analytics",
-    description:
-      "A modern Framer website for an AI automation and integration agency. Designed with a sleek FinTech aesthetic, the site showcases intelligent automation services, custom AI agents, and data-driven solutions through a clean, conversion-focused layout.",
-    link: "https://aerion-analytics.framer.website/",
-    documentation:
-      "",
-    icon: aerionLogo
-  },
   {
     name: "SceneShare",
     description:
@@ -338,8 +330,9 @@ const techStack = {
 export default function Portfolio() {
   const { theme, setTheme } = useTheme();
   const [showAllProjects, setShowAllProjects] = useState(false);
+  const [isContactModalOpen, setIsContactModalOpen] = useState(false);
 
-  const displayedProjects = showAllProjects ? projects : projects.slice(0, 6);
+  const displayedProjects = showAllProjects ? projects : projects.slice(0, 5);
 
   return (
     <motion.div
@@ -412,6 +405,50 @@ export default function Portfolio() {
             <div className="flex justify-center">
               <div className="w-16 h-0.5 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-full"></div>
             </div>
+          </motion.div>
+
+          {/* Contact Button with Animated Glow Border */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.8 }}
+            className="mt-8 sm:mt-10 flex justify-center"
+          >
+            <button
+              onClick={() => setIsContactModalOpen(true)}
+              className="relative group"
+            >
+              {/* Animated glowing border */}
+              <motion.div
+                className="absolute inset-0 rounded-2xl bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-500 blur-lg opacity-75 group-hover:opacity-100 transition-opacity duration-300"
+                animate={{
+                  backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
+                }}
+                transition={{
+                  duration: 3,
+                  repeat: Infinity,
+                  ease: "linear",
+                }}
+                style={{
+                  backgroundSize: "200% 200%",
+                }}
+              />
+
+              {/* Button with border */}
+              <motion.div
+                className="relative px-5 sm:px-6 py-2 sm:py-2.5 bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 text-white font-semibold rounded-2xl transition-all duration-300 shadow-xl hover:shadow-2xl border-2 border-transparent hover:border-white/30 flex items-center gap-2 text-sm sm:text-base"
+                whileHover={{ scale: 1.05, y: -2 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <span>Let's Work Together</span>
+                <motion.div
+                  animate={{ x: [0, 4, 0] }}
+                  transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+                >
+                  <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5" />
+                </motion.div>
+              </motion.div>
+            </button>
           </motion.div>
         </div>
       </section>
@@ -487,6 +524,18 @@ export default function Portfolio() {
             transition={{ duration: 0.8, delay: 0.2 }}
             viewport={{ once: true }}
           >
+            <motion.div
+              initial={{ opacity: 0, y: 50, scale: 0.9 }}
+              whileInView={{ opacity: 1, y: 0, scale: 1 }}
+              transition={{
+                duration: 0.6,
+                delay: 0 * 0.15,
+                ease: "easeOut",
+              }}
+              viewport={{ once: true, margin: "-100px" }}
+            >
+              <FramerProjectsCard index={0} />
+            </motion.div>
             {displayedProjects.map((project, index) => (
               <motion.div
                 key={project.name}
@@ -499,18 +548,18 @@ export default function Portfolio() {
                 whileInView={{ opacity: 1, y: 0, scale: 1 }}
                 transition={{
                   duration: 0.6,
-                  delay: index * 0.15,
+                  delay: (index + 1) * 0.15,
                   ease: "easeOut",
                 }}
                 viewport={{ once: true, margin: "-100px" }}
               >
-                <ProjectCard {...project} index={index} />
+                <ProjectCard {...project} index={index + 1} />
               </motion.div>
             ))}
           </motion.div>
 
           {/* Enhanced View More Button */}
-          {projects.length > 6 && (
+          {projects.length > 5 && (
             <motion.div
               initial={{ opacity: 0, y: 40, scale: 0.8 }}
               whileInView={{ opacity: 1, y: 0, scale: 1 }}
@@ -864,6 +913,12 @@ export default function Portfolio() {
           </p>
         </div>
       </footer>
+
+      {/* Contact Modal */}
+      <ContactModal
+        isOpen={isContactModalOpen}
+        onClose={() => setIsContactModalOpen(false)}
+      />
     </motion.div>
   );
 }
