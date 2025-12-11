@@ -20,15 +20,6 @@ const aerionLogo = "/icons/aerion.png";
 const chefGusto = "/icons/chef-gusto.png";
 
 const projects = [
-    {
-    name: "Aerion Analytics",
-    description:
-      "A modern Framer website for an AI automation and integration agency. Designed with a sleek FinTech aesthetic, the site showcases intelligent automation services, custom AI agents, and data-driven solutions through a clean, conversion-focused layout.",
-    link: "https://aerion-analytics.framer.website/",
-    documentation:
-      "",
-    icon: aerionLogo
-  },
   {
     name: "SceneShare",
     description:
