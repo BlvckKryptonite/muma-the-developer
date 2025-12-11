@@ -16,7 +16,6 @@ const currencyIcon = "/icons/currency.png";
 const glowclipIcon = "/icons/glowclip.png";
 const sceneshareIcon = "/icons/sceneshare.png";
 const maxlinIcon = "/icons/maxlin.png";
-const aerionLogo = "/icons/aerion.png";
 const chefGusto = "/icons/chef-gusto.png";
 
 const projects = [
