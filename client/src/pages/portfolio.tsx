@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { useTheme } from "@/components/theme-provider";
 import { ProjectCard } from "@/components/project-card";
+import { FramerProjectsCard } from "@/components/framer-projects-card";
 import { AnimatedBackground } from "@/components/animated-background";
 import { Sun, Moon, Mail } from "lucide-react";
 import { useState } from "react";
