@@ -440,7 +440,7 @@ export default function Portfolio() {
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.95 }}
               >
-                <span>Let's Work Together</span>
+                <span>Get In Touch</span>
                 <motion.div
                   animate={{ x: [0, 4, 0] }}
                   transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
