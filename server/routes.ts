@@ -1,6 +1,7 @@
 import { Router } from "express";
 import { storage } from "./storage.js";
 import { insertPortfolioSchema, insertContactSchema } from "@shared/schema.js";
+import { sendContactEmail } from "./email.js";
 import { z } from "zod";
 
 const router = Router();
