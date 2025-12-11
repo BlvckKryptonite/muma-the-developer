@@ -435,7 +435,7 @@ export default function Portfolio() {
 
               {/* Button with border */}
               <motion.div
-                className="relative px-6 sm:px-8 py-2.5 sm:py-3 bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 text-white font-semibold rounded-2xl transition-all duration-300 shadow-xl hover:shadow-2xl border-2 border-transparent hover:border-white/30 flex items-center gap-2"
+                className="relative px-5 sm:px-6 py-2 sm:py-2.5 bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 text-white font-semibold rounded-2xl transition-all duration-300 shadow-xl hover:shadow-2xl border-2 border-transparent hover:border-white/30 flex items-center gap-2 text-sm sm:text-base"
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.95 }}
               >
