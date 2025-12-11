@@ -5,6 +5,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { ThemeProvider } from "@/components/theme-provider";
 import Portfolio from "@/pages/portfolio";
+import FramerProjects from "@/pages/framer-projects";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -13,6 +14,7 @@ function Router() {
       <Route path="/" component={Portfolio} />
       <Route path="/muma-the-developer" component={Portfolio} />
       <Route path="/muma-the-developer/" component={Portfolio} />
+      <Route path="/framer-projects" component={FramerProjects} />
       <Route component={NotFound} />
     </Switch>
   );
