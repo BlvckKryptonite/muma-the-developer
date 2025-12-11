@@ -5,7 +5,6 @@ import { FramerProjectsCard } from "@/components/framer-projects-card";
 import { AnimatedBackground } from "@/components/animated-background";
 import { Sun, Moon, Mail } from "lucide-react";
 import { useState } from "react";
-import { Link } from "wouter";
 const profileImage = "/assets/profile.jpg";
 const featuredProjectsIcon = "/assets/featured-projects.png";
 const reelalyzeIcon = "/icons/reelalyze.png";
