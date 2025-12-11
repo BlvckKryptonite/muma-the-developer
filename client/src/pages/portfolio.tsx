@@ -330,7 +330,7 @@ export default function Portfolio() {
   const { theme, setTheme } = useTheme();
   const [showAllProjects, setShowAllProjects] = useState(false);
 
-  const displayedProjects = showAllProjects ? projects : projects.slice(0, 6);
+  const displayedProjects = showAllProjects ? projects : projects.slice(0, 5);
 
   return (
     <motion.div
