@@ -487,6 +487,18 @@ export default function Portfolio() {
             transition={{ duration: 0.8, delay: 0.2 }}
             viewport={{ once: true }}
           >
+            <motion.div
+              initial={{ opacity: 0, y: 50, scale: 0.9 }}
+              whileInView={{ opacity: 1, y: 0, scale: 1 }}
+              transition={{
+                duration: 0.6,
+                delay: 0 * 0.15,
+                ease: "easeOut",
+              }}
+              viewport={{ once: true, margin: "-100px" }}
+            >
+              <FramerProjectsCard index={0} />
+            </motion.div>
             {displayedProjects.map((project, index) => (
               <motion.div
                 key={project.name}
@@ -499,12 +511,12 @@ export default function Portfolio() {
                 whileInView={{ opacity: 1, y: 0, scale: 1 }}
                 transition={{
                   duration: 0.6,
-                  delay: index * 0.15,
+                  delay: (index + 1) * 0.15,
                   ease: "easeOut",
                 }}
                 viewport={{ once: true, margin: "-100px" }}
               >
-                <ProjectCard {...project} index={index} />
+                <ProjectCard {...project} index={index + 1} />
               </motion.div>
             ))}
           </motion.div>
