@@ -918,6 +918,12 @@ export default function Portfolio() {
           </p>
         </div>
       </footer>
+
+      {/* Contact Modal */}
+      <ContactModal
+        isOpen={isContactModalOpen}
+        onClose={() => setIsContactModalOpen(false)}
+      />
     </motion.div>
   );
 }
