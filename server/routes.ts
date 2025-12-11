@@ -1,6 +1,7 @@
 import { Router } from "express";
 import { storage } from "./storage.js";
 import { insertPortfolioSchema, insertContactSchema } from "@shared/schema.js";
+import { sendContactEmail } from "./email.js";
 import { z } from "zod";
 
 const router = Router();
@@ -88,6 +89,18 @@ router.post("/api/contacts", async (req, res) => {
   try {
     const validatedData = insertContactSchema.parse(req.body);
     const contact = await storage.createContact(validatedData);
+
+    // Send email
+    const emailSent = await sendContactEmail(
+      validatedData.name,
+      validatedData.email,
+      validatedData.message
+    );
+
+    if (!emailSent) {
+      console.warn("Email failed to send, but contact was created");
+    }
+
     res.status(201).json(contact);
   } catch (error) {
     if (error instanceof z.ZodError) {
