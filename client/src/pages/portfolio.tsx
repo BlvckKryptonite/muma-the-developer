@@ -341,17 +341,8 @@ export default function Portfolio() {
     >
       {/* Animated Background */}
       <AnimatedBackground />
-      {/* Navigation */}
-      <div className="fixed top-4 right-4 sm:top-6 sm:right-6 z-50 flex items-center gap-2 sm:gap-3">
-        <Link href="/framer-projects">
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="px-3 sm:px-4 py-2 sm:py-3 bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-200 rounded-full shadow-lg hover:shadow-xl transition-all duration-500 border border-slate-200 dark:border-slate-700 backdrop-blur-sm text-xs sm:text-sm font-medium hover:bg-slate-50 dark:hover:bg-slate-700"
-          >
-            Framer Projects
-          </motion.button>
-        </Link>
+      {/* Dark Mode Toggle */}
+      <div className="fixed top-4 right-4 sm:top-6 sm:right-6 z-50">
         <motion.button
           onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
           whileHover={{ scale: 1.1 }}
