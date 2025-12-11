@@ -539,11 +539,7 @@ export default function Portfolio() {
             {displayedProjects.map((project, index) => (
               <motion.div
                 key={project.name}
-                className={
-                  index === 4 && displayedProjects.length === 5
-                    ? "lg:col-span-2"
-                    : ""
-                }
+                className=""
                 initial={{ opacity: 0, y: 50, scale: 0.9 }}
                 whileInView={{ opacity: 1, y: 0, scale: 1 }}
                 transition={{
