@@ -23,7 +23,7 @@ const framerProjects = [
     name: "MELT.",
     description:
       "A premium chocolate café and dessert atelier. Designed with a warm, luxurious aesthetic, the site highlights artisanal desserts, cocoa-inspired dishes, and an elegant, sensory dining experience through a clean, inviting layout.",
-    link: "https://aerion-analytics.framer.website/",
+    link: "https://meltcafe.framer.website/",
     documentation: "",
     icon: meltLogo,
   },
