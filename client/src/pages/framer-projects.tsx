@@ -5,9 +5,10 @@ import { AnimatedBackground } from "@/components/animated-background";
 import { Sun, Moon, Mail, ArrowLeft } from "lucide-react";
 import { Link } from "wouter";
 
-const framerProjectsIcon = "/assets/framer-icon.png";
+const framerProjectsIcon = "/icons/framer.png";
 
 const aerionLogo = "/icons/aerion.png";
+const meltLogo = "/icons/melt.png"
 
 const framerProjects = [
   {
@@ -17,6 +18,14 @@ const framerProjects = [
     link: "https://aerion-analytics.framer.website/",
     documentation: "",
     icon: aerionLogo,
+  },
+   {
+    name: "MELT.",
+    description:
+      "A premium chocolate café and dessert atelier. Designed with a warm, luxurious aesthetic, the site highlights artisanal desserts, cocoa-inspired dishes, and an elegant, sensory dining experience through a clean, inviting layout.",
+    link: "https://aerion-analytics.framer.website/",
+    documentation: "",
+    icon: meltLogo,
   },
 ];
 
