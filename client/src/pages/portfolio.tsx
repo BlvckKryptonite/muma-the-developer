@@ -5,6 +5,7 @@ import { AnimatedBackground } from "@/components/animated-background";
 import { Sun, Moon, Mail } from "lucide-react";
 import { useState } from "react";
 const profileImage = "/assets/profile.jpg";
+const profileImage2 = "/assets/dp.jpg"
 const featuredProjectsIcon = "/assets/featured-projects.png";
 const reelalyzeIcon = "/icons/reelalyze.png";
 const bbqIcon = "/icons/mumas-mazing-bbq.png";
@@ -384,7 +385,7 @@ export default function Portfolio() {
           >
             <div className="w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 mb-4 sm:mb-6 rounded-full overflow-hidden shadow-xl border-4 border-white dark:border-slate-700">
               <img
-                src={profileImage}
+                src={profileImage2}
                 alt="Muma Kalobwe"
                 className="w-full h-full object-cover"
               />
