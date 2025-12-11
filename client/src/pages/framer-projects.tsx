@@ -90,7 +90,7 @@ export default function FramerProjects() {
             className="px-2"
           >
             <p className="text-base sm:text-lg md:text-xl text-slate-600 dark:text-slate-300 mb-3 sm:mb-4 leading-relaxed">
-              Beautiful, modern websites built with Framer
+              Stunning, high-performance websites designed and built with Framer. Each project showcases modern design principles combined with smooth interactions and engaging user experiences.
             </p>
           </motion.div>
           <motion.div
@@ -115,32 +115,6 @@ export default function FramerProjects() {
             viewport={{ once: true }}
             className="text-center mb-8 sm:mb-12 lg:mb-16"
           >
-            <motion.div
-              initial={{ width: 0 }}
-              whileInView={{ width: "100%" }}
-              transition={{ duration: 1, delay: 0.3 }}
-              viewport={{ once: true }}
-              className="h-1 bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-500 rounded-full mx-auto mb-4 sm:mb-6 lg:mb-8 max-w-24"
-            />
-            <motion.h2
-              className="font-poppins text-2xl sm:text-3xl md:text-4xl lg:text-[44px] font-bold text-slate-900 dark:text-white mb-6 flex items-center justify-center gap-2 sm:gap-4"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.4 }}
-              viewport={{ once: true }}
-            >
-              Framer Websites
-            </motion.h2>
-            <div className="text-sm sm:text-base lg:text-lg text-slate-600 dark:text-slate-300 max-w-4xl mx-auto space-y-3 sm:space-y-4 px-4 sm:px-0">
-              <motion.p
-                initial={{ opacity: 0, x: -30 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8, delay: 0.6 }}
-                viewport={{ once: true, margin: "-30px" }}
-              >
-                Stunning, high-performance websites designed and built with Framer. Each project showcases modern design principles combined with smooth interactions and engaging user experiences.
-              </motion.p>
-            </div>
           </motion.div>
 
           <motion.div
