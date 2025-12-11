@@ -329,6 +329,7 @@ const techStack = {
 export default function Portfolio() {
   const { theme, setTheme } = useTheme();
   const [showAllProjects, setShowAllProjects] = useState(false);
+  const [isContactModalOpen, setIsContactModalOpen] = useState(false);
 
   const displayedProjects = showAllProjects ? projects : projects.slice(0, 5);
 
