@@ -1,6 +1,7 @@
 import { Resend } from "resend";
 
-// Initialize Resend
+// Initialize Resend with API key from environment variables
+// RESEND_API_KEY must be set in production environment (Netlify) for email sending
 const apiKey = process.env.RESEND_API_KEY;
 const resend = apiKey ? new Resend(apiKey) : null;
 
