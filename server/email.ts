@@ -1,28 +1,26 @@
-import sgMail from "@sendgrid/mail";
+import { Resend } from "resend";
 
-// Initialize SendGrid
-const apiKey = process.env.SENDGRID_API_KEY;
-if (apiKey) {
-  sgMail.setApiKey(apiKey);
-}
+// Initialize Resend
+const apiKey = process.env.RESEND_API_KEY;
+const resend = apiKey ? new Resend(apiKey) : null;
 
 export async function sendContactEmail(
   senderName: string,
   senderEmail: string,
   message: string
 ): Promise<boolean> {
-  // If no SendGrid API key, log the message (for development)
-  if (!apiKey) {
-    console.log("📧 Contact Message (SendGrid not configured):");
+  // If no Resend API key, log the message (for development)
+  if (!resend) {
+    console.log("📧 Contact Message (Resend not configured):");
     console.log(`From: ${senderName} <${senderEmail}>`);
     console.log(`Message: ${message}`);
     return true;
   }
 
   try {
-    const msg = {
+    const response = await resend.emails.send({
+      from: "mumathedeveloper@gmail.com",
       to: "mumathedeveloper@gmail.com",
-      from: process.env.SENDGRID_FROM_EMAIL || "noreply@mumakalobwe.com",
       replyTo: senderEmail,
       subject: `New Contact Message from ${senderName}`,
       html: `
@@ -55,9 +53,14 @@ ${message}
 ---
 This message was sent from your portfolio contact form.
       `,
-    };
+    });
 
-    await sgMail.send(msg);
+    if (response.error) {
+      console.error("Error sending email with Resend:", response.error);
+      return false;
+    }
+
+    console.log("✅ Email sent successfully via Resend:", response.data?.id);
     return true;
   } catch (error) {
     console.error("Error sending email:", error);
