@@ -905,7 +905,7 @@ export default function Portfolio() {
       <footer className="py-8 px-4 sm:px-6 lg:px-8 bg-white dark:bg-slate-800 border-t border-slate-200 dark:border-slate-700">
         <div className="max-w-6xl mx-auto text-center">
           <p className="text-slate-600 dark:text-slate-400">
-            © 2025 Muma Kalobwe. Built with React, Tailwind CSS & Vite.
+            © 2026 Muma Kalobwe. Built with React, Tailwind CSS & Vite.
           </p>
         </div>
       </footer>

@@ -8,7 +8,8 @@ import { Link } from "wouter";
 const framerProjectsIcon = "/icons/framer.png";
 
 const aerionLogo = "/icons/aerion.png";
-const meltLogo = "/icons/melt.png"
+const meltLogo = "/icons/melt.png";
+const northridgeLogo = "/icons/northridge.png";
 
 const framerProjects = [
   {
@@ -26,6 +27,14 @@ const framerProjects = [
     link: "https://meltcafe.framer.website/",
     documentation: "",
     icon: meltLogo,
+  },
+     {
+    name: "Northridge Law",
+    description:
+      "A modern law firm website concept designed for Northridge Law. The site features clear, professional messaging, structured service sections, and a refined, trust-focused aesthetic tailored for a corporate and commercial legal practice.",
+    link: "https://northridgelegal.framer.website/",
+    documentation: "",
+    icon: northridgeLogo,
   },
 ];
 
