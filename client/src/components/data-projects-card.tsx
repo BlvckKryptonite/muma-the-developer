@@ -2,6 +2,8 @@ import { motion } from "framer-motion";
 import { Link } from "wouter";
 import { ArrowRight } from "lucide-react";
 
+const dataProjectsIcon = "/icons/data-projects.png";
+
 interface DataProjectsCardProps {
   index: number;
 }
