@@ -98,7 +98,7 @@ export default function DataProjects() {
             transition={{ duration: 0.6, delay: 0.6 }}
           >
             <div className="flex justify-center">
-              <div className="w-16 h-0.5 bg-gradient-to-r from-emerald-500 to-teal-600 rounded-full"></div>
+              <div className="w-16 h-0.5 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-full"></div>
             </div>
           </motion.div>
         </div>
