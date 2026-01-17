@@ -59,7 +59,7 @@ export function DataProjectsCard({ index }: DataProjectsCardProps) {
               <img
                 src={dataProjectsIcon}
                 alt="icon"
-                className="w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8 object-contain"
+                className="w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14 bg-gradient-to-br from-slate-800 to-slate-900 rounded-xl flex items-center justify-center shadow-md shadow-slate-900/30 dark:shadow-slate-950/50 group-hover:shadow-lg group-hover:shadow-slate-500/25 transition-all duration-300 object-contain p-1"
               />
             </motion.div>
           </div>
