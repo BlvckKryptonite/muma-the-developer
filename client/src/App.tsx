@@ -6,6 +6,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { ThemeProvider } from "@/components/theme-provider";
 import Portfolio from "@/pages/portfolio";
 import FramerProjects from "@/pages/framer-projects";
+import DataProjects from "@/pages/data-projects";
 import NotFound from "@/pages/not-found";
 
 function Router() {
