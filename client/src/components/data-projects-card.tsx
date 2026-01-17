@@ -26,17 +26,17 @@ export function DataProjectsCard({ index }: DataProjectsCardProps) {
           transition: { duration: 0.4, ease: "easeOut" },
         }}
         whileTap={{ scale: 0.97 }}
-        className="project-card relative bg-white dark:bg-slate-800/90 rounded-3xl p-4 sm:p-6 lg:p-8 shadow-xl border border-slate-200/50 dark:border-slate-700/50 transition-all duration-500 hover:shadow-2xl hover:border-emerald-300/60 dark:hover:border-emerald-600/60 dark:hover:shadow-2xl cursor-pointer group overflow-hidden backdrop-blur-sm"
+        className="project-card relative bg-white dark:bg-slate-800/90 rounded-3xl p-4 sm:p-6 lg:p-8 shadow-xl border border-slate-200/50 dark:border-slate-700/50 transition-all duration-500 hover:shadow-2xl hover:border-blue-300/60 dark:hover:border-blue-600/60 dark:hover:shadow-2xl cursor-pointer group overflow-hidden backdrop-blur-sm"
       >
         {/* Subtle background glow effect */}
         <motion.div
-          className="absolute inset-0 bg-gradient-to-br from-emerald-400/5 via-teal-400/5 to-cyan-400/5 dark:from-emerald-400/10 dark:via-teal-400/10 dark:to-cyan-400/10 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+          className="absolute inset-0 bg-gradient-to-br from-blue-400/5 via-indigo-400/5 to-purple-400/5 dark:from-blue-400/10 dark:via-indigo-400/10 dark:to-purple-400/10 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
           initial={false}
           whileHover={{
             background: [
-              "linear-gradient(135deg, rgba(16, 185, 129, 0.05), rgba(20, 184, 166, 0.05), rgba(34, 197, 94, 0.05))",
-              "linear-gradient(225deg, rgba(20, 184, 166, 0.08), rgba(34, 197, 94, 0.08), rgba(16, 185, 129, 0.08))",
-              "linear-gradient(315deg, rgba(34, 197, 94, 0.05), rgba(16, 185, 129, 0.05), rgba(20, 184, 166, 0.05))",
+              "linear-gradient(135deg, rgba(59, 130, 246, 0.05), rgba(99, 102, 241, 0.05), rgba(139, 92, 246, 0.05))",
+              "linear-gradient(225deg, rgba(99, 102, 241, 0.08), rgba(139, 92, 246, 0.08), rgba(59, 130, 246, 0.08))",
+              "linear-gradient(315deg, rgba(139, 92, 246, 0.05), rgba(59, 130, 246, 0.05), rgba(99, 102, 241, 0.05))",
             ],
           }}
           transition={{
