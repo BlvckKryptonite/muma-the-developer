@@ -537,6 +537,18 @@ export default function Portfolio() {
             >
               <FramerProjectsCard index={0} />
             </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 50, scale: 0.9 }}
+              whileInView={{ opacity: 1, y: 0, scale: 1 }}
+              transition={{
+                duration: 0.6,
+                delay: 1 * 0.15,
+                ease: "easeOut",
+              }}
+              viewport={{ once: true, margin: "-100px" }}
+            >
+              <DataProjectsCard index={1} />
+            </motion.div>
             {displayedProjects.map((project, index) => (
               <motion.div
                 key={project.name}
