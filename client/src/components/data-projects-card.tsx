@@ -65,7 +65,7 @@ export function DataProjectsCard({ index }: DataProjectsCardProps) {
           </div>
           <div className="flex-1">
             <motion.h3
-              className="font-poppins text-lg sm:text-xl font-semibold text-slate-900 dark:text-white mb-2 sm:mb-3 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors duration-300"
+              className="font-poppins text-lg sm:text-xl font-semibold text-slate-900 dark:text-white mb-2 sm:mb-3 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-300"
               whileHover={{ x: 4 }}
               transition={{ duration: 0.2 }}
             >
@@ -79,7 +79,7 @@ export function DataProjectsCard({ index }: DataProjectsCardProps) {
               Intelligent data analytics and fraud detection systems built with Python and modern data science. Each project demonstrates real-world problem-solving through machine learning, predictive analytics, and data-driven insights.
             </motion.p>
             <motion.div
-              className="inline-flex items-center text-emerald-600 dark:text-emerald-400 hover:text-emerald-700 dark:hover:text-emerald-300 font-medium transition-colors group/link text-sm sm:text-base"
+              className="inline-flex items-center text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 font-medium transition-colors group/link text-sm sm:text-base"
               whileHover={{ scale: 1.05, x: 4 }}
               whileTap={{ scale: 0.95 }}
               transition={{ duration: 0.2 }}
