@@ -145,17 +145,6 @@ export default function DataProjects() {
             ))}
           </motion.div>
 
-          <motion.div
-            initial={{ opacity: 0, y: 40, scale: 0.8 }}
-            whileInView={{ opacity: 1, y: 0, scale: 1 }}
-            transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
-            viewport={{ once: true }}
-            className="flex justify-center mt-8 sm:mt-12 lg:mt-16"
-          >
-            <p className="text-center text-slate-600 dark:text-slate-400 text-sm sm:text-base">
-              More data projects coming soon! 🚀
-            </p>
-          </motion.div>
         </div>
       </section>
 
