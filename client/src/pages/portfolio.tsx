@@ -29,6 +29,7 @@ const projects = [
       "https://github.com/BlvckKryptonite/scene-share/blob/main/README.md",
     icon: sceneshareIcon
   },
+  // PICKFLICK placeholder
   {
     name: "Muma's 'Mazing Barbeque",
     description:
