@@ -16,6 +16,7 @@ function Router() {
       <Route path="/muma-the-developer" component={Portfolio} />
       <Route path="/muma-the-developer/" component={Portfolio} />
       <Route path="/framer-projects" component={FramerProjects} />
+      <Route path="/data-projects" component={DataProjects} />
       <Route component={NotFound} />
     </Switch>
   );
