@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { useTheme } from "@/components/theme-provider";
 import { ProjectCard } from "@/components/project-card";
 import { FramerProjectsCard } from "@/components/framer-projects-card";
+import { DataProjectsCard } from "@/components/data-projects-card";
 import { ContactModal } from "@/components/contact-modal";
 import { AnimatedBackground } from "@/components/animated-background";
 import { Sun, Moon, Mail, ArrowRight } from "lucide-react";
