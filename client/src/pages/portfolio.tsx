@@ -30,6 +30,24 @@ const projects = [
     icon: sceneshareIcon
   },
   // PICKFLICK placeholder
+  //    {
+  //   name: "Reelalyze",
+  //   description: (
+  //     <>
+  //       <span className="inline-block bg-gradient-to-r from-blue-500 to-indigo-600 bg-clip-text text-transparent font-semibold">
+  //         Currently in development:
+  //       </span>{" "}
+  //       An AI-powered YouTube summarizer built with Streamlit, Python, and
+  //       OpenAI. It analyzes transcripts and visuals to generate smart,
+  //       context-aware summaries designed for commentary, educational, and
+  //       long-form video content.
+  //     </>
+  //   ),
+  //   link: "https://reelalyze.replit.app/",
+  //   documentation:
+  //     "https://github.com/BlvckKryptonite/Reelalyze/blob/main/README.md",
+  //   icon: reelalyzeIcon,
+  // },
   {
     name: "Muma's 'Mazing Barbeque",
     description:
@@ -186,25 +204,6 @@ const projects = [
 //     link: "https://theglowclip.com/",
 //     documentation: "",
 //     icon: glowclipIcon,
-//   },
-
-//    {
-//     name: "Reelalyze",
-//     description: (
-//       <>
-//         <span className="inline-block bg-gradient-to-r from-blue-500 to-indigo-600 bg-clip-text text-transparent font-semibold">
-//           Currently in development:
-//         </span>{" "}
-//         An AI-powered YouTube summarizer built with Streamlit, Python, and
-//         OpenAI. It analyzes transcripts and visuals to generate smart,
-//         context-aware summaries designed for commentary, educational, and
-//         long-form video content.
-//       </>
-//     ),
-//     link: "https://reelalyze.replit.app/",
-//     documentation:
-//       "https://github.com/BlvckKryptonite/Reelalyze/blob/main/README.md",
-//     icon: reelalyzeIcon,
 //   },
 ];
 
