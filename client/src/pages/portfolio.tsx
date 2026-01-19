@@ -31,21 +31,12 @@ const projects = [
       "https://github.com/BlvckKryptonite/scene-share/blob/main/README.md",
     icon: sceneshareIcon
   },
-  // PICKFLICK placeholder
-     {
+  {
     name: "PickFlick",
-    description: (
-      <>
-      An AI-powered movie recommendation app that reduces decision fatigue by matching user preferences to films using embeddings and vector search. Built with OpenAI and Supabase to generate personalized picks and explain recommendations in real time.
-      <br></br>
-        <span className="inline-block bg-gradient-to-r from-blue-500 to-indigo-600 bg-clip-text text-transparent font-semibold">
-          Currently in development
-        </span>{" "}
-      </>
-    ),
+    description:
+      "An AI-powered movie recommendation app that reduces decision fatigue by matching user preferences to films using embeddings and vector search. Built with OpenAI and Supabase to generate personalized picks and explain recommendations in real time.",
     link: "",
-    documentation:
-      "",
+    documentation: "",
     icon: pickflickLogo,
   },
   {
