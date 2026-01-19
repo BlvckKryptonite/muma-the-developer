@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { ExternalLink, Clock, FileText } from "lucide-react";
+import { ExternalLink, FileText } from "lucide-react";
+import { AnimatedClock } from "./animated-clock";
 
 interface ProjectCardProps {
   name: string;
