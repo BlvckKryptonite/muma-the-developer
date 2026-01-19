@@ -86,20 +86,17 @@ export function ProjectCard({ name, description, link, documentation, icon, inde
           </motion.p>
           {isComingSoon ? (
             <div className="flex items-center justify-between">
-              <motion.span 
-                className="inline-flex items-center text-slate-500 dark:text-slate-400 font-medium text-sm sm:text-base"
+              <motion.span
+                className="inline-flex items-center text-blue-600 dark:text-blue-400 font-medium text-sm sm:text-base"
                 whileHover={{ scale: 1.05 }}
                 transition={{ duration: 0.2 }}
               >
-                <motion.div
-                  animate={{ rotate: 360 }}
-                  transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
-                >
-                  <Clock className="w-3 h-3 sm:w-4 sm:h-4 mr-1" />
-                </motion.div>
-                Coming Soon
+                <div className="mr-2">
+                  <AnimatedClock />
+                </div>
+                Currently in Development
               </motion.span>
-              
+
               {documentation !== "#" && documentation !== "" && (
                 <motion.a
                   href={documentation}
