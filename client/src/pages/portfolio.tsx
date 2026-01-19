@@ -18,6 +18,7 @@ const glowclipIcon = "/icons/glowclip.png";
 const sceneshareIcon = "/icons/sceneshare.png";
 const maxlinIcon = "/icons/maxlin.png";
 const chefGusto = "/icons/chef-gusto.png";
+const pickflickLogo = "/icons/pickflick.png";
 
 const projects = [
   {
@@ -30,24 +31,22 @@ const projects = [
     icon: sceneshareIcon
   },
   // PICKFLICK placeholder
-  //    {
-  //   name: "Reelalyze",
-  //   description: (
-  //     <>
-  //       <span className="inline-block bg-gradient-to-r from-blue-500 to-indigo-600 bg-clip-text text-transparent font-semibold">
-  //         Currently in development:
-  //       </span>{" "}
-  //       An AI-powered YouTube summarizer built with Streamlit, Python, and
-  //       OpenAI. It analyzes transcripts and visuals to generate smart,
-  //       context-aware summaries designed for commentary, educational, and
-  //       long-form video content.
-  //     </>
-  //   ),
-  //   link: "https://reelalyze.replit.app/",
-  //   documentation:
-  //     "https://github.com/BlvckKryptonite/Reelalyze/blob/main/README.md",
-  //   icon: reelalyzeIcon,
-  // },
+     {
+    name: "PickFlick",
+    description: (
+      <>
+      An AI-powered movie recommendation app that reduces decision fatigue by matching user preferences to films using embeddings and vector search. Built with OpenAI and Supabase to generate personalized picks and explain recommendations in real time.
+      <br></br>
+        <span className="inline-block bg-gradient-to-r from-blue-500 to-indigo-600 bg-clip-text text-transparent font-semibold">
+          Currently in development
+        </span>{" "}
+      </>
+    ),
+    link: "",
+    documentation:
+      "",
+    icon: pickflickLogo,
+  },
   {
     name: "Muma's 'Mazing Barbeque",
     description:
