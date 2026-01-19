@@ -46,7 +46,7 @@ export function DataProjectsCard({ index }: DataProjectsCardProps) {
           }}
         />
 
-        <div className="relative z-10 flex items-start space-x-3 sm:space-x-4">
+        <div className="relative z-10 flex items-start space-x-4 sm:space-x-6">
           <div className="flex-shrink-0">
             <motion.div
               className="w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-xl flex items-center justify-center shadow-md shadow-blue-500/30 dark:shadow-blue-900/50 group-hover:shadow-lg group-hover:shadow-blue-400/40 transition-all duration-300"
