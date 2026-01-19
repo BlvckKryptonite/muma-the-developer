@@ -1,0 +1,44 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="globeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8e8e8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d0d0d0;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- Magnifying glass outer ring -->
+  <circle cx="80" cy="80" r="65" fill="none" stroke="#3a4a5c" stroke-width="8"/>
+  <circle cx="80" cy="80" r="60" fill="url(#globeGradient)"/>
+  
+  <!-- Globe grid lines -->
+  <circle cx="80" cy="80" r="55" fill="none" stroke="#7a8a9c" stroke-width="1.5" opacity="0.6"/>
+  <circle cx="80" cy="80" r="40" fill="none" stroke="#7a8a9c" stroke-width="1.5" opacity="0.6"/>
+  <line x1="80" y1="25" x2="80" y2="135" stroke="#7a8a9c" stroke-width="1.5" opacity="0.6"/>
+  <line x1="35" y1="80" x2="125" y2="80" stroke="#7a8a9c" stroke-width="1.5" opacity="0.6"/>
+  <path d="M 45 50 Q 80 35 115 50" fill="none" stroke="#7a8a9c" stroke-width="1.5" opacity="0.6"/>
+  <path d="M 45 110 Q 80 125 115 110" fill="none" stroke="#7a8a9c" stroke-width="1.5" opacity="0.6"/>
+  
+  <!-- Location pin -->
+  <g filter="url(#shadow)">
+    <path d="M 80 55 C 70 55 62 63 62 73 C 62 85 80 100 80 100 C 80 100 98 85 98 73 C 98 63 90 55 80 55 Z" fill="#e63946" stroke="#c1121f" stroke-width="1"/>
+    <circle cx="80" cy="73" r="6" fill="white"/>
+  </g>
+  
+  <!-- Cityscape -->
+  <g fill="#2c3e50">
+    <rect x="55" y="85" width="6" height="15"/>
+    <rect x="70" y="88" width="6" height="12"/>
+    <rect x="75" y="80" width="8" height="20"/>
+    <rect x="88" y="85" width="6" height="15"/>
+    <rect x="100" y="78" width="8" height="22"/>
+  </g>
+  
+  <!-- Magnifying glass handle -->
+  <g>
+    <line x1="125" y1="125" x2="160" y2="160" stroke="#3a4a5c" stroke-width="10" stroke-linecap="round"/>
+    <ellipse cx="160" cy="160" rx="8" ry="12" fill="#3a4a5c" transform="rotate(45 160 160)"/>
+  </g>
+</svg>

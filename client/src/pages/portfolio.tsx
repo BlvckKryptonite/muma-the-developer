@@ -31,21 +31,12 @@ const projects = [
       "https://github.com/BlvckKryptonite/scene-share/blob/main/README.md",
     icon: sceneshareIcon
   },
-  // PICKFLICK placeholder
-     {
+  {
     name: "PickFlick",
-    description: (
-      <>
-      An AI-powered movie recommendation app that reduces decision fatigue by matching user preferences to films using embeddings and vector search. Built with OpenAI and Supabase to generate personalized picks and explain recommendations in real time.
-      <br></br>
-        <span className="inline-block bg-gradient-to-r from-blue-500 to-indigo-600 bg-clip-text text-transparent font-semibold">
-          Currently in development
-        </span>{" "}
-      </>
-    ),
+    description:
+      "An AI-powered movie recommendation app that reduces decision fatigue by matching user preferences to films using embeddings and vector search. Built with OpenAI and Supabase to generate personalized picks and explain recommendations in real time.",
     link: "",
-    documentation:
-      "",
+    documentation: "",
     icon: pickflickLogo,
   },
   {
@@ -332,7 +323,7 @@ export default function Portfolio() {
   const [showAllProjects, setShowAllProjects] = useState(false);
   const [isContactModalOpen, setIsContactModalOpen] = useState(false);
 
-  const displayedProjects = showAllProjects ? projects : projects.slice(0, 5);
+  const displayedProjects = showAllProjects ? projects : projects.slice(0, 6);
 
   return (
     <motion.div
@@ -567,7 +558,7 @@ export default function Portfolio() {
           </motion.div>
 
           {/* Enhanced View More Button */}
-          {projects.length > 5 && (
+          {projects.length > 6 && (
             <motion.div
               initial={{ opacity: 0, y: 40, scale: 0.8 }}
               whileInView={{ opacity: 1, y: 0, scale: 1 }}

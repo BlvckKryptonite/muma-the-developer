@@ -26,30 +26,13 @@ export function DataProjectsCard({ index }: DataProjectsCardProps) {
           transition: { duration: 0.4, ease: "easeOut" },
         }}
         whileTap={{ scale: 0.97 }}
-        className="project-card relative bg-white dark:bg-slate-800/90 rounded-3xl p-4 sm:p-6 lg:p-8 shadow-xl border border-slate-200/50 dark:border-slate-700/50 transition-all duration-500 hover:shadow-2xl hover:border-blue-300/60 dark:hover:border-blue-600/60 dark:hover:shadow-2xl cursor-pointer group overflow-hidden backdrop-blur-sm"
+        className="project-card relative bg-white dark:bg-slate-800/90 rounded-3xl p-4 sm:p-6 lg:p-8 shadow-xl border border-slate-200/50 dark:border-slate-700/50 transition-all duration-500 hover:shadow-2xl dark:hover:shadow-2xl cursor-pointer group overflow-hidden backdrop-blur-sm"
       >
-        {/* Subtle background glow effect */}
-        <motion.div
-          className="absolute inset-0 bg-gradient-to-br from-blue-400/5 via-indigo-400/5 to-purple-400/5 dark:from-blue-400/10 dark:via-indigo-400/10 dark:to-purple-400/10 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-          initial={false}
-          whileHover={{
-            background: [
-              "linear-gradient(135deg, rgba(59, 130, 246, 0.05), rgba(99, 102, 241, 0.05), rgba(139, 92, 246, 0.05))",
-              "linear-gradient(225deg, rgba(99, 102, 241, 0.08), rgba(139, 92, 246, 0.08), rgba(59, 130, 246, 0.08))",
-              "linear-gradient(315deg, rgba(139, 92, 246, 0.05), rgba(59, 130, 246, 0.05), rgba(99, 102, 241, 0.05))",
-            ],
-          }}
-          transition={{
-            duration: 3,
-            repeat: Infinity,
-            ease: "easeInOut",
-          }}
-        />
 
-        <div className="relative z-10 flex items-start space-x-3 sm:space-x-4">
+        <div className="relative z-10 flex items-start space-x-4 sm:space-x-6">
           <div className="flex-shrink-0">
             <motion.div
-              className="w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-xl flex items-center justify-center shadow-md shadow-blue-500/30 dark:shadow-blue-900/50 group-hover:shadow-lg group-hover:shadow-blue-400/40 transition-all duration-300"
+              className="w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 bg-gradient-to-br from-slate-800 to-slate-900 rounded-xl flex items-center justify-center shadow-md shadow-slate-900/30 dark:shadow-slate-950/50 group-hover:shadow-lg group-hover:shadow-slate-500/25 transition-all duration-300"
               whileHover={{
                 rotate: [0, -5, 5, 0],
                 scale: 1.1,
@@ -59,7 +42,7 @@ export function DataProjectsCard({ index }: DataProjectsCardProps) {
               <img
                 src={dataProjectsIcon}
                 alt="icon"
-                className="w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14 bg-gradient-to-br from-slate-800 to-slate-900 rounded-xl flex items-center justify-center shadow-md shadow-slate-900/30 dark:shadow-slate-950/50 group-hover:shadow-lg group-hover:shadow-slate-500/25 transition-all duration-300 object-contain p-1"
+                className="w-12 h-12 sm:w-16 sm:h-16 lg:w-20 lg:h-20 object-contain"
               />
             </motion.div>
           </div>

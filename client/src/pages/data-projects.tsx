@@ -6,6 +6,7 @@ import { Sun, Moon, Mail, ArrowLeft } from "lucide-react";
 import { Link } from "wouter";
 
 const fraudsightLogo = "/icons/fraudshield.png";
+const crimescopeLogo = "/icons/crimescope.svg";
 
 const dataProjects = [
   {
@@ -16,6 +17,14 @@ const dataProjects = [
     documentation:
       "https://github.com/BlvckKryptonite/fraudsight/blob/main/README.md",
     icon: fraudsightLogo,
+  },
+  {
+    name: "CrimeScope",
+    description:
+      "An interactive web-based intelligence platform designed to analyze, visualize, and predict crime patterns across urban environments. Uses machine learning for predictive crime forecasting with interactive hotspot mapping, severity-based risk assessments, and temporal analysis capabilities for comprehensive urban risk intelligence.",
+    link: "https://crimescope.netlify.app/",
+    documentation: "",
+    icon: crimescopeLogo,
   },
 ];
 
