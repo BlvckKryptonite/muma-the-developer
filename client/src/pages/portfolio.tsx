@@ -323,7 +323,7 @@ export default function Portfolio() {
   const [showAllProjects, setShowAllProjects] = useState(false);
   const [isContactModalOpen, setIsContactModalOpen] = useState(false);
 
-  const displayedProjects = showAllProjects ? projects : projects.slice(0, 5);
+  const displayedProjects = showAllProjects ? projects : projects.slice(0, 6);
 
   return (
     <motion.div
