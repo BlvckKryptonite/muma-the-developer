@@ -12,7 +12,7 @@ const dataProjects = [
   {
     name: "FraudSight",
     description:
-      "A sophisticated fraud detection and prevention system built with Python and machine learning. Analyzes financial transactions in real-time using rule-based detection and predictive models to flag suspicious activity. Features tabulated outputs, color-coded alerts, and modular logic for comprehensive transaction analysis across fintech and banking sectors.",
+      "A fraud detection and prevention prototype built with Python and machine learning. Analyzes financial transactions in real-time using rule-based detection and predictive models to flag suspicious activity. Features tabulated outputs, color-coded alerts, and modular logic for comprehensive transaction analysis across fintech and banking sectors.",
     link: "https://fraudsight-df3ce1bad96c.herokuapp.com/",
     documentation:
       "https://github.com/BlvckKryptonite/fraudsight/blob/main/README.md",
