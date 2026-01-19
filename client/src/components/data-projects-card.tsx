@@ -26,7 +26,7 @@ export function DataProjectsCard({ index }: DataProjectsCardProps) {
           transition: { duration: 0.4, ease: "easeOut" },
         }}
         whileTap={{ scale: 0.97 }}
-        className="project-card relative bg-white dark:bg-slate-800/90 rounded-3xl p-4 sm:p-6 lg:p-8 shadow-xl border border-slate-200/50 dark:border-slate-700/50 transition-all duration-500 hover:shadow-2xl hover:border-blue-300/60 dark:hover:border-blue-600/60 dark:hover:shadow-2xl cursor-pointer group overflow-hidden backdrop-blur-sm"
+        className="project-card relative bg-white dark:bg-slate-800/90 rounded-3xl p-4 sm:p-6 lg:p-8 shadow-xl border border-slate-200/50 dark:border-slate-700/50 transition-all duration-500 hover:shadow-2xl dark:hover:shadow-2xl cursor-pointer group overflow-hidden backdrop-blur-sm"
       >
         {/* Subtle background glow effect */}
         <motion.div
