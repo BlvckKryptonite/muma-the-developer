@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { useTheme } from "@/components/theme-provider";
 import { ProjectCard } from "@/components/project-card";
 import { FramerProjectsCard } from "@/components/framer-projects-card";
+import { DataProjectsCard } from "@/components/data-projects-card";
 import { ContactModal } from "@/components/contact-modal";
 import { AnimatedBackground } from "@/components/animated-background";
 import { Sun, Moon, Mail, ArrowRight } from "lucide-react";
@@ -534,6 +535,18 @@ export default function Portfolio() {
               viewport={{ once: true, margin: "-100px" }}
             >
               <FramerProjectsCard index={0} />
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 50, scale: 0.9 }}
+              whileInView={{ opacity: 1, y: 0, scale: 1 }}
+              transition={{
+                duration: 0.6,
+                delay: 1 * 0.15,
+                ease: "easeOut",
+              }}
+              viewport={{ once: true, margin: "-100px" }}
+            >
+              <DataProjectsCard index={1} />
             </motion.div>
             {displayedProjects.map((project, index) => (
               <motion.div
