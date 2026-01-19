@@ -51,7 +51,7 @@ const projects = [
    {
     name: "Chef Gusto",
     description:
-      "A TypeScript-powered recipe generator using unified AI for text and image creation. Features structured JSON outputs, clean React components, and a playful chef-inspired interface built for fast, reliable cooking inspiration.",
+      "A TypeScript-powered recipe generator using unified AI for text and image creation. Features structured JSON outputs, clean React components, and a playful chef-inspired interface built for quick cooking inspiration.",
     link: "https://chef-gusto.netlify.app/",
     documentation:
       "https://github.com/BlvckKryptonite/chef-gusto/blob/main/README.md",
@@ -60,7 +60,7 @@ const projects = [
   {
     name: "ATM SIM",
     description:
-      "CLI-based ATM simulator using Python. Supports secure login, balance viewing, deposit/withdrawal functions, and simulates receipts and user accounts for core banking logic.",
+      "CLI-based ATM simulator using Python. Simulates secure login, balance viewing, deposit/withdrawal functions, receipts and user accounts for core banking logic.",
     link: "https://atm-sim-muma-k.vercel.app/",
     documentation:
       "https://github.com/BlvckKryptonite/ATMSim/blob/main/README.md",
@@ -89,7 +89,7 @@ const projects = [
     {
     name: "Maxlin Enterprise",
     description:
-      "A modern cleaning services website built with React, TypeScript, and Tailwind CSS. Includes a polished design system, smooth animations, service showcases, and an engaging user experience.",
+      "A custom cleaning services website built with React and Tailwind CSS. Includes a polished design system, smooth animations, service showcases, and an engaging user experience.",
     link: "https://maxlin-custom-site.netlify.app/",
     documentation:
       "https://github.com/BlvckKryptonite/maxlin-custom-site/blob/main/README.md",

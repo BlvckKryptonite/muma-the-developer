@@ -61,7 +61,7 @@ export function FramerProjectsCard({ index }: FramerProjectsCardProps) {
               whileHover={{ x: 2 }}
               transition={{ duration: 0.2, delay: 0.05 }}
             >
-              Stunning, high-performance websites meticulously designed and developed using Framer. Each embodies modern design principles, combining sleek aesthetics with smooth animations. Built to deliver both visual impact and seamless functionality across devices.
+              High-performance websites meticulously designed and developed using Framer. Each project showcases modern design principles combined with sleek aesthetics, smooth animations and seamless functionality.
             </motion.p>
             <motion.div
               className="inline-flex items-center text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 font-medium transition-colors group/link text-sm sm:text-base"

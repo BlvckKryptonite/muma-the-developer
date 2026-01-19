@@ -108,7 +108,7 @@ export default function FramerProjects() {
             className="px-2"
           >
             <p className="text-base sm:text-lg md:text-xl text-slate-600 dark:text-slate-300 mb-3 sm:mb-4 leading-relaxed">
-              Stunning, high-performance websites designed and built with Framer. Each project showcases modern design principles combined with smooth interactions and engaging user experiences.
+              High-performance websites designed and built with Framer. Each project showcases modern design principles combined with smooth interactions and engaging user experiences.
             </p>
           </motion.div>
           <motion.div
