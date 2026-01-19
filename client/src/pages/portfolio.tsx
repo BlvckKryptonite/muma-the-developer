@@ -558,7 +558,7 @@ export default function Portfolio() {
           </motion.div>
 
           {/* Enhanced View More Button */}
-          {projects.length > 5 && (
+          {projects.length > 6 && (
             <motion.div
               initial={{ opacity: 0, y: 40, scale: 0.8 }}
               whileInView={{ opacity: 1, y: 0, scale: 1 }}
