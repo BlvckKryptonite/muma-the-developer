@@ -28,23 +28,6 @@ export function DataProjectsCard({ index }: DataProjectsCardProps) {
         whileTap={{ scale: 0.97 }}
         className="project-card relative bg-white dark:bg-slate-800/90 rounded-3xl p-4 sm:p-6 lg:p-8 shadow-xl border border-slate-200/50 dark:border-slate-700/50 transition-all duration-500 hover:shadow-2xl dark:hover:shadow-2xl cursor-pointer group overflow-hidden backdrop-blur-sm"
       >
-        {/* Subtle background glow effect */}
-        <motion.div
-          className="absolute inset-0 bg-gradient-to-br from-blue-400/5 via-indigo-400/5 to-purple-400/5 dark:from-blue-400/10 dark:via-indigo-400/10 dark:to-purple-400/10 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-          initial={false}
-          whileHover={{
-            background: [
-              "linear-gradient(135deg, rgba(59, 130, 246, 0.05), rgba(99, 102, 241, 0.05), rgba(139, 92, 246, 0.05))",
-              "linear-gradient(225deg, rgba(99, 102, 241, 0.08), rgba(139, 92, 246, 0.08), rgba(59, 130, 246, 0.08))",
-              "linear-gradient(315deg, rgba(139, 92, 246, 0.05), rgba(59, 130, 246, 0.05), rgba(99, 102, 241, 0.05))",
-            ],
-          }}
-          transition={{
-            duration: 3,
-            repeat: Infinity,
-            ease: "easeInOut",
-          }}
-        />
 
         <div className="relative z-10 flex items-start space-x-4 sm:space-x-6">
           <div className="flex-shrink-0">
