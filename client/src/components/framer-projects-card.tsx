@@ -42,7 +42,7 @@ export function FramerProjectsCard({ index }: FramerProjectsCardProps) {
               <img
                   src={framerProjectsIcon}
                   alt="icon"
-                  className="w-12 h-12 sm:w-16 sm:h-16 lg:w-20 lg:h-20 object-contain bg-gradient-to-br from-slate-800 to-slate-900 rounded-xl flex items-center justify-center shadow-md shadow-slate-900/30 dark:shadow-slate-950/50 group-hover:shadow-lg group-hover:shadow-slate-500/25 transition-all duration-300"
+                  className="w-12 h-12 sm:w-16 sm:h-16 lg:w-20 lg:h-20 object-contain"
                 />
 
 
