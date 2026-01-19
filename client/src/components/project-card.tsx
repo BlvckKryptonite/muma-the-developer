@@ -13,7 +13,7 @@ interface ProjectCardProps {
 }
 
 export function ProjectCard({ name, description, link, documentation, icon, index }: ProjectCardProps) {
-  const isComingSoon = link === "#";
+  const isComingSoon = link === "#" || link === "";
 
   return (
     <motion.div
