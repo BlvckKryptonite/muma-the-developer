@@ -36,6 +36,7 @@ const framerProjects = [
     documentation: "",
     icon: northridgeLogo,
   },
+  // Solar placeholder
 ];
 
 export default function FramerProjects() {
