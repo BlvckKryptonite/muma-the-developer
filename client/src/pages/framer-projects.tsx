@@ -10,6 +10,7 @@ const framerProjectsIcon = "/icons/framer.png";
 const aerionLogo = "/icons/aerion.png";
 const meltLogo = "/icons/melt.png";
 const northridgeLogo = "/icons/northridge.png";
+const sunforgeLogo = "/icons/sunforge.png";
 
 const framerProjects = [
   {
@@ -37,6 +38,14 @@ const framerProjects = [
     icon: northridgeLogo,
   },
   // Solar placeholder
+       {
+    name: "Sunforge Solar",
+    description:
+      "This will be the solar description.",
+    link: "https://northridgelegal.framer.website/",
+    documentation: "",
+    icon: sunforgeLogo,
+  },
 ];
 
 export default function FramerProjects() {
