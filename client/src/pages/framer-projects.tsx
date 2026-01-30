@@ -41,8 +41,8 @@ const framerProjects = [
        {
     name: "Sunforge Solar",
     description:
-      "This will be the solar description.",
-    link: "https://northridgelegal.framer.website/",
+      "A modern solar energy website concept designed for Sunforge Energy. The site features clear, trust-focused messaging, structured service sections, and a professional, contractor-led aesthetic tailored for residential and commercial solar installations.",
+    link: "https://sunforge-energy.framer.website/",
     documentation: "",
     icon: sunforgeLogo,
   },
