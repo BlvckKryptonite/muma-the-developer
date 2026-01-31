@@ -181,9 +181,6 @@ export default function FramerProjects() {
             viewport={{ once: true }}
             className="flex justify-center mt-8 sm:mt-12 lg:mt-16"
           >
-            <p className="text-center text-slate-600 dark:text-slate-400 text-sm sm:text-base">
-              More Framer projects coming soon! 🚀
-            </p>
           </motion.div>
         </div>
       </section>
