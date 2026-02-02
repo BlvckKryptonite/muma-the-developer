@@ -403,7 +403,7 @@ export default function Portfolio() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.8 }}
-            className="mt-8 sm:mt-10 flex justify-center gap-4"
+            className="mt-8 sm:mt-10 flex flex-col items-center gap-4"
           >
             <button
               onClick={() => setIsContactModalOpen(true)}
@@ -441,20 +441,38 @@ export default function Portfolio() {
               </motion.div>
             </button>
 
-            {/* GitHub Link Button */}
-            <motion.a
-              href="https://github.com/BlvckKryptonite?tab=overview&from=2026-02-01&to=2026-02-02"
-              target="_blank"
-              rel="noopener noreferrer"
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.9 }}
-              whileHover={{ scale: 1.05, y: -2 }}
-              whileTap={{ scale: 0.95 }}
-              className="p-2 sm:p-3 bg-white dark:bg-slate-800 text-slate-900 dark:text-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-500 border border-slate-200 dark:border-slate-700 hover:border-slate-400 dark:hover:border-slate-500 backdrop-blur-sm"
-            >
-              <Github className="w-5 h-5 sm:w-6 sm:h-6" />
-            </motion.a>
+            {/* Social Links - GitHub & LinkedIn */}
+            <div className="flex justify-center gap-3 sm:gap-4">
+              {/* GitHub Link Button */}
+              <motion.a
+                href="https://github.com/BlvckKryptonite?tab=overview&from=2026-02-01&to=2026-02-02"
+                target="_blank"
+                rel="noopener noreferrer"
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.9 }}
+                whileHover={{ scale: 1.05, y: -2 }}
+                whileTap={{ scale: 0.95 }}
+                className="p-2 sm:p-3 bg-white dark:bg-slate-800 text-slate-900 dark:text-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-500 border border-slate-200 dark:border-slate-700 hover:border-slate-400 dark:hover:border-slate-500 backdrop-blur-sm"
+              >
+                <Github className="w-5 h-5 sm:w-6 sm:h-6" />
+              </motion.a>
+
+              {/* LinkedIn Link Button */}
+              <motion.a
+                href="https://www.linkedin.com/in/muma-kalobwe-b63037149/"
+                target="_blank"
+                rel="noopener noreferrer"
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.95 }}
+                whileHover={{ scale: 1.05, y: -2 }}
+                whileTap={{ scale: 0.95 }}
+                className="p-2 sm:p-3 bg-white dark:bg-slate-800 text-slate-900 dark:text-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-500 border border-slate-200 dark:border-slate-700 hover:border-slate-400 dark:hover:border-slate-500 backdrop-blur-sm"
+              >
+                <Linkedin className="w-5 h-5 sm:w-6 sm:h-6" />
+              </motion.a>
+            </div>
           </motion.div>
         </div>
       </section>
