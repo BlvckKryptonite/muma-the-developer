@@ -334,6 +334,33 @@ export default function Portfolio() {
     >
       {/* Animated Background */}
       <AnimatedBackground />
+      {/* Social Links - Top Left */}
+      <div className="fixed top-4 left-4 sm:top-6 sm:left-6 z-50 flex gap-2 sm:gap-3">
+        {/* GitHub Link Button */}
+        <motion.a
+          href="https://github.com/BlvckKryptonite?tab=overview&from=2026-02-01&to=2026-02-02"
+          target="_blank"
+          rel="noopener noreferrer"
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.95 }}
+          className="p-2 sm:p-3 bg-white dark:bg-slate-800 text-slate-900 dark:text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-500 border border-slate-200 dark:border-slate-700 hover:border-slate-400 dark:hover:border-slate-500 backdrop-blur-sm"
+        >
+          <Github className="w-5 h-5 sm:w-6 sm:h-6" />
+        </motion.a>
+
+        {/* LinkedIn Link Button */}
+        <motion.a
+          href="https://www.linkedin.com/in/muma-kalobwe-b63037149/"
+          target="_blank"
+          rel="noopener noreferrer"
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.95 }}
+          className="p-2 sm:p-3 bg-white dark:bg-slate-800 text-slate-900 dark:text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-500 border border-slate-200 dark:border-slate-700 hover:border-slate-400 dark:hover:border-slate-500 backdrop-blur-sm"
+        >
+          <Linkedin className="w-5 h-5 sm:w-6 sm:h-6" />
+        </motion.a>
+      </div>
+
       {/* Dark Mode Toggle */}
       <div className="fixed top-4 right-4 sm:top-6 sm:right-6 z-50">
         <motion.button
