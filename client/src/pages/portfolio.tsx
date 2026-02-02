@@ -5,7 +5,7 @@ import { FramerProjectsCard } from "@/components/framer-projects-card";
 import { DataProjectsCard } from "@/components/data-projects-card";
 import { ContactModal } from "@/components/contact-modal";
 import { AnimatedBackground } from "@/components/animated-background";
-import { Sun, Moon, Mail, ArrowRight, Github } from "lucide-react";
+import { Sun, Moon, Mail, ArrowRight, Github, Linkedin } from "lucide-react";
 import { useState } from "react";
 const profileImage = "/assets/profile.jpg";
 const profileImage2 = "/assets/dp.jpg"
