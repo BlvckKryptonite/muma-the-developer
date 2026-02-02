@@ -902,6 +902,39 @@ export default function Portfolio() {
               Get In Touch
             </a>
           </motion.div>
+
+          {/* Social Links - GitHub & LinkedIn */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.6 }}
+            viewport={{ once: true }}
+            className="flex justify-center gap-4 mt-8"
+          >
+            {/* GitHub Link Button */}
+            <motion.a
+              href="https://github.com/BlvckKryptonite?tab=overview&from=2026-02-01&to=2026-02-02"
+              target="_blank"
+              rel="noopener noreferrer"
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.95 }}
+              className="p-3 bg-white dark:bg-slate-800 text-slate-900 dark:text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-500 border border-slate-200 dark:border-slate-700 hover:border-slate-400 dark:hover:border-slate-500"
+            >
+              <Github className="w-6 h-6" />
+            </motion.a>
+
+            {/* LinkedIn Link Button */}
+            <motion.a
+              href="https://www.linkedin.com/in/muma-kalobwe-b63037149/"
+              target="_blank"
+              rel="noopener noreferrer"
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.95 }}
+              className="p-3 bg-white dark:bg-slate-800 text-slate-900 dark:text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-500 border border-slate-200 dark:border-slate-700 hover:border-slate-400 dark:hover:border-slate-500"
+            >
+              <Linkedin className="w-6 h-6" />
+            </motion.a>
+          </motion.div>
         </div>
       </section>
       {/* Footer */}
