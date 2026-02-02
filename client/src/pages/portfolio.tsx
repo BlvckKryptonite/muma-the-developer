@@ -5,7 +5,7 @@ import { FramerProjectsCard } from "@/components/framer-projects-card";
 import { DataProjectsCard } from "@/components/data-projects-card";
 import { ContactModal } from "@/components/contact-modal";
 import { AnimatedBackground } from "@/components/animated-background";
-import { Sun, Moon, Mail, ArrowRight } from "lucide-react";
+import { Sun, Moon, Mail, ArrowRight, Github, Linkedin } from "lucide-react";
 import { useState } from "react";
 const profileImage = "/assets/profile.jpg";
 const profileImage2 = "/assets/dp.jpg"
@@ -901,6 +901,39 @@ export default function Portfolio() {
               <Mail className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
               Get In Touch
             </a>
+          </motion.div>
+
+          {/* Social Links - GitHub & LinkedIn */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.6 }}
+            viewport={{ once: true }}
+            className="flex justify-center gap-4 mt-8"
+          >
+            {/* GitHub Link Button */}
+            <motion.a
+              href="https://github.com/BlvckKryptonite?tab=overview&from=2026-02-01&to=2026-02-02"
+              target="_blank"
+              rel="noopener noreferrer"
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.95 }}
+              className="p-3 bg-white dark:bg-slate-800 text-slate-900 dark:text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-500 border border-slate-200 dark:border-slate-700 hover:border-slate-400 dark:hover:border-slate-500"
+            >
+              <Github className="w-6 h-6" />
+            </motion.a>
+
+            {/* LinkedIn Link Button */}
+            <motion.a
+              href="https://www.linkedin.com/in/muma-kalobwe-b63037149/"
+              target="_blank"
+              rel="noopener noreferrer"
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.95 }}
+              className="p-3 bg-white dark:bg-slate-800 text-slate-900 dark:text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-500 border border-slate-200 dark:border-slate-700 hover:border-slate-400 dark:hover:border-slate-500"
+            >
+              <Linkedin className="w-6 h-6" />
+            </motion.a>
           </motion.div>
         </div>
       </section>
