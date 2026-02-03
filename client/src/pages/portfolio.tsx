@@ -748,7 +748,7 @@ export default function Portfolio() {
               {
                 institution: "Code Institute",
                 degree: "Full-Stack Software Development Program",
-                period: "2023 - Present",
+                period: "2023 - Feb 2026",
                 location: "Ireland",
                 icon: (
                   <img
