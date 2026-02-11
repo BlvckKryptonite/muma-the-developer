@@ -117,15 +117,15 @@ const projects = [
   },
  
 
-//   {
-//     name: "Love Running",
-//     description:
-//       "A simple multi-page fitness website built with vanilla HTML and CSS. Features a clean user interface, responsive layout, and accessible design tailored for a runners club.",
-//     link: "https://blvckkryptonite.github.io/love-running/",
-//     documentation:
-//       "https://github.com/BlvckKryptonite/love-running/blob/main/README.md",
-//     icon: "/icons/loverunning.png",
-//   },
+  {
+    name: "Love Running",
+    description:
+      "A simple multi-page fitness website built with vanilla HTML and CSS. Features a clean user interface, responsive layout, and accessible design tailored for a runners club.",
+    link: "https://blvckkryptonite.github.io/love-running/",
+    documentation:
+      "https://github.com/BlvckKryptonite/love-running/blob/main/README.md",
+    icon: "/icons/loverunning.png",
+  },
 //   {
 //     name: "SpendSmart",
 //     description:
