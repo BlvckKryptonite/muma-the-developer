@@ -127,14 +127,14 @@ const projects = [
   //   icon: "/icons/loverunning.png",
   // },
 //   {
-    name: "SpendSmart",
-    description:
-      "A simple budgeting app built with HTML/CSS, JavaScript, and Chart.js. Helps users visualize expenses, savings, and get financial insight.",
-    link: "https://blvckkryptonite.github.io/SpendSmart/",
-    documentation:
-      "https://github.com/BlvckKryptonite/SpendSmart/blob/master/README.md",
-    icon: "/icons/spendsmart.png",
-  },
+  //   name: "SpendSmart",
+  //   description:
+  //     "A simple budgeting app built with HTML/CSS, JavaScript, and Chart.js. Helps users visualize expenses, savings, and get financial insight.",
+  //   link: "https://blvckkryptonite.github.io/SpendSmart/",
+  //   documentation:
+  //     "https://github.com/BlvckKryptonite/SpendSmart/blob/master/README.md",
+  //   icon: "/icons/spendsmart.png",
+  // },
 //   {
 //     name: "ParsePilot",
 //     description:
