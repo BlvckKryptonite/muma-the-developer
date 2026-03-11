@@ -145,14 +145,14 @@ const projects = [
 //     icon: "/icons/parsepilot.png",
 //   },
 //   {
-//     name: "Game-Xit",
-//     description:
-//       "A three-page HTML/CSS site built to raise awareness about video game addiction. Includes a responsive layout, embedded YouTube resources, a gaming self-assessment tool link, and a styled contact form with Google Maps integration.",
-//     link: "https://blvckkryptonite.github.io/game-xit/",
-//     documentation:
-//       "https://github.com/BlvckKryptonite/game-xit/blob/main/README.md",
-//     icon: "/icons/gameexit.png",
-//   },
+    name: "Game-Xit",
+    description:
+      "A three-page HTML/CSS site built to raise awareness about video game addiction. Includes a responsive layout, embedded YouTube resources, a gaming self-assessment tool link, and a styled contact form with Google Maps integration.",
+    link: "https://blvckkryptonite.github.io/game-xit/",
+    documentation:
+      "https://github.com/BlvckKryptonite/game-xit/blob/main/README.md",
+    icon: "/icons/gameexit.png",
+  },
 //   {
 //     name: "FraudShield CLI",
 //     description:
