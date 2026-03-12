@@ -144,7 +144,7 @@ const projects = [
 //       "https://github.com/BlvckKryptonite/ParsePilot/blob/main/README.md",
 //     icon: "/icons/parsepilot.png",
 //   },
-//   {
+  {
     name: "Game-Xit",
     description:
       "A three-page HTML/CSS site built to raise awareness about video game addiction. Includes a responsive layout, embedded YouTube resources, a gaming self-assessment tool link, and a styled contact form with Google Maps integration.",
